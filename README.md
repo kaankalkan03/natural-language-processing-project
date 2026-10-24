@@ -6,10 +6,10 @@ press conference, predict the punctuation mark that follows each word.
 
 COE025 Natural Language Processing, Project 2 (token classification).
 
-> **Status (23 October 2026).** All seven methods are trained, chosen on the
+> **Status (24 October 2026).** All seven methods are trained, chosen on the
 > validation split and scored **once** on the test split, after every model
-> choice was fixed. Remaining: team files, final repository clean-up and the
-> presentation.
+> choice was fixed. Remaining: the members' own entries in
+> [`contributions/`](contributions/) and the presentation (2 November 2026).
 
 ## Example
 
