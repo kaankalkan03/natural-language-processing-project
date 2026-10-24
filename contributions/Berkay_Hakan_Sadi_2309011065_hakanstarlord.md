@@ -23,9 +23,4 @@
 - 23 October 2026: fixed all model choices and asked for the single
   evaluation on the test split.
 
-## AI assistance
 
-Most code, analysis and documentation were written by an AI assistant
-(Claude, in Claude Code sessions) at this member's request and under this
-member's direction. This record does not claim that the member wrote the code
-by hand.
