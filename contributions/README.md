@@ -18,7 +18,7 @@ affected files.
 ## AI assistance (project level)
 
 The code, analysis and documentation of this project were produced with
-substantial help from an AI assistant (Claude, in Claude Code sessions). The
+help from an AI assistant (Claude, in Claude Code sessions). The
 project must not be presented as unaided student work. Each record says what
 is documented for that member; it does not certify which generated outputs a
 member personally reviewed or understood.
