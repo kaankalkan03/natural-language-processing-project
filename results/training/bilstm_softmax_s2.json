@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "config": {
+      "embed_dim": 100,
+      "hidden": 256,
+      "layers": 2,
+      "dropout": 0.3,
+      "lr": 0.002,
+      "batch_size": 16,
+      "max_epochs": 60,
+      "patience": 5,
+      "min_count": 2,
+      "word_dropout": 0.05,
+      "clip": 5.0
+    },
+    "seed": 2,
+    "vocab_size": 6339,
+    "parameters": 2946096,
+    "best_epoch": 31,
+    "best_validation_macro_f1": 0.75499,
+    "epochs_run": 36,
+    "stopped_early": true
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_nll_per_word": 0.43881,
+      "validation_macro_f1": 0.34271
+    },
+    {
+      "epoch": 2,
+      "train_nll_per_word": 0.32757,
+      "validation_macro_f1": 0.50627
+    },
+    {
+      "epoch": 3,
+      "train_nll_per_word": 0.29098,
+      "validation_macro_f1": 0.5913
+    },
+    {
+      "epoch": 4,
+      "train_nll_per_word": 0.26539,
+      "validation_macro_f1": 0.626
+    },
+    {
+      "epoch": 5,
+      "train_nll_per_word": 0.25112,
+      "validation_macro_f1": 0.65124
+    },
+    {
+      "epoch": 6,
+      "train_nll_per_word": 0.23697,
+      "validation_macro_f1": 0.66298
+    },
+    {
+      "epoch": 7,
+      "train_nll_per_word": 0.22691,
+      "validation_macro_f1": 0.65749
+    },
+    {
+      "epoch": 8,
+      "train_nll_per_word": 0.22025,
+      "validation_macro_f1": 0.68987
+    },
+    {
+      "epoch": 9,
+      "train_nll_per_word": 0.21224,
+      "validation_macro_f1": 0.68962
+    },
+    {
+      "epoch": 10,
+      "train_nll_per_word": 0.20516,
+      "validation_macro_f1": 0.70409
+    },
+    {
+      "epoch": 11,
+      "train_nll_per_word": 0.20263,
+      "validation_macro_f1": 0.70648
+    },
+    {
+      "epoch": 12,
+      "train_nll_per_word": 0.19749,
+      "validation_macro_f1": 0.71972
+    },
+    {
+      "epoch": 13,
+      "train_nll_per_word": 0.19226,
+      "validation_macro_f1": 0.72241
+    },
+    {
+      "epoch": 14,
+      "train_nll_per_word": 0.18661,
+      "validation_macro_f1": 0.70291
+    },
+    {
+      "epoch": 15,
+      "train_nll_per_word": 0.18591,
+      "validation_macro_f1": 0.72448
+    },
+    {
+      "epoch": 16,
+      "train_nll_per_word": 0.18173,
+      "validation_macro_f1": 0.72751
+    },
+    {
+      "epoch": 17,
+      "train_nll_per_word": 0.17857,
+      "validation_macro_f1": 0.72535
+    },
+    {
+      "epoch": 18,
+      "train_nll_per_word": 0.17609,
+      "validation_macro_f1": 0.7318
+    },
+    {
+      "epoch": 19,
+      "train_nll_per_word": 0.17373,
+      "validation_macro_f1": 0.73898
+    },
+    {
+      "epoch": 20,
+      "train_nll_per_word": 0.17023,
+      "validation_macro_f1": 0.73163
+    },
+    {
+      "epoch": 21,
+      "train_nll_per_word": 0.16881,
+      "validation_macro_f1": 0.74278
+    },
+    {
+      "epoch": 22,
+      "train_nll_per_word": 0.1663,
+      "validation_macro_f1": 0.74455
+    },
+    {
+      "epoch": 23,
+      "train_nll_per_word": 0.16325,
+      "validation_macro_f1": 0.74594
+    },
+    {
+      "epoch": 24,
+      "train_nll_per_word": 0.1619,
+      "validation_macro_f1": 0.74681
+    },
+    {
+      "epoch": 25,
+      "train_nll_per_word": 0.15954,
+      "validation_macro_f1": 0.74976
+    },
+    {
+      "epoch": 26,
+      "train_nll_per_word": 0.15743,
+      "validation_macro_f1": 0.74905
+    },
+    {
+      "epoch": 27,
+      "train_nll_per_word": 0.15664,
+      "validation_macro_f1": 0.74967
+    },
+    {
+      "epoch": 28,
+      "train_nll_per_word": 0.15506,
+      "validation_macro_f1": 0.74553
+    },
+    {
+      "epoch": 29,
+      "train_nll_per_word": 0.15483,
+      "validation_macro_f1": 0.75434
+    },
+    {
+      "epoch": 30,
+      "train_nll_per_word": 0.15289,
+      "validation_macro_f1": 0.75415
+    },
+    {
+      "epoch": 31,
+      "train_nll_per_word": 0.15145,
+      "validation_macro_f1": 0.75499
+    },
+    {
+      "epoch": 32,
+      "train_nll_per_word": 0.14929,
+      "validation_macro_f1": 0.7416
+    },
+    {
+      "epoch": 33,
+      "train_nll_per_word": 0.14756,
+      "validation_macro_f1": 0.75197
+    },
+    {
+      "epoch": 34,
+      "train_nll_per_word": 0.14647,
+      "validation_macro_f1": 0.74943
+    },
+    {
+      "epoch": 35,
+      "train_nll_per_word": 0.14551,
+      "validation_macro_f1": 0.74748
+    },
+    {
+      "epoch": 36,
+      "train_nll_per_word": 0.14466,
+      "validation_macro_f1": 0.75127
+    }
+  ]
+}

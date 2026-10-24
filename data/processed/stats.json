@@ -1,0 +1,97 @@
+{
+  "labels": [
+    "O",
+    "COMMA",
+    "PERIOD",
+    "QUESTION"
+  ],
+  "splits": {
+    "train": {
+      "documents": 65,
+      "turns": 3514,
+      "words": 527904,
+      "label_counts": {
+        "O": 454538,
+        "COMMA": 45515,
+        "PERIOD": 25060,
+        "QUESTION": 2791
+      },
+      "label_share": {
+        "O": 0.861,
+        "COMMA": 0.0862,
+        "PERIOD": 0.0475,
+        "QUESTION": 0.0053
+      },
+      "oov_rate_vs_train": 0.0,
+      "turns_by_role": {
+        "chair": 1571,
+        "reporter": 1546,
+        "moderator": 397
+      },
+      "chair_turns": {
+        "Bernanke": 301,
+        "Yellen": 333,
+        "Powell": 937
+      }
+    },
+    "validation": {
+      "documents": 8,
+      "turns": 650,
+      "words": 66089,
+      "label_counts": {
+        "O": 55436,
+        "COMMA": 6781,
+        "PERIOD": 3469,
+        "QUESTION": 403
+      },
+      "label_share": {
+        "O": 0.8388,
+        "COMMA": 0.1026,
+        "PERIOD": 0.0525,
+        "QUESTION": 0.0061
+      },
+      "oov_rate_vs_train": 0.0075,
+      "turns_by_role": {
+        "chair": 259,
+        "moderator": 141,
+        "reporter": 250
+      },
+      "chair_turns": {
+        "Powell": 259
+      }
+    },
+    "test": {
+      "documents": 22,
+      "turns": 1823,
+      "words": 178893,
+      "label_counts": {
+        "O": 150267,
+        "COMMA": 17625,
+        "PERIOD": 9827,
+        "QUESTION": 1174
+      },
+      "label_share": {
+        "O": 0.84,
+        "COMMA": 0.0985,
+        "PERIOD": 0.0549,
+        "QUESTION": 0.0066
+      },
+      "oov_rate_vs_train": 0.0115,
+      "turns_by_role": {
+        "chair": 735,
+        "moderator": 358,
+        "reporter": 730
+      },
+      "chair_turns": {
+        "Powell": 668,
+        "Warsh": 67
+      }
+    }
+  },
+  "tokenization": {
+    "abbreviation_periods_kept": 854,
+    "abbreviation_sentence_ends": 5,
+    "standalone_marks_dropped": 22,
+    "standalone_marks_merged": 32
+  }
+}

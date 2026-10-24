@@ -1,0 +1,3784 @@
+{
+  "split": "validation",
+  "documents": 8,
+  "turns": 650,
+  "words": 66089,
+  "models": [
+    "crf",
+    "bilstm_crf_s0",
+    "bilstm_crf_s1",
+    "bilstm_crf_s2",
+    "bert_s0",
+    "bert_s1",
+    "bert_s2",
+    "deberta_s0",
+    "deberta_s1",
+    "deberta_s2"
+  ],
+  "focus": "deberta_s0",
+  "reference": "bilstm_crf_s0",
+  "errors": {
+    "crf": {
+      "all_words": {
+        "words": 66089,
+        "errors": 4707,
+        "error_rate": 0.07122213984172858,
+        "pairs": {
+          "COMMA->O": 1813,
+          "COMMA->PERIOD": 622,
+          "PERIOD->COMMA": 618,
+          "O->COMMA": 571,
+          "PERIOD->O": 484,
+          "O->PERIOD": 213,
+          "QUESTION->PERIOD": 141,
+          "PERIOD->QUESTION": 85,
+          "QUESTION->O": 61,
+          "QUESTION->COMMA": 46,
+          "COMMA->QUESTION": 32,
+          "O->QUESTION": 21
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 4536,
+        "error_rate": 0.06931646265988173,
+        "pairs": {
+          "COMMA->O": 1813,
+          "COMMA->PERIOD": 619,
+          "PERIOD->COMMA": 616,
+          "O->COMMA": 571,
+          "PERIOD->O": 484,
+          "O->PERIOD": 213,
+          "QUESTION->O": 61,
+          "QUESTION->PERIOD": 45,
+          "QUESTION->COMMA": 44,
+          "COMMA->QUESTION": 28,
+          "O->QUESTION": 21,
+          "PERIOD->QUESTION": 21
+        }
+      }
+    },
+    "bilstm_crf_s0": {
+      "all_words": {
+        "words": 66089,
+        "errors": 4021,
+        "error_rate": 0.06084219764257289,
+        "pairs": {
+          "COMMA->O": 1609,
+          "COMMA->PERIOD": 686,
+          "O->COMMA": 641,
+          "PERIOD->COMMA": 383,
+          "PERIOD->O": 330,
+          "O->PERIOD": 197,
+          "QUESTION->COMMA": 40,
+          "QUESTION->PERIOD": 37,
+          "COMMA->QUESTION": 31,
+          "QUESTION->O": 28,
+          "O->QUESTION": 20,
+          "PERIOD->QUESTION": 19
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 3986,
+        "error_rate": 0.06091168874829994,
+        "pairs": {
+          "COMMA->O": 1609,
+          "COMMA->PERIOD": 684,
+          "O->COMMA": 641,
+          "PERIOD->COMMA": 381,
+          "PERIOD->O": 330,
+          "O->PERIOD": 197,
+          "QUESTION->COMMA": 36,
+          "QUESTION->O": 28,
+          "COMMA->QUESTION": 27,
+          "QUESTION->PERIOD": 26,
+          "O->QUESTION": 20,
+          "PERIOD->QUESTION": 7
+        }
+      }
+    },
+    "bilstm_crf_s1": {
+      "all_words": {
+        "words": 66089,
+        "errors": 3929,
+        "error_rate": 0.05945013542344414,
+        "pairs": {
+          "COMMA->O": 1504,
+          "O->COMMA": 701,
+          "COMMA->PERIOD": 634,
+          "PERIOD->COMMA": 449,
+          "PERIOD->O": 278,
+          "O->PERIOD": 192,
+          "COMMA->QUESTION": 37,
+          "PERIOD->QUESTION": 34,
+          "QUESTION->COMMA": 34,
+          "QUESTION->O": 28,
+          "QUESTION->PERIOD": 24,
+          "O->QUESTION": 14
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 3897,
+        "error_rate": 0.059551643515334894,
+        "pairs": {
+          "COMMA->O": 1504,
+          "O->COMMA": 701,
+          "COMMA->PERIOD": 632,
+          "PERIOD->COMMA": 447,
+          "PERIOD->O": 278,
+          "O->PERIOD": 192,
+          "COMMA->QUESTION": 33,
+          "QUESTION->COMMA": 32,
+          "QUESTION->O": 28,
+          "PERIOD->QUESTION": 19,
+          "QUESTION->PERIOD": 17,
+          "O->QUESTION": 14
+        }
+      }
+    },
+    "bilstm_crf_s2": {
+      "all_words": {
+        "words": 66089,
+        "errors": 3940,
+        "error_rate": 0.059616577645296494,
+        "pairs": {
+          "COMMA->O": 1598,
+          "COMMA->PERIOD": 582,
+          "O->COMMA": 572,
+          "PERIOD->COMMA": 495,
+          "PERIOD->O": 333,
+          "O->PERIOD": 195,
+          "QUESTION->PERIOD": 35,
+          "COMMA->QUESTION": 32,
+          "QUESTION->O": 31,
+          "QUESTION->COMMA": 25,
+          "PERIOD->QUESTION": 22,
+          "O->QUESTION": 20
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 3908,
+        "error_rate": 0.05971973899356653,
+        "pairs": {
+          "COMMA->O": 1598,
+          "COMMA->PERIOD": 579,
+          "O->COMMA": 572,
+          "PERIOD->COMMA": 493,
+          "PERIOD->O": 333,
+          "O->PERIOD": 195,
+          "QUESTION->O": 31,
+          "COMMA->QUESTION": 29,
+          "QUESTION->PERIOD": 25,
+          "QUESTION->COMMA": 22,
+          "O->QUESTION": 20,
+          "PERIOD->QUESTION": 11
+        }
+      }
+    },
+    "bert_s0": {
+      "all_words": {
+        "words": 66089,
+        "errors": 2462,
+        "error_rate": 0.03725279547277156,
+        "pairs": {
+          "COMMA->O": 732,
+          "O->COMMA": 591,
+          "COMMA->PERIOD": 496,
+          "PERIOD->COMMA": 337,
+          "PERIOD->O": 96,
+          "O->PERIOD": 93,
+          "COMMA->QUESTION": 39,
+          "PERIOD->QUESTION": 21,
+          "QUESTION->COMMA": 20,
+          "QUESTION->PERIOD": 18,
+          "O->QUESTION": 13,
+          "QUESTION->O": 6
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 2438,
+        "error_rate": 0.03725607053897523,
+        "pairs": {
+          "COMMA->O": 732,
+          "O->COMMA": 591,
+          "COMMA->PERIOD": 495,
+          "PERIOD->COMMA": 336,
+          "PERIOD->O": 94,
+          "O->PERIOD": 93,
+          "COMMA->QUESTION": 35,
+          "QUESTION->COMMA": 20,
+          "O->QUESTION": 13,
+          "QUESTION->PERIOD": 12,
+          "PERIOD->QUESTION": 11,
+          "QUESTION->O": 6
+        }
+      }
+    },
+    "bert_s1": {
+      "all_words": {
+        "words": 66089,
+        "errors": 2407,
+        "error_rate": 0.03642058436350981,
+        "pairs": {
+          "COMMA->O": 692,
+          "O->COMMA": 598,
+          "COMMA->PERIOD": 467,
+          "PERIOD->COMMA": 346,
+          "O->PERIOD": 101,
+          "PERIOD->O": 88,
+          "COMMA->QUESTION": 39,
+          "QUESTION->COMMA": 24,
+          "QUESTION->PERIOD": 17,
+          "PERIOD->QUESTION": 14,
+          "O->QUESTION": 13,
+          "QUESTION->O": 8
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 2380,
+        "error_rate": 0.03636974892648115,
+        "pairs": {
+          "COMMA->O": 692,
+          "O->COMMA": 598,
+          "COMMA->PERIOD": 465,
+          "PERIOD->COMMA": 345,
+          "O->PERIOD": 101,
+          "PERIOD->O": 85,
+          "COMMA->QUESTION": 35,
+          "QUESTION->COMMA": 23,
+          "O->QUESTION": 13,
+          "QUESTION->PERIOD": 9,
+          "PERIOD->QUESTION": 7,
+          "QUESTION->O": 7
+        }
+      }
+    },
+    "bert_s2": {
+      "all_words": {
+        "words": 66089,
+        "errors": 2452,
+        "error_rate": 0.0371014843619967,
+        "pairs": {
+          "COMMA->O": 747,
+          "O->COMMA": 568,
+          "COMMA->PERIOD": 457,
+          "PERIOD->COMMA": 400,
+          "O->PERIOD": 87,
+          "PERIOD->O": 87,
+          "COMMA->QUESTION": 35,
+          "QUESTION->COMMA": 21,
+          "QUESTION->PERIOD": 18,
+          "PERIOD->QUESTION": 15,
+          "O->QUESTION": 10,
+          "QUESTION->O": 7
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 2429,
+        "error_rate": 0.03711853787496753,
+        "pairs": {
+          "COMMA->O": 747,
+          "O->COMMA": 568,
+          "COMMA->PERIOD": 456,
+          "PERIOD->COMMA": 399,
+          "O->PERIOD": 87,
+          "PERIOD->O": 85,
+          "COMMA->QUESTION": 32,
+          "QUESTION->COMMA": 21,
+          "QUESTION->PERIOD": 12,
+          "O->QUESTION": 10,
+          "PERIOD->QUESTION": 6,
+          "QUESTION->O": 6
+        }
+      }
+    },
+    "deberta_s0": {
+      "all_words": {
+        "words": 66089,
+        "errors": 1899,
+        "error_rate": 0.028733979936146712,
+        "pairs": {
+          "O->COMMA": 502,
+          "COMMA->O": 494,
+          "COMMA->PERIOD": 479,
+          "PERIOD->COMMA": 221,
+          "O->PERIOD": 73,
+          "PERIOD->O": 41,
+          "COMMA->QUESTION": 31,
+          "QUESTION->PERIOD": 17,
+          "QUESTION->COMMA": 16,
+          "PERIOD->QUESTION": 15,
+          "O->QUESTION": 7,
+          "QUESTION->O": 3
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 1873,
+        "error_rate": 0.028622075520713948,
+        "pairs": {
+          "O->COMMA": 502,
+          "COMMA->O": 494,
+          "COMMA->PERIOD": 475,
+          "PERIOD->COMMA": 221,
+          "O->PERIOD": 73,
+          "PERIOD->O": 40,
+          "COMMA->QUESTION": 28,
+          "QUESTION->COMMA": 16,
+          "PERIOD->QUESTION": 8,
+          "O->QUESTION": 7,
+          "QUESTION->PERIOD": 6,
+          "QUESTION->O": 3
+        }
+      }
+    },
+    "deberta_s1": {
+      "all_words": {
+        "words": 66089,
+        "errors": 1935,
+        "error_rate": 0.029278699934936224,
+        "pairs": {
+          "O->COMMA": 553,
+          "COMMA->O": 483,
+          "COMMA->PERIOD": 417,
+          "PERIOD->COMMA": 297,
+          "O->PERIOD": 55,
+          "PERIOD->O": 41,
+          "COMMA->QUESTION": 29,
+          "QUESTION->COMMA": 20,
+          "PERIOD->QUESTION": 17,
+          "QUESTION->PERIOD": 12,
+          "O->QUESTION": 8,
+          "QUESTION->O": 3
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 1914,
+        "error_rate": 0.02924861321230459,
+        "pairs": {
+          "O->COMMA": 553,
+          "COMMA->O": 483,
+          "COMMA->PERIOD": 415,
+          "PERIOD->COMMA": 295,
+          "O->PERIOD": 55,
+          "PERIOD->O": 41,
+          "COMMA->QUESTION": 26,
+          "QUESTION->COMMA": 19,
+          "PERIOD->QUESTION": 12,
+          "O->QUESTION": 8,
+          "QUESTION->PERIOD": 5,
+          "QUESTION->O": 2
+        }
+      }
+    },
+    "deberta_s2": {
+      "all_words": {
+        "words": 66089,
+        "errors": 1961,
+        "error_rate": 0.02967210882295087,
+        "pairs": {
+          "O->COMMA": 586,
+          "COMMA->O": 434,
+          "COMMA->PERIOD": 418,
+          "PERIOD->COMMA": 318,
+          "O->PERIOD": 65,
+          "PERIOD->O": 44,
+          "COMMA->QUESTION": 31,
+          "QUESTION->COMMA": 26,
+          "PERIOD->QUESTION": 15,
+          "QUESTION->PERIOD": 12,
+          "O->QUESTION": 9,
+          "QUESTION->O": 3
+        }
+      },
+      "within_turn": {
+        "words": 65439,
+        "errors": 1936,
+        "error_rate": 0.02958480416876786,
+        "pairs": {
+          "O->COMMA": 586,
+          "COMMA->O": 434,
+          "COMMA->PERIOD": 416,
+          "PERIOD->COMMA": 314,
+          "O->PERIOD": 65,
+          "PERIOD->O": 44,
+          "COMMA->QUESTION": 28,
+          "QUESTION->COMMA": 25,
+          "O->QUESTION": 9,
+          "PERIOD->QUESTION": 7,
+          "QUESTION->PERIOD": 5,
+          "QUESTION->O": 3
+        }
+      }
+    }
+  },
+  "turn_length": {
+    "crf": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.5384615384615384,
+            "recall": 0.7,
+            "f1": 0.6086956521739131,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.8333333333333334,
+            "recall": 0.45454545454545453,
+            "f1": 0.5882352941176471,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.676923076923077,
+            "recall": 0.5432098765432098,
+            "f1": 0.6027397260273972,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.3125,
+            "recall": 0.4166666666666667,
+            "f1": 0.35714285714285715,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.5,
+            "recall": 0.375,
+            "f1": 0.42857142857142855,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.6667883611405206,
+        "question_f1": 0.3930635838150289,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7405405405405405,
+            "recall": 0.5795262267343486,
+            "f1": 0.6502135738016137,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.6833631484794276,
+            "recall": 0.6833631484794276,
+            "f1": 0.6833631484794276,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.4788732394366197,
+            "recall": 0.3333333333333333,
+            "f1": 0.3930635838150289,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.6672583524565945,
+        "question_f1": 0.25210084033613445,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7834512457705322,
+            "recall": 0.6631085654777402,
+            "f1": 0.7182741116751269,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.6495224099926524,
+            "recall": 0.5862068965517241,
+            "f1": 0.6162425932380621,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.40540540540540543,
+            "recall": 0.18292682926829268,
+            "f1": 0.25210084033613445,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.7059223154482471,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7984496124031008,
+            "recall": 0.6208559373116335,
+            "f1": 0.6985418786029163,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.7566909975669099,
+            "recall": 0.6746203904555315,
+            "f1": 0.713302752293578,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2857142857142857,
+            "f1": 0.3076923076923077,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s0": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.5833333333333334,
+            "recall": 0.7,
+            "f1": 0.6363636363636364,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.875,
+            "recall": 0.6363636363636364,
+            "f1": 0.7368421052631579,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7868852459016393,
+            "recall": 0.5925925925925926,
+            "f1": 0.676056338028169,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.52,
+            "recall": 0.5416666666666666,
+            "f1": 0.5306122448979592,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.4,
+            "recall": 0.25,
+            "f1": 0.3076923076923077,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.7603050300840635,
+        "question_f1": 0.6502463054187192,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7718780727630286,
+            "recall": 0.6641285956006768,
+            "f1": 0.7139608913142338,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.7893835616438356,
+            "recall": 0.8246869409660107,
+            "f1": 0.8066491688538933,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.6534653465346535,
+            "recall": 0.6470588235294118,
+            "f1": 0.6502463054187192,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.7334503352639568,
+        "question_f1": 0.5693430656934306,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8181536555142503,
+            "recall": 0.6875813590210883,
+            "f1": 0.7472061111897015,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.691743119266055,
+            "recall": 0.75,
+            "f1": 0.7196945593382119,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.7090909090909091,
+            "recall": 0.47560975609756095,
+            "f1": 0.5693430656934306,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.7093742714581415,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8147527242246437,
+            "recall": 0.5858951175406871,
+            "f1": 0.6816269284712483,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.7221644120707597,
+            "recall": 0.7527114967462039,
+            "f1": 0.7371216144450345,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 1.0,
+            "recall": 0.6428571428571429,
+            "f1": 0.782608695652174,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s1": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.75,
+            "recall": 0.5454545454545454,
+            "f1": 0.631578947368421,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7534246575342466,
+            "recall": 0.6790123456790124,
+            "f1": 0.7142857142857143,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.6190476190476191,
+            "recall": 0.5416666666666666,
+            "f1": 0.5777777777777777,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.16666666666666666,
+            "recall": 0.125,
+            "f1": 0.14285714285714285,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.757400679979426,
+        "question_f1": 0.6763285024154589,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7628083491461101,
+            "recall": 0.6802030456852792,
+            "f1": 0.7191413237924866,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8043875685557587,
+            "recall": 0.7871198568872988,
+            "f1": 0.7956600361663653,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6862745098039216,
+            "f1": 0.6763285024154589,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.7323995401017576,
+        "question_f1": 0.6233766233766234,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8066365007541478,
+            "recall": 0.6961728716480083,
+            "f1": 0.7473448854108441,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.6961946350592639,
+            "recall": 0.7400530503978779,
+            "f1": 0.7174541947926711,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5853658536585366,
+            "f1": 0.6233766233766234,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.7342870887340132,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7995495495495496,
+            "recall": 0.6419529837251357,
+            "f1": 0.7121364092276831,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.7484076433121019,
+            "recall": 0.764642082429501,
+            "f1": 0.7564377682403434,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.8333333333333334,
+            "recall": 0.7142857142857143,
+            "f1": 0.7692307692307693,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s2": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.46153846153846156,
+            "recall": 0.6,
+            "f1": 0.5217391304347826,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.6666666666666666,
+            "recall": 0.36363636363636365,
+            "f1": 0.47058823529411764,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7313432835820896,
+            "recall": 0.6049382716049383,
+            "f1": 0.6621621621621622,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.56,
+            "recall": 0.5833333333333334,
+            "f1": 0.5714285714285714,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.2,
+            "recall": 0.125,
+            "f1": 0.15384615384615385,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.7542744289156786,
+        "question_f1": 0.7081339712918661,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7797797797797797,
+            "recall": 0.6590524534686971,
+            "f1": 0.7143512150389729,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8051470588235294,
+            "recall": 0.7835420393559929,
+            "f1": 0.7941976427923844,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.6915887850467289,
+            "recall": 0.7254901960784313,
+            "f1": 0.7081339712918661,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.7317126523557829,
+        "question_f1": 0.5986394557823129,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8190127970749543,
+            "recall": 0.6998177557927623,
+            "f1": 0.7547381721184894,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.6981981981981982,
+            "recall": 0.7194960212201591,
+            "f1": 0.7086871325930765,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.676923076923077,
+            "recall": 0.5365853658536586,
+            "f1": 0.5986394557823129,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.7171226412938666,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8081979891724671,
+            "recall": 0.6298975286317059,
+            "f1": 0.7079945799457995,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.7537922987164527,
+            "recall": 0.7006507592190889,
+            "f1": 0.7262507026419337,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.8181818181818182,
+            "recall": 0.6428571428571429,
+            "f1": 0.72,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bert_s0": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1": 0.7,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.875,
+            "recall": 0.6363636363636364,
+            "f1": 0.7368421052631579,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7468354430379747,
+            "recall": 0.7283950617283951,
+            "f1": 0.7375,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.6538461538461539,
+            "recall": 0.7083333333333334,
+            "f1": 0.68,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.7142857142857143,
+            "recall": 0.625,
+            "f1": 0.6666666666666666,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.8329916576245515,
+        "question_f1": 0.7929515418502202,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8243359040274207,
+            "recall": 0.8138747884940778,
+            "f1": 0.8190719455087271,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8476702508960573,
+            "recall": 0.8461538461538461,
+            "f1": 0.846911369740376,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.72,
+            "recall": 0.8823529411764706,
+            "f1": 0.7929515418502202,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.8157686986606858,
+        "question_f1": 0.7469879518072289,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8534246575342466,
+            "recall": 0.8109867222077584,
+            "f1": 0.8316646642637832,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.7688073394495413,
+            "recall": 0.833554376657825,
+            "f1": 0.7998727330575883,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.7380952380952381,
+            "recall": 0.7560975609756098,
+            "f1": 0.7469879518072289,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.8674625530118281,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8814432989690721,
+            "recall": 0.8245931283905967,
+            "f1": 0.8520710059171598,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.8671548117154811,
+            "recall": 0.8991323210412148,
+            "f1": 0.8828541001064962,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 1.0,
+            "recall": 0.7857142857142857,
+            "f1": 0.88,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bert_s1": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.6666666666666666,
+            "recall": 0.8,
+            "f1": 0.7272727272727273,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.8571428571428571,
+            "recall": 0.5454545454545454,
+            "f1": 0.6666666666666666,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7972972972972973,
+            "recall": 0.7283950617283951,
+            "f1": 0.7612903225806451,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.7307692307692307,
+            "recall": 0.7916666666666666,
+            "f1": 0.76,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.7142857142857143,
+            "recall": 0.625,
+            "f1": 0.6666666666666666,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.829570895522388,
+        "question_f1": 0.7713004484304933,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.821152192605331,
+            "recall": 0.8079526226734348,
+            "f1": 0.814498933901919,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8431372549019608,
+            "recall": 0.8461538461538461,
+            "f1": 0.8446428571428571,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.7107438016528925,
+            "recall": 0.8431372549019608,
+            "f1": 0.7713004484304933,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.824321946908118,
+        "question_f1": 0.7852760736196319,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8519807280513919,
+            "recall": 0.8286904451965634,
+            "f1": 0.8401742114293256,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.7830950901180858,
+            "recall": 0.8355437665782494,
+            "f1": 0.8084696823869105,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.7901234567901234,
+            "recall": 0.7804878048780488,
+            "f1": 0.7852760736196319,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.8679195424893884,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8809218950064021,
+            "recall": 0.8294153104279687,
+            "f1": 0.8543930456380007,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.8644421272158499,
+            "recall": 0.8991323210412148,
+            "f1": 0.8814460393407761,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.9230769230769231,
+            "recall": 0.8571428571428571,
+            "f1": 0.8888888888888888,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "bert_s2": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.8333333333333334,
+            "recall": 0.45454545454545453,
+            "f1": 0.5882352941176471,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7894736842105263,
+            "recall": 0.7407407407407407,
+            "f1": 0.7643312101910829,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.6666666666666666,
+            "recall": 0.75,
+            "f1": 0.7058823529411765,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.7142857142857143,
+            "recall": 0.625,
+            "f1": 0.6666666666666666,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.8277125351915009,
+        "question_f1": 0.7873303167420814,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.819672131147541,
+            "recall": 0.8037225042301185,
+            "f1": 0.8116189662537378,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8468468468468469,
+            "recall": 0.8407871198568873,
+            "f1": 0.8438061041292639,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.7310924369747899,
+            "recall": 0.8529411764705882,
+            "f1": 0.7873303167420814,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.8160391148725692,
+        "question_f1": 0.7848101265822784,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8492191707054388,
+            "recall": 0.821140328039573,
+            "f1": 0.8349437458636665,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.783109404990403,
+            "recall": 0.8116710875331565,
+            "f1": 0.7971344838814718,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.8157894736842105,
+            "recall": 0.7560975609756098,
+            "f1": 0.7848101265822784,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.8633018685545535,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8730057434588385,
+            "recall": 0.8245931283905967,
+            "f1": 0.8481091134531928,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.8710021321961621,
+            "recall": 0.886117136659436,
+            "f1": 0.878494623655914,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "deberta_s0": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.5714285714285714,
+            "recall": 0.4,
+            "f1": 0.47058823529411764,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.7777777777777778,
+            "recall": 0.6363636363636364,
+            "f1": 0.7,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7402597402597403,
+            "recall": 0.7037037037037037,
+            "f1": 0.7215189873417721,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.5757575757575758,
+            "recall": 0.7916666666666666,
+            "f1": 0.6666666666666666,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.8333333333333334,
+            "recall": 0.625,
+            "f1": 0.7142857142857143,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.8653267506706198,
+        "question_f1": 0.8518518518518519,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8532654792196777,
+            "recall": 0.8510998307952623,
+            "f1": 0.8521812791190174,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8532883642495784,
+            "recall": 0.9051878354203936,
+            "f1": 0.8784722222222222,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.8070175438596491,
+            "recall": 0.9019607843137255,
+            "f1": 0.8518518518518519,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.8536857731675738,
+        "question_f1": 0.8255813953488372,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8875611080934275,
+            "recall": 0.8508200989325696,
+            "f1": 0.8688023394922239,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.7896895137668424,
+            "recall": 0.8938992042440318,
+            "f1": 0.8385692068429238,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.7888888888888889,
+            "recall": 0.8658536585365854,
+            "f1": 0.8255813953488372,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.9094762410729524,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9178343949044586,
+            "recall": 0.8685955394816154,
+            "f1": 0.8925363889749148,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.9048603929679421,
+            "recall": 0.9490238611713666,
+            "f1": 0.9264160931709899,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.9285714285714286,
+            "recall": 0.9285714285714286,
+            "f1": 0.9285714285714286,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "deberta_s1": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.4444444444444444,
+            "recall": 0.4,
+            "f1": 0.42105263157894735,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.8333333333333334,
+            "recall": 0.45454545454545453,
+            "f1": 0.5882352941176471,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8,
+            "recall": 0.7901234567901234,
+            "f1": 0.7950310559006211,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.6296296296296297,
+            "recall": 0.7083333333333334,
+            "f1": 0.6666666666666666,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.8333333333333334,
+            "recall": 0.625,
+            "f1": 0.7142857142857143,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.8571582884978485,
+        "question_f1": 0.8387096774193549,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8366500829187397,
+            "recall": 0.8536379018612521,
+            "f1": 0.8450586264656617,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8586387434554974,
+            "recall": 0.8801431127012522,
+            "f1": 0.8692579505300353,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.7913043478260869,
+            "recall": 0.8921568627450981,
+            "f1": 0.8387096774193549,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.8536925273798964,
+        "question_f1": 0.8208092485549133,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8724074560252034,
+            "recall": 0.8651392866441031,
+            "f1": 0.8687581699346405,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.8123057799875699,
+            "recall": 0.866710875331565,
+            "f1": 0.8386268848251524,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.7802197802197802,
+            "recall": 0.8658536585365854,
+            "f1": 0.8208092485549133,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.9031560252063424,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8988833746898263,
+            "recall": 0.8734177215189873,
+            "f1": 0.8859675940079487,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.9134615384615384,
+            "recall": 0.9273318872017353,
+            "f1": 0.9203444564047363,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.9285714285714286,
+            "recall": 0.9285714285714286,
+            "f1": 0.9285714285714286,
+            "support": 14
+          }
+        }
+      }
+    ],
+    "deberta_s2": [
+      {
+        "bucket": "1-10",
+        "turns": 165,
+        "words": 426,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444444444444444,
+            "support": 10
+          },
+          "PERIOD": {
+            "precision": 0.8571428571428571,
+            "recall": 0.5454545454545454,
+            "f1": 0.6666666666666666,
+            "support": 11
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "bucket": "11-30",
+        "turns": 54,
+        "words": 1103,
+        "macro_f1_comma_period": null,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7710843373493976,
+            "recall": 0.7901234567901234,
+            "f1": 0.7804878048780488,
+            "support": 81
+          },
+          "PERIOD": {
+            "precision": 0.6153846153846154,
+            "recall": 0.6666666666666666,
+            "f1": 0.64,
+            "support": 24
+          },
+          "QUESTION": {
+            "precision": 0.625,
+            "recall": 0.625,
+            "f1": 0.625,
+            "support": 8
+          }
+        }
+      },
+      {
+        "bucket": "31-100",
+        "turns": 216,
+        "words": 13974,
+        "macro_f1_comma_period": 0.8545987070962617,
+        "question_f1": 0.8169014084507042,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8311367380560132,
+            "recall": 0.8536379018612521,
+            "f1": 0.842237061769616,
+            "support": 1182
+          },
+          "PERIOD": {
+            "precision": 0.8541666666666666,
+            "recall": 0.8801431127012522,
+            "f1": 0.8669603524229075,
+            "support": 559
+          },
+          "QUESTION": {
+            "precision": 0.7837837837837838,
+            "recall": 0.8529411764705882,
+            "f1": 0.8169014084507042,
+            "support": 102
+          }
+        }
+      },
+      {
+        "bucket": "101-300",
+        "turns": 182,
+        "words": 31680,
+        "macro_f1_comma_period": 0.8539273653348243,
+        "question_f1": 0.8192771084337349,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8663570691434469,
+            "recall": 0.874251497005988,
+            "f1": 0.8702863807178955,
+            "support": 3841
+          },
+          "PERIOD": {
+            "precision": 0.8132417239225485,
+            "recall": 0.863395225464191,
+            "f1": 0.837568349951753,
+            "support": 1508
+          },
+          "QUESTION": {
+            "precision": 0.8095238095238095,
+            "recall": 0.8292682926829268,
+            "f1": 0.8192771084337349,
+            "support": 82
+          }
+        }
+      },
+      {
+        "bucket": "301+",
+        "turns": 33,
+        "words": 18906,
+        "macro_f1_comma_period": 0.8966505377028815,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8907870652837095,
+            "recall": 0.8800482218203737,
+            "f1": 0.8853850818677986,
+            "support": 1659
+          },
+          "PERIOD": {
+            "precision": 0.9016042780748663,
+            "recall": 0.9143167028199566,
+            "f1": 0.9079159935379645,
+            "support": 922
+          },
+          "QUESTION": {
+            "precision": 0.9285714285714286,
+            "recall": 0.9285714285714286,
+            "f1": 0.9285714285714286,
+            "support": 14
+          }
+        }
+      }
+    ]
+  },
+  "speech_kinds": {
+    "crf": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.7423439724404742,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8355795148247979,
+            "recall": 0.5996131528046421,
+            "f1": 0.6981981981981982,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.8489583333333334,
+            "recall": 0.7325842696629213,
+            "f1": 0.7864897466827503,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.6717520529281968,
+        "question_f1": 0.21621621621621623,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7901572112098428,
+            "recall": 0.6627173705331549,
+            "f1": 0.7208480565371025,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.6547811993517018,
+            "recall": 0.5935357492654261,
+            "f1": 0.6226560493192911,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.2857142857142857,
+            "recall": 0.17391304347826086,
+            "f1": 0.21621621621621623,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.6329675398065353,
+        "question_f1": 0.4018264840182648,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.6838046272493573,
+            "recall": 0.5225933202357563,
+            "f1": 0.5924276169265034,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.66728280961183,
+            "recall": 0.67984934086629,
+            "f1": 0.6735074626865671,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.5365853658536586,
+            "recall": 0.32116788321167883,
+            "f1": 0.4018264840182648,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s0": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.6414513705002505,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8059701492537313,
+            "recall": 0.41779497098646035,
+            "f1": 0.5503184713375796,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.7325842696629213,
+            "recall": 0.7325842696629213,
+            "f1": 0.7325842696629213,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.7349581384091921,
+        "question_f1": 0.6017699115044248,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8225991290396516,
+            "recall": 0.6858398624116185,
+            "f1": 0.748020008336807,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.6931050022532672,
+            "recall": 0.7531831537708129,
+            "f1": 0.7218962684815771,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.7727272727272727,
+            "recall": 0.4927536231884058,
+            "f1": 0.6017699115044248,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.7477992212629083,
+        "question_f1": 0.623574144486692,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7379862700228833,
+            "recall": 0.6335952848722987,
+            "f1": 0.6818181818181818,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8047882136279927,
+            "recall": 0.8229755178907722,
+            "f1": 0.813780260707635,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.6507936507936508,
+            "recall": 0.5985401459854015,
+            "f1": 0.623574144486692,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s1": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.7060096910525474,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7733333333333333,
+            "recall": 0.5609284332688588,
+            "f1": 0.6502242152466368,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.7806603773584906,
+            "recall": 0.7438202247191011,
+            "f1": 0.761795166858458,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.7362486495496651,
+        "question_f1": 0.6201550387596899,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8108227988467509,
+            "recall": 0.6986432256831645,
+            "f1": 0.7505645657975775,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.6990825688073394,
+            "recall": 0.7463271302644466,
+            "f1": 0.7219327333017527,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5797101449275363,
+            "f1": 0.6201550387596899,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.7461959353045511,
+        "question_f1": 0.6544117647058824,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7321428571428571,
+            "recall": 0.6444007858546169,
+            "f1": 0.6854754440961337,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8235294117647058,
+            "recall": 0.7909604519774012,
+            "f1": 0.8069164265129684,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.6592592592592592,
+            "recall": 0.6496350364963503,
+            "f1": 0.6544117647058824,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s2": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.668815331010453,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7674418604651163,
+            "recall": 0.5106382978723404,
+            "f1": 0.6132404181184669,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.792,
+            "recall": 0.6674157303370787,
+            "f1": 0.724390243902439,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.7315395112335963,
+        "question_f1": 0.5950413223140496,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8222871264884296,
+            "recall": 0.6994076055799733,
+            "f1": 0.7558859975216853,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.6995687589841878,
+            "recall": 0.7149853085210578,
+            "f1": 0.7071930249455074,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.6923076923076923,
+            "recall": 0.5217391304347826,
+            "f1": 0.5950413223140496,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.748515578532261,
+        "question_f1": 0.673992673992674,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7505854800936768,
+            "recall": 0.6296660117878192,
+            "f1": 0.6848290598290598,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8223938223938224,
+            "recall": 0.8022598870056498,
+            "f1": 0.8122020972354623,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.6764705882352942,
+            "recall": 0.6715328467153284,
+            "f1": 0.673992673992674,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bert_s0": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9247450648268645,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9522776572668112,
+            "recall": 0.8491295938104448,
+            "f1": 0.8977505112474438,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.9506726457399103,
+            "recall": 0.952808988764045,
+            "f1": 0.9517396184062851,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.8183925225717346,
+        "question_f1": 0.7428571428571429,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8561396468699839,
+            "recall": 0.8154022549206956,
+            "f1": 0.8352745424292846,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.7735763097949886,
+            "recall": 0.8315377081292851,
+            "f1": 0.8015105027141846,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.7323943661971831,
+            "recall": 0.7536231884057971,
+            "f1": 0.7428571428571429,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.8241887804715722,
+        "question_f1": 0.7918088737201365,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7962226640159046,
+            "recall": 0.7868369351669942,
+            "f1": 0.791501976284585,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8513011152416357,
+            "recall": 0.8625235404896422,
+            "f1": 0.8568755846585594,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7435897435897436,
+            "recall": 0.8467153284671532,
+            "f1": 0.7918088737201365,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bert_s1": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9290032328804286,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9454926624737946,
+            "recall": 0.8723404255319149,
+            "f1": 0.9074446680080482,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.950561797752809,
+            "recall": 0.950561797752809,
+            "f1": 0.950561797752809,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.8218846657307392,
+        "question_f1": 0.7714285714285715,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8520126282557222,
+            "recall": 0.8251480986050067,
+            "f1": 0.8383652072614309,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.780431786862655,
+            "recall": 0.8320274240940254,
+            "f1": 0.8054041242000474,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.7605633802816901,
+            "recall": 0.782608695652174,
+            "f1": 0.7714285714285715,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.8343806494896575,
+        "question_f1": 0.7847222222222222,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8120603015075377,
+            "recall": 0.793713163064833,
+            "f1": 0.8027819175360159,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8619402985074627,
+            "recall": 0.8700564971751412,
+            "f1": 0.865979381443299,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7483443708609272,
+            "recall": 0.8248175182481752,
+            "f1": 0.7847222222222222,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "bert_s2": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9106041690311353,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9307359307359307,
+            "recall": 0.8317214700193424,
+            "f1": 0.8784473953013279,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.9417040358744395,
+            "recall": 0.9438202247191011,
+            "f1": 0.9427609427609428,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.8177309158044065,
+        "question_f1": 0.8,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8506519162386409,
+            "recall": 0.8228549589145805,
+            "f1": 0.8365225837785333,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.7867996201329535,
+            "recall": 0.8114593535749265,
+            "f1": 0.7989392478302797,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.8524590163934426,
+            "recall": 0.7536231884057971,
+            "f1": 0.8,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.82341466874734,
+        "question_f1": 0.7903780068728522,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8022088353413654,
+            "recall": 0.7848722986247544,
+            "f1": 0.7934458788480635,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.851782363977486,
+            "recall": 0.8549905838041432,
+            "f1": 0.8533834586466166,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7467532467532467,
+            "recall": 0.8394160583941606,
+            "f1": 0.7903780068728522,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "deberta_s0": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9631259804070825,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9789915966386554,
+            "recall": 0.9013539651837524,
+            "f1": 0.9385699899295066,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.984375,
+            "recall": 0.9910112359550561,
+            "f1": 0.9876819708846585,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.8564262454462985,
+        "question_f1": 0.8428571428571429,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8880270485282419,
+            "recall": 0.853239059812727,
+            "f1": 0.8702855472176201,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.7969432314410481,
+            "recall": 0.8937316356513222,
+            "f1": 0.8425669436749769,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.8309859154929577,
+            "recall": 0.855072463768116,
+            "f1": 0.8428571428571429,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.8591026509392496,
+        "question_f1": 0.8413793103448276,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8373015873015873,
+            "recall": 0.8290766208251473,
+            "f1": 0.8331688055281342,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8584070796460177,
+            "recall": 0.9133709981167608,
+            "f1": 0.885036496350365,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7973856209150327,
+            "recall": 0.8905109489051095,
+            "f1": 0.8413793103448276,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "deberta_s1": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9546101919556109,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9550102249488752,
+            "recall": 0.9032882011605415,
+            "f1": 0.9284294234592445,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.9863636363636363,
+            "recall": 0.9752808988764045,
+            "f1": 0.9807909604519774,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.8543454942724797,
+        "question_f1": 0.8435374149659864,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8727833461835004,
+            "recall": 0.8652780431874642,
+            "f1": 0.8690144899721716,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.8163737280296022,
+            "recall": 0.8643486777668952,
+            "f1": 0.8396764985727878,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.7948717948717948,
+            "recall": 0.8985507246376812,
+            "f1": 0.8435374149659864,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.8557251244592273,
+        "question_f1": 0.8280701754385965,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8239845261121856,
+            "recall": 0.8369351669941061,
+            "f1": 0.8304093567251462,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8697247706422019,
+            "recall": 0.8926553672316384,
+            "f1": 0.8810408921933085,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7972972972972973,
+            "recall": 0.8613138686131386,
+            "f1": 0.8280701754385965,
+            "support": 137
+          }
+        }
+      }
+    ],
+    "deberta_s2": [
+      {
+        "kind": "Chair opening statement (prepared, turn 0)",
+        "turns": 8,
+        "words": 9270,
+        "macro_f1_comma_period": 0.9502402104189592,
+        "question_f1": null,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.9530612244897959,
+            "recall": 0.9032882011605415,
+            "f1": 0.9275074478649454,
+            "support": 517
+          },
+          "PERIOD": {
+            "precision": 0.9751693002257337,
+            "recall": 0.9707865168539326,
+            "f1": 0.972972972972973,
+            "support": 445
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        }
+      },
+      {
+        "kind": "Chair answers",
+        "turns": 251,
+        "words": 42071,
+        "macro_f1_comma_period": 0.851315202762214,
+        "question_f1": 0.8226950354609929,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8671222475322703,
+            "recall": 0.8729218421555514,
+            "f1": 0.8700123797733549,
+            "support": 5233
+          },
+          "PERIOD": {
+            "precision": 0.8113382899628253,
+            "recall": 0.8550440744368266,
+            "f1": 0.8326180257510729,
+            "support": 2042
+          },
+          "QUESTION": {
+            "precision": 0.8055555555555556,
+            "recall": 0.8405797101449275,
+            "f1": 0.8226950354609929,
+            "support": 69
+          }
+        }
+      },
+      {
+        "kind": "Reporter questions",
+        "turns": 250,
+        "words": 14441,
+        "macro_f1_comma_period": 0.8573194169435402,
+        "question_f1": 0.8156028368794326,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8117313150425733,
+            "recall": 0.8428290766208252,
+            "f1": 0.826987951807229,
+            "support": 1018
+          },
+          "PERIOD": {
+            "precision": 0.8754578754578755,
+            "recall": 0.9001883239171374,
+            "f1": 0.8876508820798514,
+            "support": 531
+          },
+          "QUESTION": {
+            "precision": 0.7931034482758621,
+            "recall": 0.8394160583941606,
+            "f1": 0.8156028368794326,
+            "support": 137
+          }
+        }
+      }
+    ]
+  },
+  "chair_kinds": {
+    "crf": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.6851766192702459,
+        "question_f1": 0.21238938053097345,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.7936974789915966,
+            "recall": 0.6570434782608696,
+            "f1": 0.7189343482397716,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.6881431767337808,
+            "recall": 0.6184157619622035,
+            "f1": 0.6514188903007201,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.2727272727272727,
+            "recall": 0.17391304347826086,
+            "f1": 0.21238938053097345,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s0": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.7284064971601961,
+        "question_f1": 0.6017699115044248,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8216367955085295,
+            "recall": 0.6617391304347826,
+            "f1": 0.733070031788845,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.6996996996996997,
+            "recall": 0.7494973864093285,
+            "f1": 0.7237429625315472,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.7727272727272727,
+            "recall": 0.4927536231884058,
+            "f1": 0.6017699115044248,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s1": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.7354424072809602,
+        "question_f1": 0.6201550387596899,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8079443079443079,
+            "recall": 0.6862608695652174,
+            "f1": 0.7421478277223998,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.7123655913978495,
+            "recall": 0.7458785685564938,
+            "f1": 0.7287369868395207,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5797101449275363,
+            "f1": 0.6201550387596899,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bilstm_crf_s2": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.7271407043163166,
+        "question_f1": 0.5950413223140496,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8183524504692388,
+            "recall": 0.6824347826086956,
+            "f1": 0.7442389758179232,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.7136474411047928,
+            "recall": 0.7064736630478489,
+            "f1": 0.71004243281471,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.6923076923076923,
+            "recall": 0.5217391304347826,
+            "f1": 0.5950413223140496,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bert_s0": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8341727871883968,
+        "question_f1": 0.7428571428571429,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.864279155188246,
+            "recall": 0.8184347826086956,
+            "f1": 0.8407324698526127,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8034835289663006,
+            "recall": 0.8532368315239244,
+            "f1": 0.827613104524181,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.7323943661971831,
+            "recall": 0.7536231884057971,
+            "f1": 0.7428571428571429,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bert_s1": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8375676910028055,
+        "question_f1": 0.7714285714285715,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8600541027953111,
+            "recall": 0.829391304347826,
+            "f1": 0.8444444444444444,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8093058733790999,
+            "recall": 0.8532368315239244,
+            "f1": 0.8306909375611665,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.7605633802816901,
+            "recall": 0.782608695652174,
+            "f1": 0.7714285714285715,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "bert_s2": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8322665610227101,
+        "question_f1": 0.8,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8573497465604635,
+            "recall": 0.8236521739130435,
+            "f1": 0.840163207379812,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8138714733542319,
+            "recall": 0.8351427422597507,
+            "f1": 0.8243699146656083,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.8524590163934426,
+            "recall": 0.7536231884057971,
+            "f1": 0.8,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "deberta_s0": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8718395330782973,
+        "question_f1": 0.8428571428571429,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8958938953488372,
+            "recall": 0.8575652173913043,
+            "f1": 0.8763106451039631,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8276113951789628,
+            "recall": 0.9111379171692803,
+            "f1": 0.8673684210526316,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.8309859154929577,
+            "recall": 0.855072463768116,
+            "f1": 0.8428571428571429,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "deberta_s1": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8692310736054956,
+        "question_f1": 0.8435374149659864,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.879866126475251,
+            "recall": 0.8686956521739131,
+            "f1": 0.8742452087161985,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8451191391237509,
+            "recall": 0.8841978287092883,
+            "f1": 0.8642169384947926,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.7948717948717948,
+            "recall": 0.8985507246376812,
+            "f1": 0.8435374149659864,
+            "support": 69
+          }
+        }
+      }
+    ],
+    "deberta_s2": [
+      {
+        "kind": "Chair Powell",
+        "turns": 259,
+        "words": 51341,
+        "macro_f1_comma_period": 0.8660931525895029,
+        "question_f1": 0.8226950354609929,
+        "per_class": {
+          "COMMA": {
+            "precision": 0.8744355679055228,
+            "recall": 0.8756521739130435,
+            "f1": 0.8750434480361488,
+            "support": 5750
+          },
+          "PERIOD": {
+            "precision": 0.8393063583815029,
+            "recall": 0.8757539203860072,
+            "f1": 0.8571428571428571,
+            "support": 2487
+          },
+          "QUESTION": {
+            "precision": 0.8055555555555556,
+            "recall": 0.8405797101449275,
+            "f1": 0.8226950354609929,
+            "support": 69
+          }
+        }
+      }
+    ]
+  },
+  "commas_by_next_word": [
+    {
+      "next_word": "and",
+      "gold_commas": 675,
+      "occurrences": 1961,
+      "comma_rate": 0.34421213666496686,
+      "recall": {
+        "crf": 0.5288888888888889,
+        "bilstm_crf_s0": 0.5481481481481482,
+        "bilstm_crf_s1": 0.5585185185185185,
+        "bilstm_crf_s2": 0.5451851851851852,
+        "bert_s0": 0.6488888888888888,
+        "bert_s1": 0.6666666666666666,
+        "bert_s2": 0.6814814814814815,
+        "deberta_s0": 0.7229629629629629,
+        "deberta_s1": 0.7303703703703703,
+        "deberta_s2": 0.7392592592592593
+      },
+      "predicted_commas": {
+        "crf": 599,
+        "bilstm_crf_s0": 558,
+        "bilstm_crf_s1": 575,
+        "bilstm_crf_s2": 562,
+        "bert_s0": 586,
+        "bert_s1": 615,
+        "bert_s2": 647,
+        "deberta_s0": 630,
+        "deberta_s1": 660,
+        "deberta_s2": 669
+      }
+    },
+    {
+      "next_word": "you",
+      "gold_commas": 564,
+      "occurrences": 1368,
+      "comma_rate": 0.41228070175438597,
+      "recall": {
+        "crf": 0.8829787234042553,
+        "bilstm_crf_s0": 0.9024822695035462,
+        "bilstm_crf_s1": 0.8971631205673759,
+        "bilstm_crf_s2": 0.9042553191489362,
+        "bert_s0": 0.9202127659574468,
+        "bert_s1": 0.9202127659574468,
+        "bert_s2": 0.9343971631205674,
+        "deberta_s0": 0.9308510638297872,
+        "deberta_s1": 0.9308510638297872,
+        "deberta_s2": 0.9326241134751773
+      },
+      "predicted_commas": {
+        "crf": 558,
+        "bilstm_crf_s0": 540,
+        "bilstm_crf_s1": 544,
+        "bilstm_crf_s2": 553,
+        "bert_s0": 543,
+        "bert_s1": 542,
+        "bert_s2": 553,
+        "deberta_s0": 545,
+        "deberta_s1": 545,
+        "deberta_s2": 546
+      }
+    },
+    {
+      "next_word": "the",
+      "gold_commas": 356,
+      "occurrences": 3182,
+      "comma_rate": 0.11187932118164676,
+      "recall": {
+        "crf": 0.6797752808988764,
+        "bilstm_crf_s0": 0.699438202247191,
+        "bilstm_crf_s1": 0.7471910112359551,
+        "bilstm_crf_s2": 0.7219101123595506,
+        "bert_s0": 0.8848314606741573,
+        "bert_s1": 0.901685393258427,
+        "bert_s2": 0.8623595505617978,
+        "deberta_s0": 0.9241573033707865,
+        "deberta_s1": 0.9353932584269663,
+        "deberta_s2": 0.9213483146067416
+      },
+      "predicted_commas": {
+        "crf": 295,
+        "bilstm_crf_s0": 290,
+        "bilstm_crf_s1": 326,
+        "bilstm_crf_s2": 305,
+        "bert_s0": 351,
+        "bert_s1": 354,
+        "bert_s2": 346,
+        "deberta_s0": 358,
+        "deberta_s1": 367,
+        "deberta_s2": 362
+      }
+    },
+    {
+      "next_word": "we",
+      "gold_commas": 340,
+      "occurrences": 1305,
+      "comma_rate": 0.26053639846743293,
+      "recall": {
+        "crf": 0.7823529411764706,
+        "bilstm_crf_s0": 0.7941176470588235,
+        "bilstm_crf_s1": 0.8235294117647058,
+        "bilstm_crf_s2": 0.8264705882352941,
+        "bert_s0": 0.888235294117647,
+        "bert_s1": 0.9117647058823529,
+        "bert_s2": 0.8941176470588236,
+        "deberta_s0": 0.9058823529411765,
+        "deberta_s1": 0.9176470588235294,
+        "deberta_s2": 0.9264705882352942
+      },
+      "predicted_commas": {
+        "crf": 317,
+        "bilstm_crf_s0": 313,
+        "bilstm_crf_s1": 326,
+        "bilstm_crf_s2": 324,
+        "bert_s0": 332,
+        "bert_s1": 341,
+        "bert_s2": 336,
+        "deberta_s0": 327,
+        "deberta_s1": 344,
+        "deberta_s2": 348
+      }
+    },
+    {
+      "next_word": "i",
+      "gold_commas": 275,
+      "occurrences": 917,
+      "comma_rate": 0.2998909487459106,
+      "recall": {
+        "crf": 0.8072727272727273,
+        "bilstm_crf_s0": 0.8545454545454545,
+        "bilstm_crf_s1": 0.7636363636363637,
+        "bilstm_crf_s2": 0.7927272727272727,
+        "bert_s0": 0.8909090909090909,
+        "bert_s1": 0.8981818181818182,
+        "bert_s2": 0.9054545454545454,
+        "deberta_s0": 0.8909090909090909,
+        "deberta_s1": 0.92,
+        "deberta_s2": 0.9309090909090909
+      },
+      "predicted_commas": {
+        "crf": 273,
+        "bilstm_crf_s0": 285,
+        "bilstm_crf_s1": 242,
+        "bilstm_crf_s2": 257,
+        "bert_s0": 279,
+        "bert_s1": 275,
+        "bert_s2": 283,
+        "deberta_s0": 270,
+        "deberta_s1": 279,
+        "deberta_s2": 291
+      }
+    },
+    {
+      "next_word": "that",
+      "gold_commas": 198,
+      "occurrences": 1947,
+      "comma_rate": 0.1016949152542373,
+      "recall": {
+        "crf": 0.48484848484848486,
+        "bilstm_crf_s0": 0.5555555555555556,
+        "bilstm_crf_s1": 0.5151515151515151,
+        "bilstm_crf_s2": 0.5404040404040404,
+        "bert_s0": 0.7777777777777778,
+        "bert_s1": 0.7525252525252525,
+        "bert_s2": 0.7626262626262627,
+        "deberta_s0": 0.8585858585858586,
+        "deberta_s1": 0.8484848484848485,
+        "deberta_s2": 0.8636363636363636
+      },
+      "predicted_commas": {
+        "crf": 122,
+        "bilstm_crf_s0": 136,
+        "bilstm_crf_s1": 131,
+        "bilstm_crf_s2": 129,
+        "bert_s0": 185,
+        "bert_s1": 183,
+        "bert_s2": 183,
+        "deberta_s0": 196,
+        "deberta_s1": 197,
+        "deberta_s2": 202
+      }
+    },
+    {
+      "next_word": "but",
+      "gold_commas": 174,
+      "occurrences": 372,
+      "comma_rate": 0.46774193548387094,
+      "recall": {
+        "crf": 0.6724137931034483,
+        "bilstm_crf_s0": 0.5172413793103449,
+        "bilstm_crf_s1": 0.6494252873563219,
+        "bilstm_crf_s2": 0.6954022988505747,
+        "bert_s0": 0.6839080459770115,
+        "bert_s1": 0.6896551724137931,
+        "bert_s2": 0.6954022988505747,
+        "deberta_s0": 0.6551724137931034,
+        "deberta_s1": 0.6839080459770115,
+        "deberta_s2": 0.7011494252873564
+      },
+      "predicted_commas": {
+        "crf": 213,
+        "bilstm_crf_s0": 140,
+        "bilstm_crf_s1": 181,
+        "bilstm_crf_s2": 193,
+        "bert_s0": 180,
+        "bert_s1": 187,
+        "bert_s2": 194,
+        "deberta_s0": 155,
+        "deberta_s1": 177,
+        "deberta_s2": 179
+      }
+    },
+    {
+      "next_word": "as",
+      "gold_commas": 172,
+      "occurrences": 448,
+      "comma_rate": 0.38392857142857145,
+      "recall": {
+        "crf": 0.5988372093023255,
+        "bilstm_crf_s0": 0.622093023255814,
+        "bilstm_crf_s1": 0.622093023255814,
+        "bilstm_crf_s2": 0.6337209302325582,
+        "bert_s0": 0.7732558139534884,
+        "bert_s1": 0.8023255813953488,
+        "bert_s2": 0.8081395348837209,
+        "deberta_s0": 0.7674418604651163,
+        "deberta_s1": 0.8255813953488372,
+        "deberta_s2": 0.8313953488372093
+      },
+      "predicted_commas": {
+        "crf": 138,
+        "bilstm_crf_s0": 140,
+        "bilstm_crf_s1": 136,
+        "bilstm_crf_s2": 138,
+        "bert_s0": 152,
+        "bert_s1": 161,
+        "bert_s2": 161,
+        "deberta_s0": 148,
+        "deberta_s1": 162,
+        "deberta_s2": 164
+      }
+    },
+    {
+      "next_word": "it's",
+      "gold_commas": 157,
+      "occurrences": 454,
+      "comma_rate": 0.3458149779735683,
+      "recall": {
+        "crf": 0.7707006369426752,
+        "bilstm_crf_s0": 0.8152866242038217,
+        "bilstm_crf_s1": 0.8152866242038217,
+        "bilstm_crf_s2": 0.8089171974522293,
+        "bert_s0": 0.89171974522293,
+        "bert_s1": 0.8789808917197452,
+        "bert_s2": 0.8789808917197452,
+        "deberta_s0": 0.8853503184713376,
+        "deberta_s1": 0.8980891719745223,
+        "deberta_s2": 0.8853503184713376
+      },
+      "predicted_commas": {
+        "crf": 152,
+        "bilstm_crf_s0": 147,
+        "bilstm_crf_s1": 144,
+        "bilstm_crf_s2": 150,
+        "bert_s0": 156,
+        "bert_s1": 153,
+        "bert_s2": 151,
+        "deberta_s0": 155,
+        "deberta_s1": 157,
+        "deberta_s2": 158
+      }
+    },
+    {
+      "next_word": "in",
+      "gold_commas": 155,
+      "occurrences": 1085,
+      "comma_rate": 0.14285714285714285,
+      "recall": {
+        "crf": 0.5290322580645161,
+        "bilstm_crf_s0": 0.6193548387096774,
+        "bilstm_crf_s1": 0.6645161290322581,
+        "bilstm_crf_s2": 0.6193548387096774,
+        "bert_s0": 0.7806451612903226,
+        "bert_s1": 0.8129032258064516,
+        "bert_s2": 0.7548387096774194,
+        "deberta_s0": 0.8064516129032258,
+        "deberta_s1": 0.8193548387096774,
+        "deberta_s2": 0.8258064516129032
+      },
+      "predicted_commas": {
+        "crf": 110,
+        "bilstm_crf_s0": 126,
+        "bilstm_crf_s1": 136,
+        "bilstm_crf_s2": 130,
+        "bert_s0": 144,
+        "bert_s1": 153,
+        "bert_s2": 140,
+        "deberta_s0": 146,
+        "deberta_s1": 149,
+        "deberta_s2": 149
+      }
+    },
+    {
+      "next_word": "that's",
+      "gold_commas": 140,
+      "occurrences": 429,
+      "comma_rate": 0.32634032634032634,
+      "recall": {
+        "crf": 0.7857142857142857,
+        "bilstm_crf_s0": 0.7857142857142857,
+        "bilstm_crf_s1": 0.8142857142857143,
+        "bilstm_crf_s2": 0.8285714285714286,
+        "bert_s0": 0.8928571428571429,
+        "bert_s1": 0.8928571428571429,
+        "bert_s2": 0.8857142857142857,
+        "deberta_s0": 0.9285714285714286,
+        "deberta_s1": 0.9357142857142857,
+        "deberta_s2": 0.9214285714285714
+      },
+      "predicted_commas": {
+        "crf": 126,
+        "bilstm_crf_s0": 120,
+        "bilstm_crf_s1": 125,
+        "bilstm_crf_s2": 128,
+        "bert_s0": 134,
+        "bert_s1": 135,
+        "bert_s2": 133,
+        "deberta_s0": 138,
+        "deberta_s1": 142,
+        "deberta_s2": 139
+      }
+    },
+    {
+      "next_word": "of",
+      "gold_commas": 123,
+      "occurrences": 1609,
+      "comma_rate": 0.0764449968924798,
+      "recall": {
+        "crf": 0.8780487804878049,
+        "bilstm_crf_s0": 0.8536585365853658,
+        "bilstm_crf_s1": 0.8455284552845529,
+        "bilstm_crf_s2": 0.8617886178861789,
+        "bert_s0": 0.9105691056910569,
+        "bert_s1": 0.9186991869918699,
+        "bert_s2": 0.9105691056910569,
+        "deberta_s0": 0.9512195121951219,
+        "deberta_s1": 0.9512195121951219,
+        "deberta_s2": 0.967479674796748
+      },
+      "predicted_commas": {
+        "crf": 121,
+        "bilstm_crf_s0": 116,
+        "bilstm_crf_s1": 113,
+        "bilstm_crf_s2": 115,
+        "bert_s0": 120,
+        "bert_s1": 122,
+        "bert_s2": 121,
+        "deberta_s0": 125,
+        "deberta_s1": 126,
+        "deberta_s2": 128
+      }
+    }
+  ],
+  "comma_kinds": [
+    {
+      "kind": "written ','",
+      "gold_commas": 4445,
+      "recall": {
+        "crf": 0.6202474690663667,
+        "bilstm_crf_s0": 0.6625421822272216,
+        "bilstm_crf_s1": 0.688413948256468,
+        "bilstm_crf_s2": 0.6796400449943757,
+        "bert_s0": 0.8058492688413949,
+        "bert_s1": 0.8164229471316086,
+        "bert_s2": 0.8107986501687289,
+        "deberta_s0": 0.835095613048369,
+        "deberta_s1": 0.8449943757030371,
+        "deberta_s2": 0.8560179977502812
+      }
+    },
+    {
+      "kind": "dash",
+      "gold_commas": 1414,
+      "recall": {
+        "crf": 0.4809052333804809,
+        "bilstm_crf_s0": 0.5452616690240453,
+        "bilstm_crf_s1": 0.5615275813295615,
+        "bilstm_crf_s2": 0.5615275813295615,
+        "bert_s0": 0.7652050919377652,
+        "bert_s1": 0.7814710042432814,
+        "bert_s2": 0.7673267326732673,
+        "deberta_s0": 0.8281471004243282,
+        "deberta_s1": 0.8444130127298444,
+        "deberta_s2": 0.842998585572843
+      }
+    },
+    {
+      "kind": "colon",
+      "gold_commas": 50,
+      "recall": {
+        "crf": 0.56,
+        "bilstm_crf_s0": 0.54,
+        "bilstm_crf_s1": 0.42,
+        "bilstm_crf_s2": 0.58,
+        "bert_s0": 0.62,
+        "bert_s1": 0.6,
+        "bert_s2": 0.66,
+        "deberta_s0": 0.52,
+        "deberta_s1": 0.68,
+        "deberta_s2": 0.7
+      }
+    },
+    {
+      "kind": "repeated word (any mark)",
+      "gold_commas": 872,
+      "recall": {
+        "crf": 0.9736238532110092,
+        "bilstm_crf_s0": 0.8165137614678899,
+        "bilstm_crf_s1": 0.838302752293578,
+        "bilstm_crf_s2": 0.8314220183486238,
+        "bert_s0": 0.9392201834862385,
+        "bert_s1": 0.9392201834862385,
+        "bert_s2": 0.9403669724770642,
+        "deberta_s0": 0.9954128440366973,
+        "deberta_s1": 0.9954128440366973,
+        "deberta_s2": 0.9931192660550459
+      }
+    }
+  ],
+  "questions": {
+    "by_start": {
+      "auxiliary verb first": {
+        "gold": 143,
+        "recall": {
+          "crf": 0.35664335664335667,
+          "bilstm_crf_s0": 0.8251748251748252,
+          "bilstm_crf_s1": 0.8671328671328671,
+          "bilstm_crf_s2": 0.8671328671328671,
+          "bert_s0": 0.951048951048951,
+          "bert_s1": 0.9300699300699301,
+          "bert_s2": 0.9370629370629371,
+          "deberta_s0": 0.9370629370629371,
+          "deberta_s1": 0.916083916083916,
+          "deberta_s2": 0.9300699300699301
+        }
+      },
+      "wh-word or auxiliary within the first 6 words": {
+        "gold": 124,
+        "recall": {
+          "crf": 0.3951612903225806,
+          "bilstm_crf_s0": 0.6935483870967742,
+          "bilstm_crf_s1": 0.7016129032258065,
+          "bilstm_crf_s2": 0.717741935483871,
+          "bert_s0": 0.8467741935483871,
+          "bert_s1": 0.8467741935483871,
+          "bert_s2": 0.8548387096774194,
+          "deberta_s0": 0.8870967741935484,
+          "deberta_s1": 0.8951612903225806,
+          "deberta_s2": 0.8709677419354839
+        }
+      },
+      "wh-word first": {
+        "gold": 72,
+        "recall": {
+          "crf": 0.3194444444444444,
+          "bilstm_crf_s0": 0.7777777777777778,
+          "bilstm_crf_s1": 0.8472222222222222,
+          "bilstm_crf_s2": 0.8055555555555556,
+          "bert_s0": 0.875,
+          "bert_s1": 0.8611111111111112,
+          "bert_s2": 0.875,
+          "deberta_s0": 0.9305555555555556,
+          "deberta_s1": 0.9305555555555556,
+          "deberta_s2": 0.9027777777777778
+        }
+      },
+      "no wh-word or auxiliary in the first 6 words": {
+        "gold": 64,
+        "recall": {
+          "crf": 0.5,
+          "bilstm_crf_s0": 0.59375,
+          "bilstm_crf_s1": 0.703125,
+          "bilstm_crf_s2": 0.640625,
+          "bert_s0": 0.859375,
+          "bert_s1": 0.84375,
+          "bert_s2": 0.84375,
+          "deberta_s0": 0.875,
+          "deberta_s1": 0.921875,
+          "deberta_s2": 0.875
+        }
+      }
+    },
+    "turn_final_vs_within": {
+      "turn-final": {
+        "gold": 197,
+        "recall": {
+          "crf": 0.5025380710659898,
+          "bilstm_crf_s0": 0.9238578680203046,
+          "bilstm_crf_s1": 0.9543147208121827,
+          "bilstm_crf_s2": 0.934010152284264,
+          "bert_s0": 0.9695431472081218,
+          "bert_s1": 0.949238578680203,
+          "bert_s2": 0.9644670050761421,
+          "deberta_s0": 0.9441624365482234,
+          "deberta_s1": 0.9543147208121827,
+          "deberta_s2": 0.9593908629441624
+        }
+      },
+      "within turn": {
+        "gold": 206,
+        "recall": {
+          "crf": 0.27184466019417475,
+          "bilstm_crf_s0": 0.5631067961165048,
+          "bilstm_crf_s1": 0.6262135922330098,
+          "bilstm_crf_s2": 0.6213592233009708,
+          "bert_s0": 0.8155339805825242,
+          "bert_s1": 0.8106796116504854,
+          "bert_s2": 0.8106796116504854,
+          "deberta_s0": 0.8786407766990292,
+          "deberta_s1": 0.8737864077669902,
+          "deberta_s2": 0.8398058252427184
+        }
+      }
+    },
+    "focus_missed_first_words": [
+      [
+        "so",
+        7
+      ],
+      [
+        "and",
+        5
+      ],
+      [
+        "is",
+        3
+      ],
+      [
+        "you",
+        3
+      ],
+      [
+        "well",
+        2
+      ],
+      [
+        "does",
+        1
+      ],
+      [
+        "may",
+        1
+      ],
+      [
+        "how",
+        1
+      ],
+      [
+        "you've",
+        1
+      ],
+      [
+        "rolling",
+        1
+      ]
+    ],
+    "focus_missed_by_start": {
+      "wh-word or auxiliary within the first 6 words": 14,
+      "auxiliary verb first": 9,
+      "no wh-word or auxiliary in the first 6 words": 8,
+      "wh-word first": 5
+    }
+  },
+  "agreement": {
+    "models": [
+      "crf",
+      "bilstm_crf_s0",
+      "bilstm_crf_s1",
+      "bilstm_crf_s2",
+      "bert_s0",
+      "bert_s1",
+      "bert_s2",
+      "deberta_s0",
+      "deberta_s1",
+      "deberta_s2"
+    ],
+    "focus": "deberta_s0",
+    "reference": "bilstm_crf_s0",
+    "by_gold_label": {
+      "O": {
+        "words": 55436,
+        "all_models_wrong": 151,
+        "no_model_wrong": 53185,
+        "fixed_by_focus": 564,
+        "fixed_by_focus_turn_final": 0,
+        "added_by_focus": 288,
+        "both_wrong": 294
+      },
+      "COMMA": {
+        "words": 6781,
+        "all_models_wrong": 350,
+        "no_model_wrong": 3125,
+        "fixed_by_focus": 1564,
+        "fixed_by_focus_turn_final": 0,
+        "added_by_focus": 242,
+        "both_wrong": 762
+      },
+      "PERIOD": {
+        "words": 3469,
+        "all_models_wrong": 84,
+        "no_model_wrong": 1727,
+        "fixed_by_focus": 551,
+        "fixed_by_focus_turn_final": 9,
+        "added_by_focus": 96,
+        "both_wrong": 181
+      },
+      "QUESTION": {
+        "words": 403,
+        "all_models_wrong": 13,
+        "no_model_wrong": 118,
+        "fixed_by_focus": 75,
+        "fixed_by_focus_turn_final": 8,
+        "added_by_focus": 6,
+        "both_wrong": 30
+      }
+    }
+  },
+  "examples": {
+    "O->COMMA": [
+      {
+        "id": "20230503-t078",
+        "role": "chair",
+        "position": 150,
+        "source_mark": "",
+        "gold": "... to revisit this. it's pretty clear we need, [to] me, anyways, clear that we need to strengthen ...",
+        "predicted": "... to revisit this. it's pretty clear we need [to,] me, anyways, clear that we need to strengthen ..."
+      },
+      {
+        "id": "20231101-t013",
+        "role": "chair",
+        "position": 74,
+        "source_mark": "",
+        "gold": "... of people, it's not a good time they [think] to buy durable goods of various kinds because ...",
+        "predicted": "... of people, it's not a good time, they [think,] to buy durable goods of various kinds because ..."
+      },
+      {
+        "id": "20231101-t067",
+        "role": "chair",
+        "position": 141,
+        "source_mark": "",
+        "gold": "... don't think it has. ultimately, it's unknowable, and [so] really again, what we're focused on is, you ...",
+        "predicted": "... don't think it has. ultimately, it's unknowable. and [so,] really, again, what we're focused on is, you ..."
+      },
+      {
+        "id": "20231101-t079",
+        "role": "reporter",
+        "position": 19,
+        "source_mark": "",
+        "gold": "... a quick question following up on an earlier [one] with regards to the israel-hamas conflict. the fed's ...",
+        "predicted": "... a quick question. following up on an earlier [one,] with regards to the israel-hamas conflict. the fed's ..."
+      }
+    ],
+    "COMMA->O": [
+      {
+        "id": "20230201-t024",
+        "role": "chair",
+        "position": 40,
+        "source_mark": ",",
+        "gold": "... why do we think that's probably necessary? we [think,] because inflation is still running very hot. we're, ...",
+        "predicted": "... why do we think that's probably necessary? we [think] because inflation is still running very hot. we're, ..."
+      },
+      {
+        "id": "20230503-t047",
+        "role": "chair",
+        "position": 117,
+        "source_mark": ",",
+        "gold": "... down as a result of return of full [competition,] where there's enough supply to meet demand. and ...",
+        "predicted": "... down as a result of return of full [competition] where there's enough supply to meet demand. and ..."
+      },
+      {
+        "id": "20230614-t070",
+        "role": "chair",
+        "position": 110,
+        "source_mark": ",",
+        "gold": "... like something that will be around for some [time,] as opposed to, you know, something that will ...",
+        "predicted": "... like something that will be around for some [time] as opposed to, you know, something that will ..."
+      },
+      {
+        "id": "20230726-t041",
+        "role": "chair",
+        "position": 251,
+        "source_mark": ",",
+        "gold": "... supply, but there's also a role for demand, [as,] you know, the loans and things like that ...",
+        "predicted": "... supply. but there's also a role for demand. [as] you know, the loans and things like that ..."
+      }
+    ],
+    "COMMA->PERIOD": [
+      {
+        "id": "20230726-t005",
+        "role": "chair",
+        "position": 32,
+        "source_mark": ",",
+        "gold": "... september meeting, and all that data that i [recited,] we're going to be looking at all that ...",
+        "predicted": "... september meeting and all that data that i [recited.] we're going to be looking at all that ..."
+      },
+      {
+        "id": "20230726-t041",
+        "role": "chair",
+        "position": 250,
+        "source_mark": ",",
+        "gold": "... for supply, but there's also a role for [demand,] as, you know, the loans and things like ...",
+        "predicted": "... for supply. but there's also a role for [demand.] as you know, the loans and things like ..."
+      },
+      {
+        "id": "20231101-t059",
+        "role": "chair",
+        "position": 30,
+        "source_mark": ",",
+        "gold": "... expectations of higher inflation get entrenched in the [economy,] and we know that that's really bad for ...",
+        "predicted": "... expectations of higher inflation get entrenched in the [economy.] and we know that that's really bad for ..."
+      },
+      {
+        "id": "20231213-t059",
+        "role": "chair",
+        "position": 264,
+        "source_mark": ",",
+        "gold": "... been complete, and it doesn't look like it's [ongoing,] but i don't know if that's right. maybe ...",
+        "predicted": "... been complete, and it doesn't look like it's [ongoing.] but i don't know if that's right. maybe ..."
+      }
+    ],
+    "PERIOD->COMMA": [
+      {
+        "id": "20230503-t054",
+        "role": "chair",
+        "position": 119,
+        "source_mark": ".",
+        "gold": "... at nonhousing services, it really, really hasn't moved [much.] and it's quite stable. and, you know, so ...",
+        "predicted": "... at nonhousing services, it really, really hasn't moved [much,] and it's quite stable. and, you know, so ..."
+      },
+      {
+        "id": "20230614-t014",
+        "role": "reporter",
+        "position": 6,
+        "source_mark": ".",
+        "gold": "i know you said july is [live.] with only one june employment, with only the ...",
+        "predicted": "i know you said july is [live,] with only one june employment, with only the ..."
+      },
+      {
+        "id": "20230726-t053",
+        "role": "chair",
+        "position": 18,
+        "source_mark": ".",
+        "gold": "... take everything into account when you start cutting [rates.] it would, it would depend on the whole, ...",
+        "predicted": "... take everything into account. when you start cutting [rates,] it would, it would depend on the whole, ..."
+      },
+      {
+        "id": "20231213-t061",
+        "role": "reporter",
+        "position": 39,
+        "source_mark": ".",
+        "gold": "... inflation is now running at 3 1/2 on [core.] on a six-month annual basis, core pce is ...",
+        "predicted": "... inflation is now running at 3 1/2 on [core,] on a six-month annual basis. core pce is ..."
+      }
+    ],
+    "O->PERIOD": [
+      {
+        "id": "20230322-t025",
+        "role": "chair",
+        "position": 100,
+        "source_mark": "",
+        "gold": "... real and that argues for, you know, being [alert] as we go forward. as we think about ...",
+        "predicted": "... real, and that argues for, you know, being [alert.] as we go forward, as we think about ..."
+      },
+      {
+        "id": "20230503-t027",
+        "role": "reporter",
+        "position": 3,
+        "source_mark": "",
+        "gold": "i have a [follow-up] on credit. could you give us a sense ...",
+        "predicted": "i have a [follow-up.] on credit. could you give us a sense ..."
+      },
+      {
+        "id": "20230614-t039",
+        "role": "chair",
+        "position": 116,
+        "source_mark": "",
+        "gold": "... at the fed, we'll be monitoring market conditions [carefully] as the treasury refills the, the tga. the ...",
+        "predicted": "... at the fed. we'll be monitoring market conditions [carefully.] as the treasury refills the, the tga, the ..."
+      },
+      {
+        "id": "20231101-t067",
+        "role": "chair",
+        "position": 168,
+        "source_mark": "",
+        "gold": "... more time now to look carefully at the [data] by being careful in our moves. does it, ...",
+        "predicted": "... more time now to look carefully at the [data.] by being careful in our moves. does it, ..."
+      }
+    ],
+    "PERIOD->O": [
+      {
+        "id": "20230322-t062",
+        "role": "chair",
+        "position": 8,
+        "source_mark": ".",
+        "gold": "well, i'm not saying anything more than i'm [saying.] so, but what i'm saying is you've seen ...",
+        "predicted": "well, i'm not saying anything more than i'm [saying] so. but what i'm saying is, you've seen ..."
+      },
+      {
+        "id": "20230503-t042",
+        "role": "reporter",
+        "position": 96,
+        "source_mark": ".",
+        "gold": "... well, and, and also, of course, most private-sector [forecasters'.]",
+        "predicted": "... well, and, and also, of course, most private-sector [forecasters']"
+      },
+      {
+        "id": "20230614-t021",
+        "role": "chair",
+        "position": 186,
+        "source_mark": ".",
+        "gold": "... a better indicator of where inflation overall is [going.] sufficiently, so i think, you know, what, what ...",
+        "predicted": "... a better indicator of where inflation overall is [going] sufficiently. so i think, you know, what, what ..."
+      },
+      {
+        "id": "20231213-t047",
+        "role": "chair",
+        "position": 137,
+        "source_mark": ".",
+        "gold": "... that in mind, as we make policy going [forward.] and the things we'll be looking at, i've ...",
+        "predicted": "... that in mind as we make policy going [forward] and the things we'll be looking at. i've ..."
+      }
+    ],
+    "QUESTION->PERIOD": [
+      {
+        "id": "20230201-t068",
+        "role": "reporter",
+        "position": 10,
+        "source_mark": "?",
+        "gold": "... what you're looking at most closely, is consumer [expectations?]",
+        "predicted": "... what you're looking at most closely, is consumer [expectations.]"
+      },
+      {
+        "id": "20230726-t019",
+        "role": "chair",
+        "position": 82,
+        "source_mark": "?",
+        "gold": "... down. so you are really, sorry, your question [was?]",
+        "predicted": "... down. so you are really sorry. your question [was.]"
+      },
+      {
+        "id": "20230920-t074",
+        "role": "reporter",
+        "position": 125,
+        "source_mark": "?",
+        "gold": "... are getting a lot tougher a lot more [quickly?] thanks.",
+        "predicted": "... are getting a lot tougher, a lot more [quickly.] thanks."
+      },
+      {
+        "id": "20231101-t053",
+        "role": "reporter",
+        "position": 73,
+        "source_mark": "?",
+        "gold": "... and credit cards in the, in the payment [system?]",
+        "predicted": "... and credit cards in the, in the payment [system.]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "identity": {
+    "model": "microsoft/deberta-v3-base",
+    "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+    "lr": 5e-05,
+    "seed": 0,
+    "config": {
+      "max_len": 256,
+      "overlap": 64,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "epochs": 4,
+      "warmup": 0.1,
+      "weight_decay": 0.01,
+      "clip": 1.0,
+      "fp16": true
+    },
+    "data": {
+      "train": "4b5533c0e9e6721c52dc9a91c67cc7343a0341d89070c085f049b4595b7b15e4",
+      "validation": "5c94c05a2cc93a01ce8afda92dc4e11631537bf92fcc89cea789196aa985cc77",
+      "test": "6525bd8ff33c2d2fa3d8ade49d1bffb38bc34c3599be73c44536939f21714ae0"
+    },
+    "code": "9929bc892d187c36"
+  },
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "device": "NVIDIA A100-SXM4-40GB",
+    "cuda": "13.0"
+  },
+  "best_epoch": 2,
+  "best_validation_macro_f1": 0.88125,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.28389,
+      "validation_macro_f1": 0.85373,
+      "minutes": 0.48
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.06805,
+      "validation_macro_f1": 0.88125,
+      "minutes": 0.48
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04961,
+      "validation_macro_f1": 0.87177,
+      "minutes": 0.48
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.03926,
+      "validation_macro_f1": 0.88073,
+      "minutes": 0.48
+    }
+  ],
+  "parameters": 183834628,
+  "parameter_dtypes": [
+    "torch.float32"
+  ],
+  "train_windows": 4745,
+  "latency": {
+    "words": 66089,
+    "timed_runs": 3,
+    "ms_per_1000_words": 30.68,
+    "ms_per_1000_words_min": 30.51,
+    "ms_per_1000_words_max": 35.84,
+    "device": "NVIDIA A100-SXM4-40GB",
+    "batch_size": 64,
+    "note": "cuda, batches of 64 windows, fp16"
+  }
+}

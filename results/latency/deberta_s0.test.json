@@ -1,0 +1,11 @@
+{
+  "words": 66089,
+  "timed_runs": 3,
+  "ms_per_1000_words": 30.68,
+  "ms_per_1000_words_min": 30.51,
+  "ms_per_1000_words_max": 35.84,
+  "device": "NVIDIA A100-SXM4-40GB",
+  "batch_size": 64,
+  "note": "cuda, batches of 64 windows, fp16",
+  "measured_on": "validation"
+}

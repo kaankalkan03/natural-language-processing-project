@@ -1,0 +1,6566 @@
+{
+  "split": "test",
+  "documents": 22,
+  "words": 178893,
+  "bootstrap": {
+    "unit": "press conference",
+    "resamples": 1000,
+    "seed": 0
+  },
+  "models": {
+    "heuristic": {
+      "all_words": {
+        "macro_f1": 0.2570997729596473,
+        "micro_f1": 0.35411884042496394,
+        "micro_precision": 0.7506790402897239,
+        "micro_recall": 0.23171242926011318,
+        "mark_detection_f1": 0.4368693609524318,
+        "accuracy": 0.8734103626189957,
+        "per_class": {
+          "O": {
+            "precision": 0.8797873654127734,
+            "recall": 0.9956544018314067,
+            "f1": 0.9341416815474333,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8258459185624164,
+            "recall": 0.2451063829787234,
+            "f1": 0.37801890094504725,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.6407303370786517,
+            "recall": 0.23211559987788746,
+            "f1": 0.34077836707253306,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.7111111111111111,
+            "recall": 0.027257240204429302,
+            "f1": 0.052502050861361775,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            149614,
+            264,
+            386,
+            3
+          ],
+          [
+            13025,
+            4320,
+            276,
+            4
+          ],
+          [
+            6907,
+            633,
+            2281,
+            6
+          ],
+          [
+            511,
+            14,
+            617,
+            32
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.2570997729596473,
+          "low": 0.24198755613931863,
+          "high": 0.2717654068957747,
+          "std": 0.007676732111077738,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.37801890094504725,
+            "low": 0.3363763222399429,
+            "high": 0.4152488163132881,
+            "std": 0.020508943529196556,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.34077836707253306,
+            "low": 0.3273069522940904,
+            "high": 0.35425509205218236,
+            "std": 0.006912452072316125,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.052502050861361775,
+            "low": 0.03691645762251601,
+            "high": 0.06606751952362216,
+            "std": 0.007453874620782392,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.1957972327377914,
+        "micro_f1": 0.31866572036905605,
+        "micro_precision": 0.768287466134322,
+        "micro_recall": 0.20102227362608663,
+        "mark_detection_f1": 0.376153300212917,
+        "accuracy": 0.8753713220760151,
+        "per_class": {
+          "O": {
+            "precision": 0.8797873654127734,
+            "recall": 0.9956544018314067,
+            "f1": 0.9341416815474333,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8258459185624164,
+            "recall": 0.24560805048609927,
+            "f1": 0.37861524978089395,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.6007882882882883,
+            "recall": 0.12395446096654275,
+            "f1": 0.2055084745762712,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.16666666666666666,
+            "recall": 0.0016501650165016502,
+            "f1": 0.0032679738562091504,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            149614,
+            264,
+            386,
+            3
+          ],
+          [
+            13025,
+            4320,
+            243,
+            1
+          ],
+          [
+            6907,
+            633,
+            1067,
+            1
+          ],
+          [
+            511,
+            14,
+            80,
+            1
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.1957972327377914,
+          "low": 0.17950847518939808,
+          "high": 0.21150693727827913,
+          "std": 0.007971251485918481,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.37861524978089395,
+            "low": 0.33707370843060397,
+            "high": 0.4158670796034311,
+            "std": 0.02048975869528281,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.2055084745762712,
+            "low": 0.18964252447318933,
+            "high": 0.2210140857316755,
+            "std": 0.007987659520347828,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.0032679738562091504,
+            "low": 0.0,
+            "high": 0.010699546617065793,
+            "std": 0.0032853045799591833,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.23943515500074727,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.3981221615553401,
+            "PERIOD": 0.32018330344690177,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 4704,
+            "PERIOD": 2221,
+            "QUESTION": 5
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.18893619030392572,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.25816389402341344,
+            "PERIOD": 0.2404870624048706,
+            "QUESTION": 0.06815761448349308
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 526,
+            "PERIOD": 981,
+            "QUESTION": 40
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9930651872399445,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.0,
+            "PERIOD": 0.9930651872399445,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 1,
+            "PERIOD": 358,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.3035554963067319,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.0,
+            "PERIOD": 0.8085248085248086,
+            "QUESTION": 0.10214168039538715
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 0,
+            "PERIOD": 1784,
+            "QUESTION": 39
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.29764344262295084,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.06585111920874545,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 0.38,
+        "ms_per_1000_words_min": 0.35,
+        "ms_per_1000_words_max": 0.44,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "hmm": {
+      "all_words": {
+        "macro_f1": 0.25638747234485887,
+        "micro_f1": 0.25881063305015073,
+        "micro_precision": 0.6004577822990844,
+        "micro_recall": 0.1649549360721023,
+        "mark_detection_f1": 0.3279254590298712,
+        "accuracy": 0.8558635608995321,
+        "per_class": {
+          "O": {
+            "precision": 0.8676072478936321,
+            "recall": 0.9874822815388609,
+            "f1": 0.9236716298989094,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.6013628620102215,
+            "recall": 0.16022695035460993,
+            "f1": 0.25303525827695894,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.6,
+            "recall": 0.1746209423018215,
+            "f1": 0.2705131236698983,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.5909090909090909,
+            "recall": 0.15502555366269166,
+            "f1": 0.24561403508771928,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148386,
+            1425,
+            453,
+            3
+          ],
+          [
+            14495,
+            2824,
+            300,
+            6
+          ],
+          [
+            7570,
+            424,
+            1716,
+            117
+          ],
+          [
+            578,
+            23,
+            391,
+            182
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.25638747234485887,
+          "low": 0.2410570734821495,
+          "high": 0.27022545985973817,
+          "std": 0.007347056078127154,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.25303525827695894,
+            "low": 0.2303412098919739,
+            "high": 0.273880720659862,
+            "std": 0.011110867881209631,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.2705131236698983,
+            "low": 0.25613332889409646,
+            "high": 0.28480577817516367,
+            "std": 0.007136152497469402,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.24561403508771928,
+            "low": 0.21318846550041037,
+            "high": 0.27609439171939176,
+            "std": 0.015656412097293772,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.1257033354204166,
+        "micro_f1": 0.2092315186944343,
+        "micro_precision": 0.5687800033107101,
+        "micro_recall": 0.12819460508152072,
+        "mark_detection_f1": 0.25331871879186457,
+        "accuracy": 0.8574123228101881,
+        "per_class": {
+          "O": {
+            "precision": 0.8676072478936321,
+            "recall": 0.9874822815388609,
+            "f1": 0.9236716298989094,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.6020081179235206,
+            "recall": 0.16021376996986753,
+            "f1": 0.2530758868432869,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.45541635961680177,
+            "recall": 0.07179368029739777,
+            "f1": 0.12403411941796287,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148386,
+            1425,
+            453,
+            3
+          ],
+          [
+            14495,
+            2818,
+            276,
+            0
+          ],
+          [
+            7570,
+            420,
+            618,
+            0
+          ],
+          [
+            578,
+            18,
+            10,
+            0
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.1257033354204166,
+          "low": 0.11740915422176282,
+          "high": 0.13299905756249875,
+          "std": 0.004050065947812968,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.2530758868432869,
+            "low": 0.2302330870645849,
+            "high": 0.2740076550325437,
+            "std": 0.01107780874434739,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.12403411941796287,
+            "low": 0.11412403858638877,
+            "high": 0.13500526474562968,
+            "std": 0.005305514006206118,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "std": 0.0,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.16883560486506607,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.261453228212231,
+            "PERIOD": 0.17344233318603625,
+            "QUESTION": 0.07161125319693094
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 3879,
+            "PERIOD": 1235,
+            "QUESTION": 116
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.3052836763698897,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.20838052095130238,
+            "PERIOD": 0.39807824296499655,
+            "QUESTION": 0.30939226519337015
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 812,
+            "PERIOD": 1267,
+            "QUESTION": 187
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9736477115117892,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.23529411764705882,
+            "PERIOD": 0.9736477115117892,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 5,
+            "PERIOD": 358,
+            "QUESTION": 5
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.48633562954846893,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.23529411764705882,
+            "PERIOD": 0.8067597354886114,
+            "QUESTION": 0.41695303550973656
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 15,
+            "PERIOD": 1503,
+            "QUESTION": 305
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.1955503512880562,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.03695991671004685,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 5.88,
+        "ms_per_1000_words_min": 5.39,
+        "ms_per_1000_words_max": 5.97,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "crf": {
+      "all_words": {
+        "macro_f1": 0.5621698930058312,
+        "micro_f1": 0.6391238467882694,
+        "micro_precision": 0.7086470162902471,
+        "micro_recall": 0.5820233354293299,
+        "mark_detection_f1": 0.8199934787195274,
+        "accuracy": 0.9211819355704248,
+        "per_class": {
+          "O": {
+            "precision": 0.9533407988055245,
+            "recall": 0.9857919569832365,
+            "f1": 0.9692948447402085,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.74204234480772,
+            "recall": 0.5846241134751773,
+            "f1": 0.6539938434197582,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.6723982917509552,
+            "recall": 0.6088328075709779,
+            "f1": 0.6390387182910547,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.5144429160935351,
+            "recall": 0.3185689948892675,
+            "f1": 0.39347711730668067,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148132,
+            1566,
+            541,
+            28
+          ],
+          [
+            5362,
+            10304,
+            1871,
+            88
+          ],
+          [
+            1722,
+            1885,
+            5983,
+            237
+          ],
+          [
+            166,
+            131,
+            503,
+            374
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.5621698930058312,
+          "low": 0.5430649182209237,
+          "high": 0.5790272607660591,
+          "std": 0.009377234530826499,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6539938434197582,
+            "low": 0.6211207713075496,
+            "high": 0.682347861428515,
+            "std": 0.016053712794818965,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.6390387182910547,
+            "low": 0.625520814910751,
+            "high": 0.6528838619613587,
+            "std": 0.007231320987587384,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.39347711730668067,
+            "low": 0.3635352305019079,
+            "high": 0.42131767879538007,
+            "std": 0.014921932452129878,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.5216062209041767,
+        "micro_f1": 0.6339189969479502,
+        "micro_precision": 0.7086541564848541,
+        "micro_recall": 0.5734432712756035,
+        "mark_detection_f1": 0.8064835436773076,
+        "accuracy": 0.9233749364658045,
+        "per_class": {
+          "O": {
+            "precision": 0.9533469343098577,
+            "recall": 0.9857919569832365,
+            "f1": 0.9692980160184265,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7420377576019599,
+            "recall": 0.5854795610893172,
+            "f1": 0.6545269647567292,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.6573901464713715,
+            "recall": 0.5735362453531598,
+            "f1": 0.6126070232038715,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.4485049833887043,
+            "recall": 0.22277227722772278,
+            "f1": 0.29768467475192945,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148132,
+            1566,
+            541,
+            28
+          ],
+          [
+            5361,
+            10298,
+            1858,
+            72
+          ],
+          [
+            1722,
+            1883,
+            4937,
+            66
+          ],
+          [
+            166,
+            131,
+            174,
+            135
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.5216062209041767,
+          "low": 0.5017125113630738,
+          "high": 0.5365761730533893,
+          "std": 0.008815088659185032,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6545269647567292,
+            "low": 0.6215315001050662,
+            "high": 0.6829493242301556,
+            "std": 0.016029832694274427,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.6126070232038715,
+            "low": 0.5969482456683234,
+            "high": 0.6278705342477227,
+            "std": 0.00810373588656944,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.29768467475192945,
+            "low": 0.2545058277154976,
+            "high": 0.33649289099526064,
+            "std": 0.021301951726406525,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.49361438324340573,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6692353733353285,
+            "PERIOD": 0.6304617505168849,
+            "QUESTION": 0.18114602587800369
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 11839,
+            "PERIOD": 6693,
+            "QUESTION": 266
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.5497411136861726,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.569327731092437,
+            "PERIOD": 0.6016027475672582,
+            "QUESTION": 0.4782928623988227
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2040,
+            "PERIOD": 1847,
+            "QUESTION": 460
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9930651872399445,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.42105263157894735,
+            "PERIOD": 0.9930651872399445,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 358,
+            "QUESTION": 1
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.5186891712119025,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.2727272727272727,
+            "PERIOD": 0.8024549290372075,
+            "QUESTION": 0.48088531187122735
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 8,
+            "PERIOD": 1388,
+            "QUESTION": 426
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6204625292740047,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.4627798021863613,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 8.41,
+        "ms_per_1000_words_min": 7.99,
+        "ms_per_1000_words_max": 12.61,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_softmax_s0": {
+      "all_words": {
+        "macro_f1": 0.7284646488444978,
+        "micro_f1": 0.7063901660880173,
+        "micro_precision": 0.763210186949998,
+        "micro_recall": 0.657444281422483,
+        "mark_detection_f1": 0.839560852022145,
+        "accuracy": 0.9323785726663425,
+        "per_class": {
+          "O": {
+            "precision": 0.9594252888468172,
+            "recall": 0.9847538048939555,
+            "f1": 0.9719245585400377,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7589529797703664,
+            "recall": 0.6300709219858156,
+            "f1": 0.6885327215798122,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7647452335823391,
+            "recall": 0.6979749669278519,
+            "f1": 0.7298361353479463,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8090737240075614,
+            "recall": 0.7291311754684838,
+            "f1": 0.7670250896057348,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            147976,
+            1796,
+            464,
+            31
+          ],
+          [
+            4883,
+            11105,
+            1529,
+            108
+          ],
+          [
+            1286,
+            1619,
+            6859,
+            63
+          ],
+          [
+            89,
+            112,
+            117,
+            856
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7284646488444978,
+          "low": 0.7116416638218167,
+          "high": 0.7445248265015786,
+          "std": 0.008484439630709583,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6885327215798122,
+            "low": 0.6616551658512874,
+            "high": 0.7112997963602968,
+            "std": 0.012832370327210827,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7298361353479463,
+            "low": 0.7159073453114313,
+            "high": 0.742974042236074,
+            "std": 0.0067702752357445386,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7670250896057348,
+            "low": 0.7421988149222013,
+            "high": 0.7900047941915544,
+            "std": 0.011903637902792535,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6629201243175245,
+        "micro_f1": 0.68913555873406,
+        "micro_precision": 0.7489928183569802,
+        "micro_recall": 0.6381375219191882,
+        "mark_detection_f1": 0.8277765466669352,
+        "accuracy": 0.9322866662901678,
+        "per_class": {
+          "O": {
+            "precision": 0.9594252888468172,
+            "recall": 0.9847538048939555,
+            "f1": 0.9719245585400377,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7590996168582376,
+            "recall": 0.6307919722553869,
+            "f1": 0.6890234435646638,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.7334796076406814,
+            "recall": 0.6601998141263941,
+            "f1": 0.6949131817070189,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.690677966101695,
+            "recall": 0.5379537953795379,
+            "f1": 0.6048237476808905,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            147976,
+            1796,
+            464,
+            31
+          ],
+          [
+            4883,
+            11095,
+            1522,
+            89
+          ],
+          [
+            1286,
+            1613,
+            5683,
+            26
+          ],
+          [
+            89,
+            112,
+            79,
+            326
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6629201243175245,
+          "low": 0.6427036058824807,
+          "high": 0.6804693435182564,
+          "std": 0.009332176806085198,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6890234435646638,
+            "low": 0.6619392767661397,
+            "high": 0.711759878986098,
+            "std": 0.012825783928891029,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.6949131817070189,
+            "low": 0.6790500202125619,
+            "high": 0.7097681289593535,
+            "std": 0.00781151738205042,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6048237476808905,
+            "low": 0.5693275553134892,
+            "high": 0.6387558493088651,
+            "std": 0.01753014711635261,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.636553443770132,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7001242780905037,
+            "PERIOD": 0.7049488972565896,
+            "QUESTION": 0.5045871559633027
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 12465,
+            "PERIOD": 7055,
+            "QUESTION": 161
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7474599735151694,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.625128100020496,
+            "PERIOD": 0.7865168539325843,
+            "QUESTION": 0.8307349665924276
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2159,
+            "PERIOD": 1557,
+            "QUESTION": 897
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9916666666666667,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.3,
+            "PERIOD": 0.9916666666666667,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 8,
+            "PERIOD": 357,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7556980016507818,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.38461538461538464,
+            "PERIOD": 0.9639344262295082,
+            "QUESTION": 0.9185441941074524
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 16,
+            "PERIOD": 1221,
+            "QUESTION": 586
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6556645199063232,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5445080687142113,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 183.91,
+        "ms_per_1000_words_min": 181.63,
+        "ms_per_1000_words_max": 199.69,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_softmax_s1": {
+      "all_words": {
+        "macro_f1": 0.7419532278762818,
+        "micro_f1": 0.7202013018981456,
+        "micro_precision": 0.7532898500972651,
+        "micro_recall": 0.6898972961643262,
+        "mark_detection_f1": 0.85451197053407,
+        "accuracy": 0.9348101938029996,
+        "per_class": {
+          "O": {
+            "precision": 0.9659802457491682,
+            "recall": 0.9814663232778986,
+            "f1": 0.9736617119392097,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7632124006146856,
+            "recall": 0.648113475177305,
+            "f1": 0.7009695630829651,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7338470657972732,
+            "recall": 0.7558766663274652,
+            "f1": 0.7446989824051331,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.7960992907801419,
+            "recall": 0.7649063032367973,
+            "f1": 0.7801911381407471,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            147482,
+            2107,
+            626,
+            52
+          ],
+          [
+            4118,
+            11423,
+            1969,
+            115
+          ],
+          [
+            1006,
+            1330,
+            7428,
+            63
+          ],
+          [
+            70,
+            107,
+            99,
+            898
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7419532278762818,
+          "low": 0.7255133841949296,
+          "high": 0.7559855957003473,
+          "std": 0.0075961625594349975,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.7009695630829651,
+            "low": 0.673189131846378,
+            "high": 0.7252003874353644,
+            "std": 0.013551105054120001,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7446989824051331,
+            "low": 0.7297493953214694,
+            "high": 0.75949984256833,
+            "std": 0.007234396129269117,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7801911381407471,
+            "low": 0.7588636752801116,
+            "high": 0.8001865181208797,
+            "std": 0.010820745023587645,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6829723398520504,
+        "micro_f1": 0.7040900035157623,
+        "micro_precision": 0.7388399262143882,
+        "micro_recall": 0.672462037831586,
+        "mark_detection_f1": 0.8441736005312708,
+        "accuracy": 0.9346924944937031,
+        "per_class": {
+          "O": {
+            "precision": 0.9659865727853283,
+            "recall": 0.9814663232778986,
+            "f1": 0.9736649259594246,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7632388339128109,
+            "recall": 0.6489851611802832,
+            "f1": 0.7014902442771547,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.7023742545290874,
+            "recall": 0.725139405204461,
+            "f1": 0.7135753072306373,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.6648550724637681,
+            "recall": 0.6056105610561056,
+            "f1": 0.6338514680483592,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            147482,
+            2107,
+            626,
+            52
+          ],
+          [
+            4117,
+            11415,
+            1957,
+            100
+          ],
+          [
+            1006,
+            1327,
+            6242,
+            33
+          ],
+          [
+            70,
+            107,
+            62,
+            367
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6829723398520504,
+          "low": 0.6668152108806585,
+          "high": 0.6964500347849399,
+          "std": 0.007483885128032068,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.7014902442771547,
+            "low": 0.6737726436852861,
+            "high": 0.7256619775515557,
+            "std": 0.013564259987514427,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7135753072306373,
+            "low": 0.6968893614417281,
+            "high": 0.7299373307392485,
+            "std": 0.00836720972740488,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6338514680483592,
+            "low": 0.6023880763680509,
+            "high": 0.6624470382558617,
+            "std": 0.015516680160853603,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.6728139816220055,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7128468055707066,
+            "PERIOD": 0.7229505111961362,
+            "QUESTION": 0.5826446280991735
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 12608,
+            "PERIOD": 8126,
+            "QUESTION": 209
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7555327025106431,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6376182965299685,
+            "PERIOD": 0.795738203957382,
+            "QUESTION": 0.833241607044579
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2352,
+            "PERIOD": 1638,
+            "QUESTION": 918
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9930651872399445,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.42105263157894735,
+            "PERIOD": 0.9930651872399445,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 358,
+            "QUESTION": 1
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7451107924369121,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.3404255319148936,
+            "PERIOD": 0.9665851670741646,
+            "QUESTION": 0.9283216783216783
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 11,
+            "PERIOD": 1235,
+            "QUESTION": 576
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6699355971896955,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5765226444560125,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 184.13,
+        "ms_per_1000_words_min": 181.93,
+        "ms_per_1000_words_max": 185.61,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_softmax_s2": {
+      "all_words": {
+        "macro_f1": 0.7350283272948822,
+        "micro_f1": 0.714635231316726,
+        "micro_precision": 0.7611940298507462,
+        "micro_recall": 0.673443722490044,
+        "mark_detection_f1": 0.8476052787663108,
+        "accuracy": 0.9339884735568189,
+        "per_class": {
+          "O": {
+            "precision": 0.9624854298123946,
+            "recall": 0.9836224853094825,
+            "f1": 0.9729391707313862,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7793639575971731,
+            "recall": 0.6257021276595744,
+            "f1": 0.6941306058221872,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7355330458329155,
+            "recall": 0.746311183474102,
+            "f1": 0.7408829174664108,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.7601659751037344,
+            "recall": 0.7802385008517888,
+            "f1": 0.7700714585960488,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            147806,
+            1731,
+            675,
+            55
+          ],
+          [
+            4585,
+            11028,
+            1872,
+            140
+          ],
+          [
+            1100,
+            1299,
+            7334,
+            94
+          ],
+          [
+            76,
+            92,
+            90,
+            916
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7350283272948822,
+          "low": 0.7158107082320507,
+          "high": 0.7526031035990651,
+          "std": 0.009328504844608083,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6941306058221872,
+            "low": 0.6659077693009969,
+            "high": 0.7167293050009029,
+            "std": 0.01296167188926468,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7408829174664108,
+            "low": 0.7271668682967111,
+            "high": 0.7555548325926973,
+            "std": 0.00724073634786641,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7700714585960488,
+            "low": 0.7419865877497829,
+            "high": 0.7951925966133238,
+            "std": 0.013545530622826442,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6756720280459921,
+        "micro_f1": 0.698165338209863,
+        "micro_precision": 0.747128392750787,
+        "micro_recall": 0.6552251613625341,
+        "mark_detection_f1": 0.8366296288934385,
+        "accuracy": 0.9339131416953748,
+        "per_class": {
+          "O": {
+            "precision": 0.9625042327628871,
+            "recall": 0.9836224853094825,
+            "f1": 0.9729487774453561,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7796406338426712,
+            "recall": 0.6265847973165046,
+            "f1": 0.6947832939322302,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.7032515687393041,
+            "recall": 0.7160780669144982,
+            "f1": 0.7096068612214356,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.6231404958677685,
+            "recall": 0.6221122112211221,
+            "f1": 0.6226259289843105,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            147806,
+            1731,
+            675,
+            55
+          ],
+          [
+            4582,
+            11021,
+            1863,
+            123
+          ],
+          [
+            1100,
+            1294,
+            6164,
+            50
+          ],
+          [
+            76,
+            90,
+            63,
+            377
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6756720280459921,
+          "low": 0.6510980005452383,
+          "high": 0.6984778643629523,
+          "std": 0.01164964762102408,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6947832939322302,
+            "low": 0.6665280503262141,
+            "high": 0.7174446235445872,
+            "std": 0.01297494119064841,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7096068612214356,
+            "low": 0.6942606346507455,
+            "high": 0.7258045278940458,
+            "std": 0.008156195814900664,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6226259289843105,
+            "low": 0.5739418822421308,
+            "high": 0.6661746151905122,
+            "std": 0.023108523263074346,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.6581039149167616,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7072418533794077,
+            "PERIOD": 0.7226911931460249,
+            "QUESTION": 0.5443786982248521
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 12020,
+            "PERIOD": 8057,
+            "QUESTION": 232
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7449487915794967,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6227544910179641,
+            "PERIOD": 0.7773279352226721,
+            "QUESTION": 0.8347639484978541
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2123,
+            "PERIOD": 1564,
+            "QUESTION": 965
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9817671809256662,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.3157894736842105,
+            "PERIOD": 0.9817671809256662,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 350,
+            "QUESTION": 8
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7226312196958998,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.28,
+            "PERIOD": 0.9649484536082474,
+            "QUESTION": 0.922945205479452
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 14,
+            "PERIOD": 1206,
+            "QUESTION": 600
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6504683840749415,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5445080687142113,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 182.73,
+        "ms_per_1000_words_min": 181.11,
+        "ms_per_1000_words_max": 190.2,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_crf_s0": {
+      "all_words": {
+        "macro_f1": 0.7316733855245038,
+        "micro_f1": 0.7064915712023843,
+        "micro_precision": 0.7567740133285447,
+        "micro_recall": 0.6624746733738559,
+        "mark_detection_f1": 0.8424699636770048,
+        "accuracy": 0.9323226733298676,
+        "per_class": {
+          "O": {
+            "precision": 0.9609189125940949,
+            "recall": 0.9837289624468446,
+            "f1": 0.9721901605058846,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7739111717012269,
+            "recall": 0.6119716312056738,
+            "f1": 0.6834801343387618,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7266401590457257,
+            "recall": 0.7438689325328177,
+            "f1": 0.7351536179413687,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8173258003766478,
+            "recall": 0.7393526405451448,
+            "f1": 0.776386404293381,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            147822,
+            1842,
+            571,
+            32
+          ],
+          [
+            4676,
+            10786,
+            2068,
+            95
+          ],
+          [
+            1255,
+            1195,
+            7310,
+            67
+          ],
+          [
+            81,
+            114,
+            111,
+            868
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7316733855245038,
+          "low": 0.7122718445485493,
+          "high": 0.7477717095951455,
+          "std": 0.008997029691511461,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6834801343387618,
+            "low": 0.6557165173504708,
+            "high": 0.7070840409215605,
+            "std": 0.013386887611854366,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7351536179413687,
+            "low": 0.7216130486876687,
+            "high": 0.7483501265580799,
+            "std": 0.006929052430545729,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.776386404293381,
+            "low": 0.7473354061641561,
+            "high": 0.8018224560249876,
+            "std": 0.014252272288378647,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6731105160133929,
+        "micro_f1": 0.6897020324147165,
+        "micro_precision": 0.7426407299018764,
+        "micro_recall": 0.6438085288960191,
+        "mark_detection_f1": 0.8309918263754271,
+        "accuracy": 0.932275371322076,
+        "per_class": {
+          "O": {
+            "precision": 0.9609189125940949,
+            "recall": 0.9837289624468446,
+            "f1": 0.9721901605058846,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7741703778192789,
+            "recall": 0.6127693444766615,
+            "f1": 0.6840785757354575,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.6945985732080172,
+            "recall": 0.712592936802974,
+            "f1": 0.703480704168817,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.7122153209109731,
+            "recall": 0.5676567656765676,
+            "f1": 0.6317722681359045,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            147822,
+            1842,
+            571,
+            32
+          ],
+          [
+            4676,
+            10778,
+            2058,
+            77
+          ],
+          [
+            1255,
+            1189,
+            6134,
+            30
+          ],
+          [
+            81,
+            113,
+            68,
+            344
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6731105160133929,
+          "low": 0.6471692229346035,
+          "high": 0.6951297291555638,
+          "std": 0.01224874858900715,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6840785757354575,
+            "low": 0.6561841607932751,
+            "high": 0.7078238785478859,
+            "std": 0.013381264099752429,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.703480704168817,
+            "low": 0.6880298941355876,
+            "high": 0.7184445275119274,
+            "std": 0.008024636485795317,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6317722681359045,
+            "low": 0.5763744735258725,
+            "high": 0.679399885316991,
+            "std": 0.026398963025486437,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.647616465651846,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6946022192965958,
+            "PERIOD": 0.7122994652406417,
+            "QUESTION": 0.5359477124183006
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 11692,
+            "PERIOD": 8078,
+            "QUESTION": 184
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7511182324533259,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6256306760847629,
+            "PERIOD": 0.7892321810951362,
+            "QUESTION": 0.8384918401800788
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2235,
+            "PERIOD": 1622,
+            "QUESTION": 878
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9930843706777317,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.2727272727272727,
+            "PERIOD": 0.9930843706777317,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 10,
+            "PERIOD": 360,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7293992284504619,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.3137254901960784,
+            "PERIOD": 0.9607843137254902,
+            "QUESTION": 0.9136878814298169
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 15,
+            "PERIOD": 1229,
+            "QUESTION": 579
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6315866510538641,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5481520041644976,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 118.81,
+        "ms_per_1000_words_min": 83.53,
+        "ms_per_1000_words_max": 123.46,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_crf_s1": {
+      "all_words": {
+        "macro_f1": 0.7389570019578496,
+        "micro_f1": 0.7162924455259374,
+        "micro_precision": 0.7583138173302107,
+        "micro_recall": 0.6786837141060574,
+        "mark_detection_f1": 0.8484312207351694,
+        "accuracy": 0.9340052433577614,
+        "per_class": {
+          "O": {
+            "precision": 0.9633725444142152,
+            "recall": 0.9826442266099676,
+            "f1": 0.9729129604006062,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7688479890933879,
+            "recall": 0.6399432624113475,
+            "f1": 0.6984982195386282,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7400962227454192,
+            "recall": 0.7357280960618704,
+            "f1": 0.7379056950398041,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.7781541066892464,
+            "recall": 0.782793867120954,
+            "f1": 0.7804670912951168,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            147659,
+            1930,
+            625,
+            53
+          ],
+          [
+            4391,
+            11279,
+            1839,
+            116
+          ],
+          [
+            1149,
+            1355,
+            7230,
+            93
+          ],
+          [
+            74,
+            106,
+            75,
+            919
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7389570019578496,
+          "low": 0.7198308622009003,
+          "high": 0.7564167849152347,
+          "std": 0.00928508376654468,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6984982195386282,
+            "low": 0.6715327244634782,
+            "high": 0.7221507117607631,
+            "std": 0.013300063406152349,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7379056950398041,
+            "low": 0.7215375396576861,
+            "high": 0.7536638309926685,
+            "std": 0.008121020878771871,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7804670912951168,
+            "low": 0.7549828713906437,
+            "high": 0.8036955268559447,
+            "std": 0.012706814993838335,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6802251672227534,
+        "micro_f1": 0.6996699669966997,
+        "micro_precision": 0.7438440205059249,
+        "micro_recall": 0.6604484572622468,
+        "mark_detection_f1": 0.8375328550819153,
+        "accuracy": 0.9338736093070537,
+        "per_class": {
+          "O": {
+            "precision": 0.9633788297927867,
+            "recall": 0.9826442266099676,
+            "f1": 0.9729161656327523,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7688267394270123,
+            "recall": 0.6407982261640798,
+            "f1": 0.6989984185556142,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.7074567554932212,
+            "recall": 0.7031830855018587,
+            "f1": 0.7053134467490095,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.6494845360824743,
+            "recall": 0.6237623762376238,
+            "f1": 0.6363636363636364,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            147659,
+            1930,
+            625,
+            53
+          ],
+          [
+            4391,
+            11271,
+            1830,
+            97
+          ],
+          [
+            1148,
+            1353,
+            6053,
+            54
+          ],
+          [
+            74,
+            106,
+            48,
+            378
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6802251672227534,
+          "low": 0.6568995419370116,
+          "high": 0.7012566247083672,
+          "std": 0.010975687843153475,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6989984185556142,
+            "low": 0.6720070214830555,
+            "high": 0.7226554018263899,
+            "std": 0.013307143917572867,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7053134467490095,
+            "low": 0.6865275394595965,
+            "high": 0.7231629245864594,
+            "std": 0.009318399826218288,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6363636363636364,
+            "low": 0.5965710485309823,
+            "high": 0.6733350168350168,
+            "std": 0.01941225964416269,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.67749505616538,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7087606211544096,
+            "PERIOD": 0.7155155921178497,
+            "QUESTION": 0.6082089552238806
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 12411,
+            "PERIOD": 7864,
+            "QUESTION": 261
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7550389278458826,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6432019308125503,
+            "PERIOD": 0.7902316844082655,
+            "QUESTION": 0.8316831683168316
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2252,
+            "PERIOD": 1547,
+            "QUESTION": 919
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9930651872399445,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.42105263157894735,
+            "PERIOD": 0.9930651872399445,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 358,
+            "QUESTION": 1
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7476391286863446,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.34782608695652173,
+            "PERIOD": 0.9679276315789473,
+            "QUESTION": 0.9271636675235647
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 10,
+            "PERIOD": 1213,
+            "QUESTION": 599
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6626902810304449,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5650702758979698,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 121.94,
+        "ms_per_1000_words_min": 109.41,
+        "ms_per_1000_words_max": 147.01,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bilstm_crf_s2": {
+      "all_words": {
+        "macro_f1": 0.7374343275386869,
+        "micro_f1": 0.7136895293347058,
+        "micro_precision": 0.7685920432101253,
+        "micro_recall": 0.6661077342276253,
+        "mark_detection_f1": 0.8462992420698044,
+        "accuracy": 0.9342847400401357,
+        "per_class": {
+          "O": {
+            "precision": 0.9609628514316866,
+            "recall": 0.985372703254873,
+            "f1": 0.9730147099894529,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7754018169112509,
+            "recall": 0.6295602836879433,
+            "f1": 0.6949115390637232,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.7544233638882968,
+            "recall": 0.7202605067670703,
+            "f1": 0.736946223124577,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8003581020590869,
+            "recall": 0.7614991482112436,
+            "f1": 0.7804452204277608,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148069,
+            1640,
+            513,
+            45
+          ],
+          [
+            4722,
+            11096,
+            1686,
+            121
+          ],
+          [
+            1216,
+            1476,
+            7078,
+            57
+          ],
+          [
+            77,
+            98,
+            105,
+            894
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.7374343275386869,
+          "low": 0.7168316754581171,
+          "high": 0.7550389406355247,
+          "std": 0.009432860005841476,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6949115390637232,
+            "low": 0.6654171314874582,
+            "high": 0.7198559903910259,
+            "std": 0.01408323281151008,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.736946223124577,
+            "low": 0.7230012680024804,
+            "high": 0.7512075353528762,
+            "std": 0.006968529561301372,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7804452204277608,
+            "low": 0.7546649618663078,
+            "high": 0.8013525013918715,
+            "std": 0.012626070005394716,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.6792926657019468,
+        "micro_f1": 0.6968205828596677,
+        "micro_precision": 0.7546767597668146,
+        "micro_recall": 0.6472036712308323,
+        "mark_detection_f1": 0.8350438851955251,
+        "accuracy": 0.9341842209295759,
+        "per_class": {
+          "O": {
+            "precision": 0.9609628514316866,
+            "recall": 0.985372703254873,
+            "f1": 0.9730147099894529,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.7758572428271518,
+            "recall": 0.6303371425322645,
+            "f1": 0.6955676150443866,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.7233755066945092,
+            "recall": 0.6841310408921933,
+            "f1": 0.7032061615618843,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.6684684684684684,
+            "recall": 0.6122112211221122,
+            "f1": 0.6391042204995694,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148069,
+            1640,
+            513,
+            45
+          ],
+          [
+            4722,
+            11087,
+            1674,
+            106
+          ],
+          [
+            1216,
+            1470,
+            5889,
+            33
+          ],
+          [
+            77,
+            93,
+            65,
+            371
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.6792926657019468,
+          "low": 0.6553253908199459,
+          "high": 0.7004250941523859,
+          "std": 0.011483251825829955,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.6955676150443866,
+            "low": 0.6661080599892256,
+            "high": 0.7202460069672736,
+            "std": 0.014037743826768034,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.7032061615618843,
+            "low": 0.6864722725004985,
+            "high": 0.7195159836192326,
+            "std": 0.00820639820802996,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.6391042204995694,
+            "low": 0.5956540464047734,
+            "high": 0.6756199808964517,
+            "std": 0.020722676079518387,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.6578398345547327,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7071953878561662,
+            "PERIOD": 0.7117022670685362,
+            "QUESTION": 0.5546218487394958
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 12166,
+            "PERIOD": 7445,
+            "QUESTION": 201
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.7554629190940071,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.6279596458719374,
+            "PERIOD": 0.7987596899224806,
+            "QUESTION": 0.8396694214876033
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2137,
+            "PERIOD": 1578,
+            "QUESTION": 916
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9944598337950139,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.3157894736842105,
+            "PERIOD": 0.9944598337950139,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 359,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7379196516364658,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.32142857142857145,
+            "PERIOD": 0.9666666666666667,
+            "QUESTION": 0.9256637168141593
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 20,
+            "PERIOD": 1241,
+            "QUESTION": 562
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.6541276346604216,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.5486725663716814,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 178893,
+        "timed_runs": 5,
+        "ms_per_1000_words": 192.81,
+        "ms_per_1000_words_min": 185.56,
+        "ms_per_1000_words_max": 195.51,
+        "device": "cpu (one process, one thread)",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_count": 20,
+        "python": "3.13.5",
+        "note": "wall-clock median after a warm-up, including feature extraction. The CPU mixes performance and efficiency cores, so repeated runs can differ by up to about 4x; compare orders of magnitude only."
+      }
+    },
+    "bert_s0": {
+      "all_words": {
+        "macro_f1": 0.8394618932081283,
+        "micro_f1": 0.8225812153133727,
+        "micro_precision": 0.8324985689753863,
+        "micro_recall": 0.812897366030881,
+        "mark_detection_f1": 0.9252359574392873,
+        "accuracy": 0.9601214133588234,
+        "per_class": {
+          "O": {
+            "precision": 0.9837552421144685,
+            "recall": 0.9881677281106297,
+            "f1": 0.9859565482988499,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8374556177408677,
+            "recall": 0.7895602836879433,
+            "f1": 0.8128029904795281,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8221606099613823,
+            "recall": 0.8449170652284522,
+            "f1": 0.8333835190203754,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8503236245954693,
+            "recall": 0.8952299829642248,
+            "f1": 0.8721991701244813,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148489,
+            1513,
+            245,
+            20
+          ],
+          [
+            2071,
+            13916,
+            1520,
+            118
+          ],
+          [
+            352,
+            1125,
+            8303,
+            47
+          ],
+          [
+            29,
+            63,
+            31,
+            1051
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8394618932081283,
+          "low": 0.8289955458973618,
+          "high": 0.8497194496144493,
+          "std": 0.005245837710890102,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8128029904795281,
+            "low": 0.7946165470978384,
+            "high": 0.8289284077455472,
+            "std": 0.008826025753286953,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8333835190203754,
+            "low": 0.8236569142614234,
+            "high": 0.8431584093579052,
+            "std": 0.00523423342695276,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8721991701244813,
+            "low": 0.8552398214888591,
+            "high": 0.889675170814267,
+            "std": 0.008804647956494186,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8090461843012058,
+        "micro_f1": 0.8130194952395345,
+        "micro_precision": 0.8234416255309379,
+        "micro_recall": 0.8028578890422714,
+        "mark_detection_f1": 0.9201677497355297,
+        "accuracy": 0.9601174676681539,
+        "per_class": {
+          "O": {
+            "precision": 0.9837813127331271,
+            "recall": 0.9881677281106297,
+            "f1": 0.9859696418374257,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8377515363296782,
+            "recall": 0.790550912502132,
+            "f1": 0.8134671073799983,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8004953839225399,
+            "recall": 0.8259758364312267,
+            "f1": 0.8130360205831904,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.7718223583460949,
+            "recall": 0.8316831683168316,
+            "f1": 0.8006354249404289,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148489,
+            1513,
+            245,
+            20
+          ],
+          [
+            2069,
+            13905,
+            1514,
+            101
+          ],
+          [
+            350,
+            1120,
+            7110,
+            28
+          ],
+          [
+            29,
+            60,
+            13,
+            504
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8090461843012058,
+          "low": 0.797614280579741,
+          "high": 0.8202046742310972,
+          "std": 0.005886822742062252,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8134671073799983,
+            "low": 0.7952736973069894,
+            "high": 0.8294857847596814,
+            "std": 0.00879861665011709,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8130360205831904,
+            "low": 0.8022059775286096,
+            "high": 0.8237724815256724,
+            "std": 0.005681580029744113,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8006354249404289,
+            "low": 0.7723015675056316,
+            "high": 0.8264542689483548,
+            "std": 0.014013578541564245,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8135000931758634,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8210584496338261,
+            "PERIOD": 0.8201853243175558,
+            "QUESTION": 0.7992565055762082
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14055,
+            "PERIOD": 8155,
+            "QUESTION": 263
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.8415069136687613,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7687345854676532,
+            "PERIOD": 0.8626237623762376,
+            "QUESTION": 0.8931623931623932
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2551,
+            "PERIOD": 1585,
+            "QUESTION": 973
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9944598337950139,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.5217391304347826,
+            "PERIOD": 0.9944598337950139,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 11,
+            "PERIOD": 359,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7766507979306446,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.4,
+            "PERIOD": 0.9794745484400657,
+            "QUESTION": 0.950477845351868
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 19,
+            "PERIOD": 1217,
+            "QUESTION": 583
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.7972043325526932,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.7667881311816762,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 26.43,
+        "ms_per_1000_words_min": 26.01,
+        "ms_per_1000_words_max": 31.16,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    },
+    "bert_s1": {
+      "all_words": {
+        "macro_f1": 0.8400871388771792,
+        "micro_f1": 0.8251873746437243,
+        "micro_precision": 0.831242024670353,
+        "micro_recall": 0.8192202892475372,
+        "mark_detection_f1": 0.9269502797424258,
+        "accuracy": 0.9606245073870974,
+        "per_class": {
+          "O": {
+            "precision": 0.984848786509248,
+            "recall": 0.9875621393918824,
+            "f1": 0.9862035966346345,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8311351860574658,
+            "recall": 0.8009078014184398,
+            "f1": 0.8157415701118206,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8295636509207366,
+            "recall": 0.8434924188460364,
+            "f1": 0.8364700539885968,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8462783171521036,
+            "recall": 0.8909710391822828,
+            "f1": 0.8680497925311204,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148398,
+            1613,
+            230,
+            26
+          ],
+          [
+            1953,
+            14116,
+            1440,
+            116
+          ],
+          [
+            307,
+            1183,
+            8289,
+            48
+          ],
+          [
+            23,
+            72,
+            33,
+            1046
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8400871388771792,
+          "low": 0.8289618802800974,
+          "high": 0.8507466397418277,
+          "std": 0.005456986906129369,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8157415701118206,
+            "low": 0.79826117236965,
+            "high": 0.8315676635433799,
+            "std": 0.008613453256714945,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8364700539885968,
+            "low": 0.8263910027005353,
+            "high": 0.846070087141161,
+            "std": 0.00514025948899326,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8680497925311204,
+            "low": 0.8494417878555277,
+            "high": 0.8840526477648406,
+            "std": 0.00881043872896405,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8097506678430602,
+        "micro_f1": 0.8161209068010076,
+        "micro_precision": 0.8224284902443645,
+        "micro_recall": 0.8099093385068835,
+        "mark_detection_f1": 0.9220647392759126,
+        "accuracy": 0.9606709211046479,
+        "per_class": {
+          "O": {
+            "precision": 0.9848880039820807,
+            "recall": 0.9875621393918824,
+            "f1": 0.9862232589668442,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8315938439766496,
+            "recall": 0.8018079481494116,
+            "f1": 0.8164293157346301,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8086026399635867,
+            "recall": 0.8255111524163569,
+            "f1": 0.8169694182570706,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.7700617283950617,
+            "recall": 0.8234323432343235,
+            "f1": 0.79585326953748,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148398,
+            1613,
+            230,
+            26
+          ],
+          [
+            1952,
+            14103,
+            1435,
+            99
+          ],
+          [
+            303,
+            1175,
+            7106,
+            24
+          ],
+          [
+            22,
+            68,
+            17,
+            499
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8097506678430602,
+          "low": 0.7974555636038412,
+          "high": 0.821792252344195,
+          "std": 0.00622159163324205,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8164293157346301,
+            "low": 0.7991050446996271,
+            "high": 0.8322255677057334,
+            "std": 0.008577534046309244,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8169694182570706,
+            "low": 0.8061801905557798,
+            "high": 0.827699282907777,
+            "std": 0.005615920975517427,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.79585326953748,
+            "low": 0.7688913547563503,
+            "high": 0.8198487753699215,
+            "std": 0.012911086018674665,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8070742709516109,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8247965533748205,
+            "PERIOD": 0.8246266305375259,
+            "QUESTION": 0.7717996289424861
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14353,
+            "PERIOD": 8052,
+            "QUESTION": 264
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.8415119967454346,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7679910044977512,
+            "PERIOD": 0.8607673267326733,
+            "QUESTION": 0.8957776590058792
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2616,
+            "PERIOD": 1585,
+            "QUESTION": 972
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9888579387186629,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.4444444444444444,
+            "PERIOD": 0.9888579387186629,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 15,
+            "PERIOD": 355,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7830239112895067,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.4262295081967213,
+            "PERIOD": 0.9764754436648783,
+            "QUESTION": 0.9463667820069204
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 25,
+            "PERIOD": 1204,
+            "QUESTION": 588
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.8078893442622951,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.7800624674648621,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 25.98,
+        "ms_per_1000_words_min": 25.87,
+        "ms_per_1000_words_max": 31.55,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    },
+    "bert_s2": {
+      "all_words": {
+        "macro_f1": 0.8373763911935521,
+        "micro_f1": 0.8207780288054222,
+        "micro_precision": 0.8295041027470568,
+        "micro_recall": 0.8122336337595193,
+        "mark_detection_f1": 0.9254094888449591,
+        "accuracy": 0.9598083770745641,
+        "per_class": {
+          "O": {
+            "precision": 0.9840186129137032,
+            "recall": 0.9879214997304797,
+            "f1": 0.9859661940025902,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8316308350160352,
+            "recall": 0.7944964539007092,
+            "f1": 0.8126396425151612,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8226275177873534,
+            "recall": 0.835351582375089,
+            "f1": 0.8289407250328183,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8565539983511954,
+            "recall": 0.8850085178875639,
+            "f1": 0.870548806032677,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148452,
+            1540,
+            253,
+            22
+          ],
+          [
+            2029,
+            14003,
+            1483,
+            110
+          ],
+          [
+            356,
+            1220,
+            8209,
+            42
+          ],
+          [
+            26,
+            75,
+            34,
+            1039
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8373763911935521,
+          "low": 0.8256437083792847,
+          "high": 0.8478260074583756,
+          "std": 0.005614645340614098,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8126396425151612,
+            "low": 0.7947192547174168,
+            "high": 0.8289932203256298,
+            "std": 0.008972181257420542,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8289407250328183,
+            "low": 0.819460697988813,
+            "high": 0.8384695952739324,
+            "std": 0.005054995770563779,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.870548806032677,
+            "low": 0.8530372262284928,
+            "high": 0.8869305520514291,
+            "std": 0.008737294193808691,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8054957766152394,
+        "micro_f1": 0.811046347122404,
+        "micro_precision": 0.8202212895841282,
+        "micro_recall": 0.8020743946573144,
+        "mark_detection_f1": 0.9203402938901779,
+        "accuracy": 0.9597899135934941,
+        "per_class": {
+          "O": {
+            "precision": 0.984038181095055,
+            "recall": 0.9879214997304797,
+            "f1": 0.9859760167636911,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8318668252080856,
+            "recall": 0.7954971857410882,
+            "f1": 0.8132755965009154,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8007763443315447,
+            "recall": 0.8148234200743495,
+            "f1": 0.8077388149939541,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.7797147385103012,
+            "recall": 0.8118811881188119,
+            "f1": 0.7954729183508489,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148452,
+            1540,
+            253,
+            22
+          ],
+          [
+            2028,
+            13992,
+            1476,
+            93
+          ],
+          [
+            354,
+            1216,
+            7014,
+            24
+          ],
+          [
+            26,
+            72,
+            16,
+            492
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8054957766152394,
+          "low": 0.7927159650716674,
+          "high": 0.8180213961335121,
+          "std": 0.006491230429894554,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8132755965009154,
+            "low": 0.7954250554497946,
+            "high": 0.8296370629286152,
+            "std": 0.008930644922245112,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8077388149939541,
+            "low": 0.7969607826898966,
+            "high": 0.8182543485119637,
+            "std": 0.0055865736336423244,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.7954729183508489,
+            "low": 0.7680763470215751,
+            "high": 0.8227440884820748,
+            "std": 0.013924519030224318,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8059669484472325,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8208290510448784,
+            "PERIOD": 0.815590312815338,
+            "QUESTION": 0.7814814814814814
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14297,
+            "PERIOD": 8039,
+            "QUESTION": 265
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.8408029428594556,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.7683228631258329,
+            "PERIOD": 0.8574969021065675,
+            "QUESTION": 0.8965890633459664
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2533,
+            "PERIOD": 1581,
+            "QUESTION": 948
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9944598337950139,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.5,
+            "PERIOD": 0.9944598337950139,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 8,
+            "PERIOD": 359,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7795405181104952,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.4074074074074074,
+            "PERIOD": 0.979909799097991,
+            "QUESTION": 0.951304347826087
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 18,
+            "PERIOD": 1220,
+            "QUESTION": 582
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.8037909836065574,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.7647058823529411,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 26.2,
+        "ms_per_1000_words_min": 26.08,
+        "ms_per_1000_words_max": 31.5,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    },
+    "deberta_s0": {
+      "all_words": {
+        "macro_f1": 0.8676934229644494,
+        "micro_f1": 0.8603926784026878,
+        "micro_precision": 0.861991584852735,
+        "micro_recall": 0.8587996925871585,
+        "mark_detection_f1": 0.9470829104399258,
+        "accuracy": 0.9692497750051707,
+        "per_class": {
+          "O": {
+            "precision": 0.9895925465342847,
+            "recall": 0.9902906160367878,
+            "f1": 0.9899414582224587,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8800241764883651,
+            "recall": 0.8260992907801419,
+            "f1": 0.852209540532631,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8343409915356711,
+            "recall": 0.9127912893049761,
+            "f1": 0.8718048401205171,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8611111111111112,
+            "recall": 0.8977853492333902,
+            "f1": 0.8790658882402002,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148808,
+            1225,
+            212,
+            22
+          ],
+          [
+            1431,
+            14560,
+            1525,
+            109
+          ],
+          [
+            121,
+            697,
+            8970,
+            39
+          ],
+          [
+            13,
+            63,
+            44,
+            1054
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8676934229644494,
+          "low": 0.8569326049949386,
+          "high": 0.8778069416084412,
+          "std": 0.005270507040143228,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.852209540532631,
+            "low": 0.8365944230012087,
+            "high": 0.8662127731085638,
+            "std": 0.007545607425802313,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8718048401205171,
+            "low": 0.8630334880229507,
+            "high": 0.8796413110189946,
+            "std": 0.0042490862530412885,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8790658882402002,
+            "low": 0.8631998933813118,
+            "high": 0.8950878638430678,
+            "std": 0.008319415056677226,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8439213712999601,
+        "micro_f1": 0.8538372397293559,
+        "micro_precision": 0.8555002060002247,
+        "micro_recall": 0.8521807260381301,
+        "mark_detection_f1": 0.943516130238122,
+        "accuracy": 0.9693849889874061,
+        "per_class": {
+          "O": {
+            "precision": 0.9896057085475258,
+            "recall": 0.9902906160367878,
+            "f1": 0.989948043826795,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8800483675937122,
+            "recall": 0.8275626812212178,
+            "f1": 0.8529989158779924,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8168821612530222,
+            "recall": 0.9027648698884758,
+            "f1": 0.8576789360410574,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.7956656346749226,
+            "recall": 0.8481848184818482,
+            "f1": 0.8210862619808307,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148808,
+            1225,
+            212,
+            22
+          ],
+          [
+            1429,
+            14556,
+            1514,
+            90
+          ],
+          [
+            121,
+            696,
+            7771,
+            20
+          ],
+          [
+            13,
+            63,
+            16,
+            514
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8439213712999601,
+          "low": 0.8315225645485707,
+          "high": 0.8549982644378471,
+          "std": 0.006171598363426287,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8529989158779924,
+            "low": 0.8375220159314626,
+            "high": 0.8670323219297742,
+            "std": 0.007518623649812503,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8576789360410574,
+            "low": 0.8477728648082813,
+            "high": 0.8665676047080771,
+            "std": 0.00481656688687159,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8210862619808307,
+            "low": 0.7970880035569526,
+            "high": 0.8438554834365946,
+            "std": 0.011968214347093484,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8416962839246128,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8605993570910097,
+            "PERIOD": 0.862933074449366,
+            "QUESTION": 0.8015564202334631
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14038,
+            "PERIOD": 8664,
+            "QUESTION": 239
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.865377682904218,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.807427258805513,
+            "PERIOD": 0.8884934756820878,
+            "QUESTION": 0.9002123142250531
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2504,
+            "PERIOD": 1725,
+            "QUESTION": 985
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9958620689655172,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.26666666666666666,
+            "PERIOD": 0.9958620689655172,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 3,
+            "PERIOD": 362,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.704505768056613,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.1951219512195122,
+            "PERIOD": 0.975986975986976,
+            "QUESTION": 0.9424083769633508
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 5,
+            "PERIOD": 1238,
+            "QUESTION": 578
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.8284543325526932,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.8219677251431546,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 30.68,
+        "ms_per_1000_words_min": 30.51,
+        "ms_per_1000_words_max": 35.84,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    },
+    "deberta_s1": {
+      "all_words": {
+        "macro_f1": 0.8728136350804664,
+        "micro_f1": 0.8632326199468457,
+        "micro_precision": 0.8641391864454246,
+        "micro_recall": 0.8623279536086076,
+        "mark_detection_f1": 0.9481046300181843,
+        "accuracy": 0.9698423079718044,
+        "per_class": {
+          "O": {
+            "precision": 0.9899286222701178,
+            "recall": 0.9903238901422136,
+            "f1": 0.9901262167574868,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8680345068780602,
+            "recall": 0.8449361702127659,
+            "f1": 0.8563296052442425,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8564419585909135,
+            "recall": 0.8881652589803603,
+            "f1": 0.8720151863323009,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8736669401148482,
+            "recall": 0.9071550255536627,
+            "f1": 0.8900961136648559,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148813,
+            1295,
+            143,
+            16
+          ],
+          [
+            1354,
+            14892,
+            1280,
+            99
+          ],
+          [
+            149,
+            911,
+            8728,
+            39
+          ],
+          [
+            11,
+            58,
+            40,
+            1065
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8728136350804664,
+          "low": 0.862533957504574,
+          "high": 0.881835064635098,
+          "std": 0.005040832663825211,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8563296052442425,
+            "low": 0.8402525389997755,
+            "high": 0.8703042039901068,
+            "std": 0.00782424714419441,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8720151863323009,
+            "low": 0.8634708203974488,
+            "high": 0.8799461212330447,
+            "std": 0.004311152901931806,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8900961136648559,
+            "low": 0.8752041013362168,
+            "high": 0.9044446859078507,
+            "std": 0.007612655277404608,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8502092311927144,
+        "micro_f1": 0.8565612803226951,
+        "micro_precision": 0.8574740148059523,
+        "micro_recall": 0.8556504868857964,
+        "mark_detection_f1": 0.9446301518235635,
+        "accuracy": 0.9699384424239001,
+        "per_class": {
+          "O": {
+            "precision": 0.9899483781698198,
+            "recall": 0.9903238901422136,
+            "f1": 0.9901360985525182,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8681248177311169,
+            "recall": 0.8462106998692365,
+            "f1": 0.8570276962054472,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8402723518249805,
+            "recall": 0.8745353159851301,
+            "f1": 0.8570615358342346,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.8130841121495327,
+            "recall": 0.8613861386138614,
+            "f1": 0.8365384615384616,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148813,
+            1295,
+            143,
+            16
+          ],
+          [
+            1352,
+            14884,
+            1272,
+            81
+          ],
+          [
+            149,
+            908,
+            7528,
+            23
+          ],
+          [
+            10,
+            58,
+            16,
+            522
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8502092311927144,
+          "low": 0.8368576691187724,
+          "high": 0.8626172446054506,
+          "std": 0.006483984597773821,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8570276962054472,
+            "low": 0.8411309916950386,
+            "high": 0.8709143456945312,
+            "std": 0.007788984130168495,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8570615358342346,
+            "low": 0.8472018821462315,
+            "high": 0.8663247774014814,
+            "std": 0.004946041208607767,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8365384615384616,
+            "low": 0.8119222958491733,
+            "high": 0.861244019138756,
+            "std": 0.013206202032773636,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8537582650380586,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8647712218485683,
+            "PERIOD": 0.8634829353669209,
+            "QUESTION": 0.8330206378986866
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14546,
+            "PERIOD": 8181,
+            "QUESTION": 258
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.8680820815471314,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8111966935938381,
+            "PERIOD": 0.8865979381443299,
+            "QUESTION": 0.9064516129032258
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2603,
+            "PERIOD": 1651,
+            "QUESTION": 961
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9944598337950139,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.42105263157894735,
+            "PERIOD": 0.9944598337950139,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 7,
+            "PERIOD": 359,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7560297713660287,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.3404255319148936,
+            "PERIOD": 0.9791921664626683,
+            "QUESTION": 0.948471615720524
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 11,
+            "PERIOD": 1232,
+            "QUESTION": 577
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.8455064402810304,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.8466944299843832,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 30.49,
+        "ms_per_1000_words_min": 30.18,
+        "ms_per_1000_words_max": 35.78,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    },
+    "deberta_s2": {
+      "all_words": {
+        "macro_f1": 0.8708643984463643,
+        "micro_f1": 0.8609923159834498,
+        "micro_precision": 0.8569698228128461,
+        "micro_recall": 0.8650527492489345,
+        "mark_detection_f1": 0.9472201940127256,
+        "accuracy": 0.9691659260004584,
+        "per_class": {
+          "O": {
+            "precision": 0.9907798155963119,
+            "recall": 0.9889995807462716,
+            "f1": 0.9898888977699625,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8544411631076784,
+            "recall": 0.8536170212765958,
+            "f1": 0.8540288933670139,
+            "support": 17625
+          },
+          "PERIOD": {
+            "precision": 0.8577927215189873,
+            "recall": 0.8826701943624707,
+            "f1": 0.8700536636742063,
+            "support": 9827
+          },
+          "QUESTION": {
+            "precision": 0.8877551020408163,
+            "recall": 0.889267461669506,
+            "f1": 0.8885106382978724,
+            "support": 1174
+          }
+        },
+        "confusion": [
+          [
+            148614,
+            1498,
+            142,
+            13
+          ],
+          [
+            1237,
+            15045,
+            1260,
+            83
+          ],
+          [
+            135,
+            982,
+            8674,
+            36
+          ],
+          [
+            11,
+            83,
+            36,
+            1044
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8708643984463643,
+          "low": 0.8613555428151817,
+          "high": 0.8795857227470487,
+          "std": 0.004636672507446177,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8540288933670139,
+            "low": 0.839188805582761,
+            "high": 0.8675949457944955,
+            "std": 0.00740310244490685,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8700536636742063,
+            "low": 0.8620951397391743,
+            "high": 0.8775010076616854,
+            "std": 0.004101444931835535,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8885106382978724,
+            "low": 0.8744327869731107,
+            "high": 0.9032836986074844,
+            "std": 0.007348507551658707,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "within_turn": {
+        "macro_f1": 0.8460039745532169,
+        "micro_f1": 0.8540618793964253,
+        "micro_precision": 0.8497562416900576,
+        "micro_recall": 0.8584113718613589,
+        "mark_detection_f1": 0.9437071957534475,
+        "accuracy": 0.969232506918168,
+        "per_class": {
+          "O": {
+            "precision": 0.9907996319852794,
+            "recall": 0.9889995807462716,
+            "f1": 0.9898987880543927,
+            "support": 150267
+          },
+          "COMMA": {
+            "precision": 0.8547708404412601,
+            "recall": 0.8546250497470009,
+            "f1": 0.8546979388770434,
+            "support": 17589
+          },
+          "PERIOD": {
+            "precision": 0.8411162372004051,
+            "recall": 0.8683782527881041,
+            "f1": 0.8545298656759074,
+            "support": 8608
+          },
+          "QUESTION": {
+            "precision": 0.8308457711442786,
+            "recall": 0.8267326732673267,
+            "f1": 0.8287841191066998,
+            "support": 606
+          }
+        },
+        "confusion": [
+          [
+            148614,
+            1498,
+            142,
+            13
+          ],
+          [
+            1236,
+            15032,
+            1254,
+            67
+          ],
+          [
+            133,
+            978,
+            7475,
+            22
+          ],
+          [
+            11,
+            78,
+            16,
+            501
+          ]
+        ],
+        "macro_f1_ci": {
+          "point": 0.8460039745532169,
+          "low": 0.8342180188602593,
+          "high": 0.8565221295674491,
+          "std": 0.005728105545631646,
+          "n_resamples": 1000,
+          "n_documents": 22
+        },
+        "class_f1_ci": {
+          "COMMA": {
+            "point": 0.8546979388770434,
+            "low": 0.8396870734467824,
+            "high": 0.868277535835834,
+            "std": 0.007408993090198099,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "PERIOD": {
+            "point": 0.8545298656759074,
+            "low": 0.8452547016825093,
+            "high": 0.8630162085633954,
+            "std": 0.004669280088787121,
+            "n_resamples": 1000,
+            "n_documents": 22
+          },
+          "QUESTION": {
+            "point": 0.8287841191066998,
+            "low": 0.8075082754592069,
+            "high": 0.8512556845930879,
+            "std": 0.011331218825246502,
+            "n_resamples": 1000,
+            "n_documents": 22
+          }
+        }
+      },
+      "slices": {
+        "role=chair": {
+          "macro_f1": 0.8477126158406353,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.8628531120889457,
+            "PERIOD": 0.8615712851405622,
+            "QUESTION": 0.8187134502923976
+          },
+          "support": {
+            "COMMA": 14893,
+            "PERIOD": 7817,
+            "QUESTION": 275
+          },
+          "predicted": {
+            "COMMA": 14878,
+            "PERIOD": 8119,
+            "QUESTION": 238
+          },
+          "words": 139656
+        },
+        "role=reporter": {
+          "macro_f1": 0.8664578445394081,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.807494489346069,
+            "PERIOD": 0.8838768668088998,
+            "QUESTION": 0.9080021774632553
+          },
+          "support": {
+            "COMMA": 2720,
+            "PERIOD": 1647,
+            "QUESTION": 899
+          },
+          "predicted": {
+            "COMMA": 2724,
+            "PERIOD": 1634,
+            "QUESTION": 938
+          },
+          "words": 38663
+        },
+        "role=moderator": {
+          "macro_f1": 0.9944598337950139,
+          "classes_used": [
+            "PERIOD"
+          ],
+          "f1": {
+            "COMMA": 0.3333333333333333,
+            "PERIOD": 0.9944598337950139,
+            "QUESTION": 0.0
+          },
+          "support": {
+            "COMMA": 12,
+            "PERIOD": 363,
+            "QUESTION": 0
+          },
+          "predicted": {
+            "COMMA": 6,
+            "PERIOD": 359,
+            "QUESTION": 0
+          },
+          "words": 574
+        },
+        "turn_final_words": {
+          "macro_f1": 0.7937503092430198,
+          "classes_used": [
+            "COMMA",
+            "PERIOD",
+            "QUESTION"
+          ],
+          "f1": {
+            "COMMA": 0.4482758620689655,
+            "PERIOD": 0.9811783960720131,
+            "QUESTION": 0.9517966695880806
+          },
+          "support": {
+            "COMMA": 36,
+            "PERIOD": 1219,
+            "QUESTION": 568
+          },
+          "predicted": {
+            "COMMA": 22,
+            "PERIOD": 1225,
+            "QUESTION": 573
+          },
+          "words": 1823
+        },
+        "comma_recall_from_comma": {
+          "recall": 0.8545813817330211,
+          "gold": 13664
+        },
+        "comma_recall_from_dash": {
+          "recall": 0.8537220197813639,
+          "gold": 3842
+        }
+      },
+      "latency": {
+        "words": 66089,
+        "timed_runs": 3,
+        "ms_per_1000_words": 30.49,
+        "ms_per_1000_words_min": 30.46,
+        "ms_per_1000_words_max": 30.56,
+        "device": "NVIDIA A100-SXM4-40GB",
+        "batch_size": 64,
+        "note": "cuda, batches of 64 windows, fp16",
+        "measured_on": "validation"
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "model": "hmm",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": -0.0007123006147884414,
+        "low": -0.015791750054382866,
+        "high": 0.014337817080663739,
+        "share_not_better": 0.549,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.07009389731737481,
+        "low": -0.0833614196870065,
+        "high": -0.056230328401606855,
+        "share_not_better": 1.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "crf",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.3050701200461839,
+        "low": 0.2903139995693949,
+        "high": 0.3188637995710886,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.32580898816638537,
+        "low": 0.3091736242031689,
+        "high": 0.34074429532729705,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "crf",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.30578242066097233,
+        "low": 0.2900378648502386,
+        "high": 0.31895010982631017,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.3959028854837602,
+        "low": 0.38005676749493955,
+        "high": 0.4093403414072535,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s0",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.4713648758848505,
+        "low": 0.4577850966106529,
+        "high": 0.48433600217164263,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.4671228915797331,
+        "low": 0.45263231162404,
+        "high": 0.4823404553649055,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s0",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.47207717649963893,
+        "low": 0.4590492655164871,
+        "high": 0.485268724881539,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5372167888971079,
+        "low": 0.5219119335672169,
+        "high": 0.551275378548733,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s0",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.1662947558386666,
+        "low": 0.1553793256079968,
+        "high": 0.17678806722516605,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1413139034133477,
+        "low": 0.12756962649173717,
+        "high": 0.1538858161756098,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s1",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.4848534549166345,
+        "low": 0.47215493271468045,
+        "high": 0.49881131732631456,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.48717510711425904,
+        "low": 0.4745571887292801,
+        "high": 0.501572497041193,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s1",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.48556575553142295,
+        "low": 0.47271614804142204,
+        "high": 0.49835641339866904,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5572690044316339,
+        "low": 0.5438785897458699,
+        "high": 0.5688740589843775,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s1",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.17978333487045062,
+        "low": 0.1697429361464545,
+        "high": 0.1892623214751972,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16136611894787367,
+        "low": 0.14847420719069807,
+        "high": 0.17353136798512453,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s1",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.01348857903178402,
+        "low": 0.007908678183237199,
+        "high": 0.02003150724715185,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.020052215534525963,
+        "low": 0.011168029760452228,
+        "high": 0.02929512693519071,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s2",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.4779285543352349,
+        "low": 0.4629334102917123,
+        "high": 0.4939865924852781,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.47987479530820076,
+        "low": 0.4613585138238505,
+        "high": 0.5001034768321108,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s2",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.47864085495002334,
+        "low": 0.46361595990682525,
+        "high": 0.49284943857874114,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5499686926255756,
+        "low": 0.5300295372112755,
+        "high": 0.5675026867125187,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s2",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.172858434289051,
+        "low": 0.1613859757235885,
+        "high": 0.1852773320903336,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1540658071418154,
+        "low": 0.13659708318648428,
+        "high": 0.1710788755527096,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s2",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.006563678450384414,
+        "low": 0.0009018290415884739,
+        "high": 0.012985911939563255,
+        "share_not_better": 0.011,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.012751903728467684,
+        "low": 0.004195486924176449,
+        "high": 0.02153666664729175,
+        "share_not_better": 0.002,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_softmax_s2",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": -0.006924900581399607,
+        "low": -0.013542063182357095,
+        "high": 0.0001938335381925594,
+        "share_not_better": 0.97,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.0073003118060582795,
+        "low": -0.01974638617887893,
+        "high": 0.006717218129881735,
+        "share_not_better": 0.858,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.4745736125648565,
+        "low": 0.45968591090240746,
+        "high": 0.4891933383441255,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.4773132832756015,
+        "low": 0.4577482493406122,
+        "high": 0.4967381479794616,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.4752859131796449,
+        "low": 0.4625037980088803,
+        "high": 0.48685210618112784,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5474071805929763,
+        "low": 0.5255284230875803,
+        "high": 0.5659935232396158,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.16950349251867258,
+        "low": 0.1581691236509788,
+        "high": 0.18022828991866524,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.15150429510921615,
+        "low": 0.13234340813703582,
+        "high": 0.16878815265287891,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.0032087366800059858,
+        "low": -0.0022260797381514486,
+        "high": 0.008602581785647023,
+        "share_not_better": 0.126,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.01019039169586844,
+        "low": -0.0010062531116686673,
+        "high": 0.02084044367127549,
+        "share_not_better": 0.042,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": -0.010279842351778035,
+        "low": -0.016558804966933117,
+        "high": -0.004123946221459119,
+        "share_not_better": 0.999,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.009861823838657524,
+        "low": -0.023742157734669665,
+        "high": 0.0035175601023955056,
+        "share_not_better": 0.917,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s0",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": -0.003354941770378428,
+        "low": -0.009654504764589456,
+        "high": 0.002079370974387506,
+        "share_not_better": 0.871,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.0025615120325992446,
+        "low": -0.013964647021751618,
+        "high": 0.007982883767975318,
+        "share_not_better": 0.68,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.4818572289982023,
+        "low": 0.46792616929070807,
+        "high": 0.4969691573151453,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.484427934484962,
+        "low": 0.4677918740709371,
+        "high": 0.5011578456033486,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.48256952961299077,
+        "low": 0.46834343374142845,
+        "high": 0.4963211178102701,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5545218318023368,
+        "low": 0.5352921324433912,
+        "high": 0.5709765525715687,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.17678710895201843,
+        "low": 0.1660069527481786,
+        "high": 0.18743451755219706,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.15861894631857665,
+        "low": 0.14223787354882633,
+        "high": 0.17368809231382193,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.010492353113351838,
+        "low": 0.0053317128281775775,
+        "high": 0.01576872154223077,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.01730504290522894,
+        "low": 0.00903548278294043,
+        "high": 0.0258650093221997,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": -0.0029962259184321827,
+        "low": -0.009260067899408201,
+        "high": 0.0033848018983606036,
+        "share_not_better": 0.785,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.0027471726292970233,
+        "low": -0.013584706409784127,
+        "high": 0.008857467663828503,
+        "share_not_better": 0.662,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.003928674662967424,
+        "low": -0.0013450751563353872,
+        "high": 0.00964457636031951,
+        "share_not_better": 0.075,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.004553139176761256,
+        "low": -0.0038555516303577834,
+        "high": 0.013886174342227438,
+        "share_not_better": 0.158,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s1",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.007283616433345852,
+        "low": 0.0016943661333004433,
+        "high": 0.013053285943201928,
+        "share_not_better": 0.004,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.007114651209360501,
+        "low": -0.005084456106581269,
+        "high": 0.01911013608976911,
+        "share_not_better": 0.1,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.48033455457903956,
+        "low": 0.4655173571304956,
+        "high": 0.4956683807738808,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.4834954329641554,
+        "low": 0.4660545414102731,
+        "high": 0.5004520009954315,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.481046855193828,
+        "low": 0.4659219092264494,
+        "high": 0.49464675081378945,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.5535893302815302,
+        "low": 0.5332685623758664,
+        "high": 0.570535504200189,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.17526443453285567,
+        "low": 0.16355080511555473,
+        "high": 0.1864789735982788,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.15768644479777005,
+        "low": 0.14016832834144705,
+        "high": 0.17458841289906687,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.008969678694189076,
+        "low": 0.003098350164176028,
+        "high": 0.014829958567518278,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.016372541384422346,
+        "low": 0.006069639552381354,
+        "high": 0.026004477025306547,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": -0.004518900337594944,
+        "low": -0.01036828774562307,
+        "high": 0.0015114353804749343,
+        "share_not_better": 0.922,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.003679674150103618,
+        "low": -0.015407408795481452,
+        "high": 0.008294279111380693,
+        "share_not_better": 0.711,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.0024060002438046624,
+        "low": -0.0032531886760871673,
+        "high": 0.007907096547327052,
+        "share_not_better": 0.234,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.0036206376559546616,
+        "low": -0.005188258314379152,
+        "high": 0.012783608211539406,
+        "share_not_better": 0.226,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.00576094201418309,
+        "low": 3.2245511541604425e-05,
+        "high": 0.011050650370293638,
+        "share_not_better": 0.024,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.006182149688553906,
+        "low": -0.005125612113181886,
+        "high": 0.01634627956987878,
+        "share_not_better": 0.131,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bilstm_crf_s2",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": -0.0015226744191627617,
+        "low": -0.007325922573031116,
+        "high": 0.004291151490125349,
+        "share_not_better": 0.715,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.0009325015208065945,
+        "low": -0.011044900497597222,
+        "high": 0.009464319077995201,
+        "share_not_better": 0.583,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.582362120248481,
+        "low": 0.5693569650639149,
+        "high": 0.5969769289248839,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6132489515634144,
+        "low": 0.5976419809304324,
+        "high": 0.630473433112529,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.5830744208632694,
+        "low": 0.570642597892959,
+        "high": 0.5971255023579126,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6833428488807892,
+        "low": 0.6718589354703076,
+        "high": 0.6941990032370051,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.27729200020229705,
+        "low": 0.26332215536816916,
+        "high": 0.2913320900107935,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.28743996339702904,
+        "low": 0.2722539631567866,
+        "high": 0.3043937752948176,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.11099724436363045,
+        "low": 0.10255075447043342,
+        "high": 0.12056801078303196,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.14612605998368133,
+        "low": 0.13411744658363195,
+        "high": 0.1591888756429421,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.09750866533184643,
+        "low": 0.08892906409105775,
+        "high": 0.10727839458512463,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12607384444915537,
+        "low": 0.11467811850609066,
+        "high": 0.13802410483954553,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.10443356591324604,
+        "low": 0.09403363200468225,
+        "high": 0.11467644290551593,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.13337415625521365,
+        "low": 0.1169776050252509,
+        "high": 0.149943299414026,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.10778850768362447,
+        "low": 0.09795758361549749,
+        "high": 0.11807031498787639,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1359356682878129,
+        "low": 0.11907134969849963,
+        "high": 0.15356643990218058,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.10050489125027862,
+        "low": 0.09089075118959555,
+        "high": 0.11101433167093912,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1288210170784524,
+        "low": 0.11540813583185032,
+        "high": 0.14343990548973504,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s0",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.10202756566944138,
+        "low": 0.09075078679763736,
+        "high": 0.11382310612761998,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.129753518599259,
+        "low": 0.11354918126252914,
+        "high": 0.14607884559080364,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.582987365917532,
+        "low": 0.5705735813019261,
+        "high": 0.5969971711507072,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6139534351052688,
+        "low": 0.6002147914784043,
+        "high": 0.6287192037410619,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.5836996665323204,
+        "low": 0.5716674203180802,
+        "high": 0.5965847622988032,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6840473324226436,
+        "low": 0.6728570844068906,
+        "high": 0.6942309217411452,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.27791724587134803,
+        "low": 0.2646858733454106,
+        "high": 0.2918107617688586,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.2881444469388834,
+        "low": 0.2725676134236435,
+        "high": 0.30469341424161156,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.11162249003268143,
+        "low": 0.10346190363055864,
+        "high": 0.11969756076725749,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1468305435255357,
+        "low": 0.13653989444569298,
+        "high": 0.15784664255187772,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.09813391100089741,
+        "low": 0.09027280036131628,
+        "high": 0.1066587709608957,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12677832799100974,
+        "low": 0.11717712323170254,
+        "high": 0.13703948939606556,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.10505881158229702,
+        "low": 0.09570980193392105,
+        "high": 0.11497194829111852,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.13407863979706802,
+        "low": 0.1206146367797395,
+        "high": 0.149214309238453,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.10841375335267545,
+        "low": 0.09980204969107617,
+        "high": 0.11763552609704257,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.13664015182966727,
+        "low": 0.12146309691188711,
+        "high": 0.15244139316632455,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.1011301369193296,
+        "low": 0.09227180609560938,
+        "high": 0.11135675374474832,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12952550062030677,
+        "low": 0.11775588772180884,
+        "high": 0.14312798531416762,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.10265281133849236,
+        "low": 0.09312710141052515,
+        "high": 0.11334610474223442,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.13045800214111336,
+        "low": 0.11741973934386653,
+        "high": 0.14496902430023859,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s1",
+      "versus": "bert_s0",
+      "all_words": {
+        "difference": 0.0006252456690509778,
+        "low": -0.003035819032694828,
+        "high": 0.004052669773668243,
+        "share_not_better": 0.369,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.0007044835418543727,
+        "low": -0.006098081763613446,
+        "high": 0.007040504463122433,
+        "share_not_better": 0.41,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.5802766182339048,
+        "low": 0.5684725801019944,
+        "high": 0.5935370049559586,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.609698543877448,
+        "low": 0.5958955268512564,
+        "high": 0.6247598025330314,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.5809889188486932,
+        "low": 0.5684260676994721,
+        "high": 0.5933642750676446,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6797924411948228,
+        "low": 0.6690280244579989,
+        "high": 0.6910632562259748,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.2752064981877209,
+        "low": 0.26345831348510734,
+        "high": 0.2876602254973028,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.28388955571106267,
+        "low": 0.26958376979170257,
+        "high": 0.29887511823240637,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.10891174234905432,
+        "low": 0.10199796008605864,
+        "high": 0.11650963717231146,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.14257565229771496,
+        "low": 0.1327418103969841,
+        "high": 0.15385780797589518,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.0954231633172703,
+        "low": 0.0888308174515438,
+        "high": 0.1028717343222164,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.122523436763189,
+        "low": 0.1133815112039168,
+        "high": 0.132525792234107,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.1023480638986699,
+        "low": 0.09309818732644179,
+        "high": 0.1117094043025002,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12982374856924728,
+        "low": 0.11562746486631771,
+        "high": 0.14442037153413326,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.10570300566904833,
+        "low": 0.09761708215860464,
+        "high": 0.11440338259866571,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.13238526060184652,
+        "low": 0.11773272857633868,
+        "high": 0.1477713645316725,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.09841938923570248,
+        "low": 0.09049586600974147,
+        "high": 0.1072061308903266,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12527060939248602,
+        "low": 0.11397516135384883,
+        "high": 0.13730365199298467,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.09994206365486524,
+        "low": 0.09092108862104313,
+        "high": 0.1095300396287953,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.12620311091329262,
+        "low": 0.1125626809593077,
+        "high": 0.14051687288207565,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bert_s0",
+      "all_words": {
+        "difference": -0.002085502014576135,
+        "low": -0.005670033581504116,
+        "high": 0.0014692769887994525,
+        "share_not_better": 0.874,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.0035504076859663725,
+        "low": -0.009123975079643002,
+        "high": 0.002766061926672754,
+        "share_not_better": 0.871,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "bert_s2",
+      "versus": "bert_s1",
+      "all_words": {
+        "difference": -0.0027107476836271127,
+        "low": -0.0059395282150975556,
+        "high": 0.0008675356625273465,
+        "share_not_better": 0.92,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.004254891227820745,
+        "low": -0.009952385161227083,
+        "high": 0.0018994805740870087,
+        "share_not_better": 0.909,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.6105936500048021,
+        "low": 0.5992854028591985,
+        "high": 0.6234741892748977,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6481241385621688,
+        "low": 0.6355312731775371,
+        "high": 0.6620694476787135,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.6113059506195906,
+        "low": 0.599035894691161,
+        "high": 0.6239656532610961,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.7182180358795436,
+        "low": 0.7075040145037295,
+        "high": 0.7288810730038239,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.3055235299586182,
+        "low": 0.29233772991431733,
+        "high": 0.3193385670363894,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.3223151503957834,
+        "low": 0.30741035327907895,
+        "high": 0.33825594455398306,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.1392287741199516,
+        "low": 0.13004599986897275,
+        "high": 0.14866169248417452,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1810012469824357,
+        "low": 0.16937500656971088,
+        "high": 0.1945430713246399,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.12574019508816758,
+        "low": 0.11728615008429776,
+        "high": 0.13522615803373791,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16094903144790973,
+        "low": 0.15078279449950965,
+        "high": 0.1716465707017444,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.1326650956695672,
+        "low": 0.12222567717979185,
+        "high": 0.1438401912369311,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.168249343253968,
+        "low": 0.15330368991873566,
+        "high": 0.18485986676130584,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.13602003743994562,
+        "low": 0.1262561637860614,
+        "high": 0.14650852641026177,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.17081085528656725,
+        "low": 0.1544711362370089,
+        "high": 0.18842347498792597,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.12873642100659977,
+        "low": 0.11945313960941946,
+        "high": 0.13869951636712366,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16369620407720675,
+        "low": 0.15127336391501053,
+        "high": 0.1767341016407077,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.13025909542576253,
+        "low": 0.11899091641129941,
+        "high": 0.1419628075399303,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16462870559801335,
+        "low": 0.15010328007908808,
+        "high": 0.17999795250859846,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bert_s0",
+      "all_words": {
+        "difference": 0.02823152975632115,
+        "low": 0.023545034887215772,
+        "high": 0.0331416743309355,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.03487518699875436,
+        "low": 0.027454908664730503,
+        "high": 0.0419735270836561,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bert_s1",
+      "all_words": {
+        "difference": 0.027606284087270172,
+        "low": 0.023511105326043818,
+        "high": 0.03233486200934881,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.03417070345689999,
+        "low": 0.029009097940888632,
+        "high": 0.04056492016040344,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s0",
+      "versus": "bert_s2",
+      "all_words": {
+        "difference": 0.030317031770897285,
+        "low": 0.026404143537705742,
+        "high": 0.03442407730887701,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.03842559468472073,
+        "low": 0.03251009371899481,
+        "high": 0.0451293472017892,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.6157138621208191,
+        "low": 0.605298823245128,
+        "high": 0.6279664249659,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.654411998454923,
+        "low": 0.6409277464390637,
+        "high": 0.66995140606739,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.6164261627356076,
+        "low": 0.6032191847502867,
+        "high": 0.6301188879582934,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.7245058957722978,
+        "low": 0.7132675446321759,
+        "high": 0.7361131255006058,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.3106437420746352,
+        "low": 0.29819647468628857,
+        "high": 0.32541229718090364,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.32860301028853767,
+        "low": 0.3122294619152909,
+        "high": 0.3470167489250289,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.1443489862359686,
+        "low": 0.13475562552814657,
+        "high": 0.15468594789031045,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.18728910687518996,
+        "low": 0.17519355598849967,
+        "high": 0.20222280037632573,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.13086040720418457,
+        "low": 0.12400375803551068,
+        "high": 0.13978087552446788,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.167236891340664,
+        "low": 0.15957671750252328,
+        "high": 0.17698543211134732,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.13778530778558418,
+        "low": 0.1271219608655059,
+        "high": 0.148417097219529,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.17453720314672228,
+        "low": 0.1604304034822559,
+        "high": 0.19057507118251765,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.1411402495559626,
+        "low": 0.13111395530182376,
+        "high": 0.1514239033270161,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.17709871517932152,
+        "low": 0.16019892253909035,
+        "high": 0.19571806754210785,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.13385663312261675,
+        "low": 0.12388355911389949,
+        "high": 0.14451395287437543,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16998406396996102,
+        "low": 0.15655112694048368,
+        "high": 0.18476153045482413,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.13537930754177951,
+        "low": 0.12580155242489757,
+        "high": 0.1465326818215709,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1709165654907676,
+        "low": 0.15771253916221023,
+        "high": 0.18626042956004543,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bert_s0",
+      "all_words": {
+        "difference": 0.033351741872338136,
+        "low": 0.02812848362203728,
+        "high": 0.03852466941941045,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.041163046891508626,
+        "low": 0.03280347336429867,
+        "high": 0.05018587633139693,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bert_s1",
+      "all_words": {
+        "difference": 0.03272649620328716,
+        "low": 0.027713902940568927,
+        "high": 0.038047624385785093,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.04045856334965425,
+        "low": 0.03282818437669125,
+        "high": 0.048961638763551085,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "bert_s2",
+      "all_words": {
+        "difference": 0.03543724388691427,
+        "low": 0.03072947711806999,
+        "high": 0.04047690547525592,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.044713454577475,
+        "low": 0.03651463769767175,
+        "high": 0.05330676652284789,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s1",
+      "versus": "deberta_s0",
+      "all_words": {
+        "difference": 0.005120212116016987,
+        "low": 0.000323386385862429,
+        "high": 0.009805237168420387,
+        "share_not_better": 0.015,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.006287859892754266,
+        "low": -0.0010096861800685212,
+        "high": 0.013561476397077558,
+        "share_not_better": 0.046,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "heuristic",
+      "all_words": {
+        "difference": 0.6137646254867171,
+        "low": 0.6024534898207398,
+        "high": 0.6273904717754955,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.6502067418154255,
+        "low": 0.6369660256757657,
+        "high": 0.6649516562840205,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "hmm",
+      "all_words": {
+        "difference": 0.6144769261015055,
+        "low": 0.601261816206299,
+        "high": 0.6279089070501773,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.7203006391328003,
+        "low": 0.7095057650507718,
+        "high": 0.7312592090518452,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "crf",
+      "all_words": {
+        "difference": 0.3086945054405331,
+        "low": 0.2954656453929073,
+        "high": 0.32371941985217095,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.3243977536490401,
+        "low": 0.3083619550742511,
+        "high": 0.34159136168812504,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_softmax_s0",
+      "all_words": {
+        "difference": 0.14239974960186652,
+        "low": 0.1315479838417005,
+        "high": 0.15400707671400232,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.1830838502356924,
+        "low": 0.17054009296980654,
+        "high": 0.19822376108856626,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_softmax_s1",
+      "all_words": {
+        "difference": 0.1289111705700825,
+        "low": 0.12008612892356288,
+        "high": 0.13917119136740033,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16303163470116644,
+        "low": 0.15345581385894072,
+        "high": 0.17393532777696724,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_softmax_s2",
+      "all_words": {
+        "difference": 0.1358360711514821,
+        "low": 0.12394616698702147,
+        "high": 0.1484177863490705,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.17033194650722472,
+        "low": 0.15406360556794854,
+        "high": 0.18840241996685217,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_crf_s0",
+      "all_words": {
+        "difference": 0.13919101292186054,
+        "low": 0.1281995599834554,
+        "high": 0.15136476625282938,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.17289345853982396,
+        "low": 0.15568085271334478,
+        "high": 0.19229546175224937,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_crf_s1",
+      "all_words": {
+        "difference": 0.13190739648851468,
+        "low": 0.12067835443839016,
+        "high": 0.14387309628319506,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16577880733046346,
+        "low": 0.1516971589659045,
+        "high": 0.18131370590995802,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bilstm_crf_s2",
+      "all_words": {
+        "difference": 0.13343007090767744,
+        "low": 0.12225091099163302,
+        "high": 0.14619960565515666,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.16671130885127006,
+        "low": 0.15178352157983277,
+        "high": 0.1831055021202217,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bert_s0",
+      "all_words": {
+        "difference": 0.03140250523823607,
+        "low": 0.026410525507187876,
+        "high": 0.03646192758518975,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.03695779025201107,
+        "low": 0.03026491263748633,
+        "high": 0.04380632277318108,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bert_s1",
+      "all_words": {
+        "difference": 0.03077725956918509,
+        "low": 0.025834198913041985,
+        "high": 0.03660491703576296,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.036253306710156696,
+        "low": 0.029900306664989627,
+        "high": 0.0438046366686134,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "bert_s2",
+      "all_words": {
+        "difference": 0.0334880072528122,
+        "low": 0.028711075722838323,
+        "high": 0.038747384324444835,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.04050819793797744,
+        "low": 0.03449706085020489,
+        "high": 0.046917075422389216,
+        "share_not_better": 0.0,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "deberta_s0",
+      "all_words": {
+        "difference": 0.003170975481914917,
+        "low": -0.000806594728809667,
+        "high": 0.007200760964659757,
+        "share_not_better": 0.06,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": 0.0020826032532567096,
+        "low": -0.003540153897887843,
+        "high": 0.007740636764149962,
+        "share_not_better": 0.244,
+        "n_resamples": 1000
+      }
+    },
+    {
+      "model": "deberta_s2",
+      "versus": "deberta_s1",
+      "all_words": {
+        "difference": -0.0019492366341020695,
+        "low": -0.005869100260562003,
+        "high": 0.001379978210655152,
+        "share_not_better": 0.847,
+        "n_resamples": 1000
+      },
+      "within_turn": {
+        "difference": -0.004205256639497557,
+        "low": -0.010246526851858772,
+        "high": 0.0013050816993954158,
+        "share_not_better": 0.936,
+        "n_resamples": 1000
+      }
+    }
+  ],
+  "seed_groups": {
+    "bilstm_softmax": {
+      "models": [
+        "bilstm_softmax_s0",
+        "bilstm_softmax_s1",
+        "bilstm_softmax_s2"
+      ],
+      "all_words": {
+        "mean": 0.7351487346718872,
+        "sd": 0.006745095590612398,
+        "min": 0.7284646488444978,
+        "max": 0.7419532278762818
+      },
+      "within_turn": {
+        "mean": 0.6738548307385224,
+        "sd": 0.010148866513137204,
+        "min": 0.6629201243175245,
+        "max": 0.6829723398520504
+      }
+    },
+    "bilstm_crf": {
+      "models": [
+        "bilstm_crf_s0",
+        "bilstm_crf_s1",
+        "bilstm_crf_s2"
+      ],
+      "all_words": {
+        "mean": 0.7360215716736801,
+        "sd": 0.003841832432265848,
+        "min": 0.7316733855245038,
+        "max": 0.7389570019578496
+      },
+      "within_turn": {
+        "mean": 0.6775427829793643,
+        "sd": 0.0038666694473161395,
+        "min": 0.6731105160133929,
+        "max": 0.6802251672227534
+      }
+    },
+    "bert": {
+      "models": [
+        "bert_s0",
+        "bert_s1",
+        "bert_s2"
+      ],
+      "all_words": {
+        "mean": 0.8389751410929532,
+        "sd": 0.0014194132475403279,
+        "min": 0.8373763911935521,
+        "max": 0.8400871388771792
+      },
+      "within_turn": {
+        "mean": 0.8080975429198352,
+        "sd": 0.002280562472940199,
+        "min": 0.8054957766152394,
+        "max": 0.8097506678430602
+      }
+    },
+    "deberta": {
+      "models": [
+        "deberta_s0",
+        "deberta_s1",
+        "deberta_s2"
+      ],
+      "all_words": {
+        "mean": 0.8704571521637601,
+        "sd": 0.0025842852356644077,
+        "min": 0.8676934229644494,
+        "max": 0.8728136350804664
+      },
+      "within_turn": {
+        "mean": 0.8467115256819638,
+        "sd": 0.0032030870980306225,
+        "min": 0.8439213712999601,
+        "max": 0.8502092311927144
+      }
+    }
+  }
+}

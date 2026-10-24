@@ -1,0 +1,9 @@
+{
+  "selection": "validation macro-F1",
+  "trials": [
+    {
+      "params": {},
+      "validation_macro_f1": 0.29064
+    }
+  ]
+}

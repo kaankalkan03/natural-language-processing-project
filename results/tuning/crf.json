@@ -1,0 +1,330 @@
+{
+  "selection": "validation macro-F1",
+  "trials": [
+    {
+      "params": {
+        "c1": 0.1,
+        "c2": 0.001,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.57987,
+      "iterations": 723,
+      "loss": 35017.547632,
+      "active_features": 100266,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.1,
+        "c2": 0.01,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58376,
+      "iterations": 608,
+      "loss": 39206.908889,
+      "active_features": 120904,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.1,
+        "c2": 0.1,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58859,
+      "iterations": 398,
+      "loss": 56371.850614,
+      "active_features": 167813,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.1,
+        "c2": 0.3,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.59023,
+      "iterations": 350,
+      "loss": 71552.311403,
+      "active_features": 195132,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.1,
+        "c2": 1.0,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58644,
+      "iterations": 277,
+      "loss": 91242.413934,
+      "active_features": 223569,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.3,
+        "c2": 0.001,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.59751,
+      "iterations": 477,
+      "loss": 61010.211879,
+      "active_features": 77787,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.3,
+        "c2": 0.01,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.59465,
+      "iterations": 497,
+      "loss": 62990.822937,
+      "active_features": 86874,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.3,
+        "c2": 0.1,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.59818,
+      "iterations": 369,
+      "loss": 73390.760668,
+      "active_features": 112163,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.3,
+        "c2": 0.3,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60277,
+      "iterations": 362,
+      "loss": 83754.292196,
+      "active_features": 129811,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.3,
+        "c2": 1.0,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58648,
+      "iterations": 270,
+      "loss": 98313.357575,
+      "active_features": 148267,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.5,
+        "c2": 0.001,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60573,
+      "iterations": 459,
+      "loss": 77134.745569,
+      "active_features": 63073,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.5,
+        "c2": 0.01,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60667,
+      "iterations": 405,
+      "loss": 78281.665131,
+      "active_features": 68659,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.5,
+        "c2": 0.1,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60787,
+      "iterations": 378,
+      "loss": 85015.707242,
+      "active_features": 84508,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.5,
+        "c2": 0.3,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60603,
+      "iterations": 313,
+      "loss": 92329.975787,
+      "active_features": 96802,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 0.5,
+        "c2": 1.0,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58399,
+      "iterations": 296,
+      "loss": 103491.593706,
+      "active_features": 111348,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 1.0,
+        "c2": 0.001,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60764,
+      "iterations": 336,
+      "loss": 97818.086787,
+      "active_features": 28930,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 1.0,
+        "c2": 0.01,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60495,
+      "iterations": 361,
+      "loss": 98140.958258,
+      "active_features": 29367,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 1.0,
+        "c2": 0.1,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.60114,
+      "iterations": 315,
+      "loss": 100665.718945,
+      "active_features": 32257,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 1.0,
+        "c2": 0.3,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58956,
+      "iterations": 285,
+      "loss": 104326.719165,
+      "active_features": 35513,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 1.0,
+        "c2": 1.0,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.57907,
+      "iterations": 231,
+      "loss": 111413.652374,
+      "active_features": 40953,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 2.0,
+        "c2": 0.001,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58237,
+      "iterations": 335,
+      "loss": 112262.373435,
+      "active_features": 15161,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 2.0,
+        "c2": 0.01,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.58205,
+      "iterations": 337,
+      "loss": 112388.494761,
+      "active_features": 15243,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 2.0,
+        "c2": 0.1,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.57776,
+      "iterations": 289,
+      "loss": 113522.441133,
+      "active_features": 16124,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 2.0,
+        "c2": 0.3,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.57828,
+      "iterations": 273,
+      "loss": 115476.251133,
+      "active_features": 17231,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    },
+    {
+      "params": {
+        "c1": 2.0,
+        "c2": 1.0,
+        "max_iterations": 1000
+      },
+      "validation_macro_f1": 0.56179,
+      "iterations": 239,
+      "loss": 120013.789474,
+      "active_features": 19499,
+      "converged": true,
+      "termination": "L-BFGS terminated with the stopping criteria"
+    }
+  ]
+}

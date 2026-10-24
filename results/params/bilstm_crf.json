@@ -1,0 +1,5 @@
+{
+  "hidden": 256,
+  "layers": 2,
+  "dropout": 0.3
+}

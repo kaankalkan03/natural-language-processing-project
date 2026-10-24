@@ -1,0 +1,8 @@
+matplotlib==3.10.9
+numpy==2.5.4
+pdfplumber==0.11.10
+python-crfsuite==0.9.12
+requests==2.34.2
+torch==2.14.1
+# The transformer runs (Google Colab) also install transformers==5.20.2 and
+# sentencepiece==0.2.2; the notebook does this itself.
