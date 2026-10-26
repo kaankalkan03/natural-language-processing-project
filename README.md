@@ -113,7 +113,11 @@ peaked at epochs 2–4.
 Punctuation restoration as token classification, the kind of post-processing
 that speech-recognition output needs. Input: the words of one speaker turn,
 lower-cased, with all punctuation removed (the turn boundary is given). Output:
-one label per word for the mark that follows it.
+one label per word for the mark that follows it. As in the course's
+token-classification slides, a label describes the boundary after its word,
+and O means that nothing is inserted. The evaluation unit is the word: unlike
+NER there are no multi-word spans to recover, so every label is one boundary
+decision.
 
 | Label | Marks in the transcript |
 |---|---|
@@ -191,26 +195,35 @@ Baselines (methods from the course slides):
    QUESTION. Every rule and word list comes from training statistics (listed
    in the module).
 2. **HMM with Viterbi decoding**, written from scratch (`hmm.py`): labels are
-   states and words are emissions, add-k smoothing, `<unk>`/`<num>` emissions
-   estimated from rare training words. Tuned: k ∈ {0.001, 0.01, 0.1, 1},
+   the hidden states and words the observations; start, transition and
+   emission probabilities are estimated by counting, with add-k smoothing and
+   `<unk>`/`<num>` emissions estimated from rare training words; Viterbi runs
+   in log space. Tuned: k ∈ {0.001, 0.01, 0.1, 1},
    min_count ∈ {1, 2, 3}.
-3. **Linear-chain CRF** (`crf.py`, python-crfsuite, L-BFGS with L1/L2
-   penalties): the word, its suffix and shape, words at −2…+3, three bigrams,
+3. **Linear-chain CRF** with hand-designed features (`crf.py`,
+   python-crfsuite, L-BFGS with L1/L2 penalties): the word, its suffix and
+   shape, words at −2…+3, three bigrams,
    repeat flags, first/last word of the turn. Tuned: c1 × c2 (25 settings);
    every setting converged.
 4. **BiLSTM-CRF**, written from scratch in PyTorch (`bilstm_crf.py`;
    Lample et al., 2016, without character features): 100-d word embeddings
    trained from scratch → 2-layer bidirectional LSTM (256 units per direction)
-   → linear layer → CRF layer with our own forward algorithm and Viterbi
-   decoder (2.9 M parameters). Adam (lr 2e-3), batches of 16 turns of similar
+   → linear layer giving each word one score per label (the CRF's unary
+   scores) → CRF layer with transition, start and end scores (2.9 M
+   parameters). It is trained with the negative log-likelihood of the gold
+   label sequence, log Z − gold score, where our own forward algorithm
+   computes the partition function Z with log-sum-exp; our own Viterbi
+   decoder picks the best sequence. Adam (lr 2e-3), batches of 16 turns of similar
    length, word dropout 0.05, early stopping on validation macro-F1 (patience
    5, at most 60 epochs). Tuned: hidden {128, 256} × layers {1, 2} × dropout
    {0.3, 0.5}; then seeds 0, 1, 2 of the best setting. Unit tests check the CRF
    against brute force over all label paths and with a gradient check.
 5. **Ablation: BiLSTM without the CRF layer** (`bilstm_softmax.py`): the same
    network, setting and training, but each word's label is chosen on its own
-   (softmax, word-level cross-entropy, argmax). The CRF's transition, start and
-   end scores are gone, so label sequences are no longer modelled explicitly
+   (a per-word softmax head, called contextual softmax in the course slides:
+   word-level cross-entropy, argmax at each position). This is the comparison
+   the slides recommend for structured decoding: the same encoder with and
+   without a CRF. The CRF's transition, start and end scores are gone, so label sequences are no longer modelled explicitly
    (the LSTM can still pick up some of that from context). It reuses the
    setting tuned for the BiLSTM-CRF without tuning of its own, so it measures
    what removing the CRF costs *this* model; on validation, where that setting
@@ -236,7 +249,10 @@ the selection was redone on validation (seed-0 results for every rate in
 `results/tuning/`). Gain from the extension: BERT 0.843 → 0.850, DeBERTa-v3
 0.877 → 0.879 macro-F1 (seed means).
 
-Both use the label on the first subword of each word, windows of at most 256
+Both use first-subword labelling (a word's label goes on its first subword;
+its other subwords and the special tokens get the ignore index −100 and do not
+enter the loss; a word takes the label predicted for its first subword),
+windows of at most 256
 subwords that overlap by up to 64 words (at most half a window; each word is scored in the one window where
 it has most context), AdamW with linear warm-up and decay, fp16 mixed
 precision, 4 epochs, the best epoch by validation macro-F1, and seeds 0, 1, 2
@@ -245,8 +261,9 @@ of the learning rate chosen with seed 0.
 ## Evaluation
 
 - **Main metric: macro-F1 over COMMA, PERIOD and QUESTION.** About 85% of words
-  carry no mark, so accuracy would reward predicting no punctuation at all, and
-  micro-F1 would be dominated by COMMA. Macro-F1 gives the rare QUESTION class
+  carry no mark, so accuracy would reward predicting no punctuation at all (the
+  same trap as predicting O everywhere in NER), and micro-F1 would be dominated
+  by COMMA. O is left out of the average. Macro-F1 gives the rare QUESTION class
   the same weight as the others.
 - **Second headline metric: within-turn macro-F1** (see Results).
 - Also reported: per-class precision, recall and F1, micro-F1, mark-detection
@@ -343,7 +360,8 @@ of a model.
   scores 0.760 ± 0.006 macro-F1 (with it: 0.760 ± 0.004), and the
   matched-seed differences are −0.003, −0.003 and +0.006, so the sign depends
   on the seed, even though the setting was tuned with the CRF. A likely reason:
-  unlike BIO tags in NER, these four labels have no forbidden transitions, and
+  unlike BIO tags in NER (where, for example, O → I-PER is not allowed), these
+  four labels have no forbidden transitions, and
   the BiLSTM already reads the whole turn in both directions. The CRF does
   produce fewer back-to-back sentence ends (17–26 predicted, against 29–36
   without it and 27 in the gold data), but that barely moves the scores. The
