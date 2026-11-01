@@ -6,11 +6,12 @@
 
 ## Responsibility area
 
-Not yet recorded. To be filled in by the member and the team.
-
+contribution: did the literature search and provided all refrences.
 ## Documented work
 
 No individual work on Project 2 is documented yet. The member adds their own
 work here (date, what was done, affected files or slides).
-
+work date: 31/10/2026
+what was done: provided all refrences
+affected files: 
 
