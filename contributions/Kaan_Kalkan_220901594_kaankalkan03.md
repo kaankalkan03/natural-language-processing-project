@@ -6,11 +6,14 @@
 
 ## Responsibility area
 
-Not yet recorded. To be filled in by the member and the team.
+Preparing the presentation and uploading the project to the system.
 
 ## Documented work
 
-No individual work on Project 2 is documented yet. The member adds their own
-work here (date, what was done, affected files or slides).
+- **Date:** 23 October 2026
+- **Work done:** Prepared the project presentation and organized the slides.
+- **Files affected:** Presentation slides.
 
+- **Work done:** Uploaded the final project files to the system.
+- **Files affected:** Project files and presentation.
 
