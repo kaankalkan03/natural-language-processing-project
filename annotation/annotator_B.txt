@@ -1,0 +1,198 @@
+# Punctuation sheet: annotator B
+# Read annotation/README.md first. In short:
+# - Work alone. Do not look up the transcripts, do not use AI or grammar tools,
+#   and do not compare with the other annotator until both sheets are done.
+# - Only type punctuation between the words: , . ? (and, if you would use them,
+#   ; : ! or a dash written as " -- "). Do not add, delete or change words.
+# - Capital letters and line breaks do not matter.
+# - To end a sentence after an abbreviation such as u.s. type a second period: u.s..
+# - Do not edit the lines that start with "===" or "#", and do not add separator lines.
+# Each block below is one speaker's turn in an FOMC press conference.
+
+=== T01 ===
+hi, chair powell. jean yung with mni market news. i wanted to ask about inflation
+expectations. you've said the fed can't take the stability of inflation expectations for
+granted. you mentioned at the short run they've gone up a little bit. i wonder if you can
+talk a bit about that, and then also at the long run, i'm wondering: do you see evidence
+that the debate over fed independence and the growing deficit is putting pressure on
+inflation expectations?
+
+=== T02 ===
+thank you, mr. chairman. jennifer schonberger with yahoo finance. inflation has run up
+mostly from higher energy prices and tariffs, which some say are supply shocks that rate
+hikes cannot fix and should fade on their own, so long as inflation expectations stay
+anchored. now that you have hiked rates, do you need to push growth below potential,
+unintentionally pushing weakness on the job market to bring inflation down? and how do
+those dynamics play out, given the forcefulness with which ai is driving the economy
+right now?
+
+=== T03 ===
+i'm sorry, it's your question. so, interpreting markets is an imperfect business. we central
+bankers, like market pros, can think these things are overdetermined, but let me offer some
+speculation. first, as we said in the fomc statement that you got at two o'clock, the
+economy output is solid, capex and productivity are strong, labor markets solid, steady.
+the bond market, the treasury market, it seems to be saying that as well. if i were to try to
+break down, just aggregate, the treasury market signals, i wouldn't be able to do it
+perfectly, but the bond market's saying many of those same things, and that's why we're
+seeing a tightening both in nominals and in reals, even while at some level we haven't
+done much in 42 days. the markets have done quite a bit.
+
+=== T04 ===
+so i think it's unlikely that the next policy rate move will be a hike. i'd say it's
+unlikely. you know, our policy focus is really what i just mentioned, which is: which is
+how long to keep policy restrictive. you ask what would it take? you know, i think we'd need
+to see persuasive evidence that our policy stance is not sufficiently restrictive to bring
+inflation sustainably down to 2 percent over time. that's not, that's not what we think
+we're seeing, as i, as i mentioned. but that's something like that is what it would take.
+we'd look at the totality of the data in answer to that question. that would include
+inflation, inflation expectations, and all the other data too.
+
+=== T05 ===
+so there was broad support on the committee for holding today, broad, i would say,
+including among nonvoters. so that's where that was. of course, some people did want to cut
+and dissented, but the committee was pretty broadly for holding today. we're not trying to
+articulate a test for what, for when to next cut or whether to cut at the next meeting.
+what we're saying is we're well positioned as we make decisions meeting by meeting,
+looking at the incoming data, the evolving outlook, and all that. and we're in a position
+where we have to -- we still have some tension between employment and inflation, but it's
+less than it was. i think that the upside risks to inflation and the downside risks to
+employment have probably both diminished a bit. so we'll be looking at that. it's about
+how you weigh the risks to the two goals and how big those -- and quantify them. and so
+there are different views on the committee, and we'll find our way forward as the data
+evolve.
+
+=== T06 ===
+so the thing about if what it is is seasonality, and it could just be -- it's very, very hard
+to, you know, to do appropriate seasonal adjustments. if that's what it is, then that
+actually implies that that other months were underreporting too low inflation. if you
+smoothed it out, it's a zero-sum game, and that's why we look at 12 months. we look at 12
+months because that takes all of that out, all those effects out. twelve-month now is 2
+1/2 percent headline, 2.6 percent core. this is so much better than where we were even a
+year ago. it's a lot better now. the job is not done. i want to stress that, and we're
+committed to getting the job inflation sustainably under 2 percent, but we need to take
+note of that progress, and we need to weigh the risks to the labor market and the risks
+to our inflation target now more equally than we did a year ago.
+
+=== T07 ===
+thank you very much. claire jones from the financial times. people have drawn quite a few
+historical parallels with the current situation. we've seen oil price shocks in the past.
+some people have said the first gulf war and the fed's response to that, where there was
+a focus on the growth risks, is the right parallel. to what extent would you agree with
+that, and to what extent would you think we're in a different place today? thank you.
+
+=== T08 ===
+but, but i think that the markets are looking for, for a little more clarity. i mean, i've
+heard estimates from 2.9 percent to 4 percent. you know, i, i think the markets would like
+to see a little more clarity about a year out, 18 months out, as to where that, that
+goalpost, for lack of a better term, is, because at the moment it looks big.
+
+=== T09 ===
+okay. i also just wanted to ask a finreg question. i think several years ago you said the
+overall amount of capital in the system was about right. as the fed moves forward with a
+revised basel proposal, potentially changes to the g-sib surcharge, has that changed at
+all, or are you planning to significantly reduce the amount of capital in the system?
+thanks.
+
+=== T10 ===
+so we don't actually -- it's our, it's our finance ministry, the treasury department, that has
+a responsibility for thinking about and, and if it sees fit, doing things about the level
+of the dollar. so for us, it's just another financial variable. and you're right, the dollar
+has been, has exhibited, exhibited some strength over the course of the last year or so
+because the u.s. economy is very strong. we don't think of it as benefiting or hurting
+the u.s. we don't, again, we don't manage the level of the dollar. that's, that's not our,
+that's not our job. it's not, you know, and for, for our economy, what, you know, we're
+trying to foster is maximum employment and price stability, and we feel like we've made good
+progress on, on both of those goals over the course of the past year.
+
+=== T11 ===
+if i told somebody in the milk aisle that i had a task force for that, i think that would
+be doing a very poor job. so i appreciate it. if i saw somebody in the grocery store, what
+i would say to them is that we cannot have a very significant effect on particular
+prices, the price of oil in the markets today or even the price of a dozen eggs. that does
+not have first-order consequences to what we're doing. but we do have a really important
+job there, and it's to make sure that those changes in oil or beef or eggs or milk don't
+broaden in the economy, don't have second- and third-order effects. that's our job, that's
+our commitment, that's our capability, and we're going to deliver on it.
+
+=== T12 ===
+hi, chris rugaber, the associated press. thank you. in the projections, there is an increase
+in the neutral rate, as you know, and higher rates, 1/4 point higher rates projected in
+2025, 2026. can you speak about why, what might be behind that? is there a real sense here
+that the economy has perhaps changed in some way, that higher rates will be needed in the
+future? thank you.
+
+=== T13 ===
+okay. from my standpoint, it's, it's not complicated. what everyone on the fomc wants is a
+good, solid american economy with a strong labor market and, and price stability. that's
+what we want. we think our policy is well positioned to, right now, to, to deliver that and
+and to be able to respond in a timely way as the data lead us around. the economy's been
+resilient, and part of that is our stance. and, again, we think we're, we're in a good place
+on that to respond to significant economic developments. that's what matters. that is what
+matters to us. pretty much, that's all that matters to us.
+
+=== T14 ===
+so, as you know, today we decided to leave our policy rate where it's been, which, where i
+would characterize as modestly restrictive. inflation is running a bit above 2 percent, as
+i mentioned. even excluding tariff effects, the labor market's solid, historically low
+unemployment, financial conditions are accommodative, and the economy is not -- the economy
+is not performing as though restrictive policy were holding it back inappropriately. so
+it seems to, to me and to almost the whole committee, that the economy is not performing
+as though restrictive policy is holding it back inappropriately, and modestly restrictive
+policy seems appropriate. all that said, there's also downside risk to the labor market in
+coming months. we'll receive a good amount of data that will help inform our assessment
+of the balance of risks and the appropriate setting of the federal funds rate.
+
+=== T15 ===
+hi, victoria guida with politico. just to follow up on that, i mean, this is now the third
+time that you've cut this year, and inflation is around 3 percent. so is the message that
+you're sort of trying to send with that, that you're okay with where inflation is for now,
+as long as people understand that at some point you still want to get back to 2 percent,
+because inflation is relatively stable where it is?
+
+=== T16 ===
+hi, victoria guida with politico. i wanted to ask, first of all, if you could clarify:
+you were talking about how tariffs were a good part of the uptick in the inflation
+forecasts, and i was just wondering what that specifically refers to. is that the tariffs
+that have already been put in place? is that anticipating some of the tariffs that might
+be coming on april 2? and then also, if you wouldn't mind talking a little more about the
+balance sheet decision and what drove that, did that have anything to do with expectations
+of how the debt ceiling, raising the debt ceiling, might affect the reserve supply?
+
+=== T17 ===
+michael mckee with bloomberg tv and radio. to follow up on that, what would constitute for
+you and the committee a deterioration in the labor market? you're pricing in basically by
+the end of next year 200 basis points of cuts just to maintain a higher unemployment
+rate. would you be moving to a more preemptive monetary policy style rather than, as you
+did with inflation, waiting until the data gave you a signal?
+
+=== T18 ===
+you know, it's going to depend. i think you have to just take a step back and realize this
+is, this is why we are where we are, is, you know, we are going to need to see how this
+evolves. there are cases in which it would be appropriate for us to cut rates this year.
+there are cases in which it wouldn't, and we just don't know until we know more about how
+this is going to settle out and what the economic implications are for employment, for
+and for, for inflation. i couldn't confidently say that i know what the appropriate path
+will be.
+
+=== T19 ===
+you know what? it's, you get halfway through the cycle between the last set and the next
+set. i, i wouldn't want to comment one way or the other. you know, people are -- let's talk
+about the data we've gotten since the last meeting. so, in the main, the economic activity
+data have been stronger than expected. the nipa revision was stronger. certainly the
+september employment report was stronger. the october report, not stronger. retail sales
+stronger. so overall, though, i think you take away a sense of, of some of the downside
+risks to economic activity having, having been diminished with the nipa revisions in
+particular. and so, overall, feeling, feeling good about economic activity. so i think we
+would factor that in. at the same time, we got one inflation report, which was -- it wasn't
+terrible, but it was, it was a little higher than expected. so i think really the question
+is, is december. and, you know, by december, we'll have, we'll have more data: i guess one more
+employment report, two more inflation reports, and lots of other data. and, you know, we'll
+make a decision as we get to december.
+
+=== T20 ===
+thank you, chair powell. howard schneider with reuters. you mentioned that staying on as a
+governor, you intend to keep a low profile. i'm just wondering if you could give us a
+little more detail on what that looks like and how you can touché, what that, yeah, walk
+down the steps -- what that looks like, and particularly around the policy discussion, how
+you're able to have your intervention and not be a shadow chair and not have kind of an
+outsized influence over the process

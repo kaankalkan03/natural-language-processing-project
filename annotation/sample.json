@@ -1,0 +1,171 @@
+{
+  "split": "test",
+  "criteria": {
+    "per_role": 10,
+    "min_words": 40,
+    "max_words": 200,
+    "seed": 0
+  },
+  "turns": [
+    {
+      "key": "T01",
+      "id": "20250917-t069",
+      "doc": "20250917",
+      "role": "reporter",
+      "words": 80,
+      "words_sha256": "b0d03c67cd4449f6"
+    },
+    {
+      "key": "T02",
+      "id": "20260916-t050",
+      "doc": "20260916",
+      "role": "reporter",
+      "words": 88,
+      "words_sha256": "8273da82eccde5b4"
+    },
+    {
+      "key": "T03",
+      "id": "20260729-t009",
+      "doc": "20260729",
+      "role": "chair",
+      "words": 136,
+      "words_sha256": "dea62f7e49157af7"
+    },
+    {
+      "key": "T04",
+      "id": "20240501-t014",
+      "doc": "20240501",
+      "role": "chair",
+      "words": 123,
+      "words_sha256": "cf4e35bf5fa259f3"
+    },
+    {
+      "key": "T05",
+      "id": "20260128-t034",
+      "doc": "20260128",
+      "role": "chair",
+      "words": 176,
+      "words_sha256": "dac3ad06c6320036"
+    },
+    {
+      "key": "T06",
+      "id": "20240731-t030",
+      "doc": "20240731",
+      "role": "chair",
+      "words": 164,
+      "words_sha256": "cfe781b1e36ffa62"
+    },
+    {
+      "key": "T07",
+      "id": "20260318-t032",
+      "doc": "20260318",
+      "role": "reporter",
+      "words": 80,
+      "words_sha256": "1db27752fa6a7aee"
+    },
+    {
+      "key": "T08",
+      "id": "20241218-t057",
+      "doc": "20241218",
+      "role": "reporter",
+      "words": 68,
+      "words_sha256": "b0eeb9f7dde47d28"
+    },
+    {
+      "key": "T09",
+      "id": "20251029-t061",
+      "doc": "20251029",
+      "role": "reporter",
+      "words": 64,
+      "words_sha256": "1c8805ec18add0be"
+    },
+    {
+      "key": "T10",
+      "id": "20240612-t062",
+      "doc": "20240612",
+      "role": "chair",
+      "words": 143,
+      "words_sha256": "742ad5a65ffc5220"
+    },
+    {
+      "key": "T11",
+      "id": "20260617-t033",
+      "doc": "20260617",
+      "role": "chair",
+      "words": 134,
+      "words_sha256": "5c7bf2cac2a66045"
+    },
+    {
+      "key": "T12",
+      "id": "20240320-t022",
+      "doc": "20240320",
+      "role": "reporter",
+      "words": 69,
+      "words_sha256": "cbf867f1f1925578"
+    },
+    {
+      "key": "T13",
+      "id": "20250618-t030",
+      "doc": "20250618",
+      "role": "chair",
+      "words": 110,
+      "words_sha256": "ea499be4f4921c91"
+    },
+    {
+      "key": "T14",
+      "id": "20250730-t003",
+      "doc": "20250730",
+      "role": "chair",
+      "words": 142,
+      "words_sha256": "96c5d7eb9f9a6a8e"
+    },
+    {
+      "key": "T15",
+      "id": "20251210-t045",
+      "doc": "20251210",
+      "role": "reporter",
+      "words": 78,
+      "words_sha256": "eb66e75ddc4bdc28"
+    },
+    {
+      "key": "T16",
+      "id": "20250319-t061",
+      "doc": "20250319",
+      "role": "reporter",
+      "words": 110,
+      "words_sha256": "c2aa656e01638d52"
+    },
+    {
+      "key": "T17",
+      "id": "20240918-t031",
+      "doc": "20240918",
+      "role": "reporter",
+      "words": 74,
+      "words_sha256": "eefa86e63e800a3c"
+    },
+    {
+      "key": "T18",
+      "id": "20250507-t021",
+      "doc": "20250507",
+      "role": "chair",
+      "words": 107,
+      "words_sha256": "0b3420acb08f57d2"
+    },
+    {
+      "key": "T19",
+      "id": "20241107-t008",
+      "doc": "20241107",
+      "role": "chair",
+      "words": 195,
+      "words_sha256": "9b04d6a9b6db5565"
+    },
+    {
+      "key": "T20",
+      "id": "20260429-t031",
+      "doc": "20260429",
+      "role": "reporter",
+      "words": 86,
+      "words_sha256": "fdb4105e7d963000"
+    }
+  ]
+}

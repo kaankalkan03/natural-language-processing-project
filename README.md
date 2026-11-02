@@ -6,10 +6,13 @@ press conference, predict the punctuation mark that follows each word.
 
 COE025 Natural Language Processing, Project 2 (token classification).
 
-> **Status (24 October 2026).** All seven methods are trained, chosen on the
-> validation split and scored **once** on the test split, after every model
-> choice was fixed. Remaining: the members' own entries in
-> [`contributions/`](contributions/) and the presentation (2 November 2026).
+> **Status (2 November 2026).** All seven methods were trained, chosen on the
+> validation split and scored **once** on the test split (23 October 2026),
+> after every model choice was fixed; no model has changed since. Two later
+> checks only read saved predictions: a saturation check (accuracy, macro-F1
+> and turn exact match) and a human agreement check on 20 test turns, scored on
+> 1 November 2026. The project was presented on 2 November 2026. The members'
+> own records are in [`contributions/`](contributions/).
 
 ## Example
 
@@ -63,6 +66,73 @@ intervals over a modest number of clusters, and the coverage check made for
 validation was not repeated.
 
 ![Macro-F1 with 95% CIs on the test split](results/figures/test_macro_f1.png)
+
+### Is the task saturated?
+
+84.0% of test words carry no mark, so a system that never adds punctuation
+already reaches 0.840 accuracy. Accuracy therefore says little here: the CRF
+reaches 0.921 accuracy but only 0.562 macro-F1. The course's rule of thumb calls
+a task trivial if even a baseline reaches 90% accuracy or about 85% exact
+match; read literally, the CRF passes the accuracy line only because of the O
+share. Turn exact match (every label of a speaker turn right) is the strictest
+view: on turns of two or more words, even the best model gets about one turn in
+five fully right. The 303 one-word test turns (279 of them the moderator naming
+the next reporter) are left out of that column because they are almost always
+right. Source: [`results/saturation_test.md`](results/saturation_test.md), which
+also gives 95% CIs (bootstrap over press conferences) and the column with
+one-word turns.
+
+| System | Accuracy | Macro-F1 | Turn exact match (turns of 2+ words) |
+|---|---|---|---|
+| No punctuation at all (every word O) | 0.840 | 0.000 | 0.000 |
+| Heuristic rules | 0.873 | 0.257 | 0.080 |
+| HMM + Viterbi | 0.856 | 0.256 | 0.073 |
+| Linear-chain CRF | 0.921 | 0.562 | 0.087 |
+| BiLSTM without CRF (3 seeds) | 0.932–0.935 | 0.728–0.742 | 0.132–0.137 |
+| BiLSTM-CRF (3 seeds) | 0.932–0.934 | 0.732–0.739 | 0.128–0.141 |
+| BERT-base (3 seeds) | 0.960–0.961 | 0.837–0.840 | 0.184–0.191 |
+| DeBERTa-v3-base (3 seeds) | 0.969–0.970 | 0.868–0.873 | 0.211–0.224 |
+
+## Human agreement check
+
+The labels come from one source, the punctuation in the published transcripts,
+and many commas are optional. To see how much room the task leaves for
+different but valid punctuation, two team members punctuated the same 20 test
+turns on their own. The turns hold 2,227 words: 10 Chair and 10 reporter turns
+of 40–200 words, each from a different press conference (seed 0). The
+annotators did not see the original, were asked not to use AI or grammar tools,
+and did not compare sheets ([`annotation/README.md`](annotation/README.md)).
+`fomcpunct/agreement.py` checks that every word is unchanged, turns the typed
+marks into labels with the dataset's mapping and compares every pair. The
+sheets were scored on 1 November 2026; the full report is
+[`results/agreement/agreement.md`](results/agreement/agreement.md) (95% CIs:
+bootstrap over turns).
+
+| Pair | Macro-F1 [95% CI] | COMMA F1 | PERIOD F1 | QUESTION F1 | Cohen's kappa |
+|---|---|---|---|---|---|
+| transcript vs annotator A | 0.787 [0.731, 0.836] | 0.598 | 0.887 | 0.875 | 0.752 |
+| transcript vs annotator B | 0.865 [0.825, 0.898] | 0.819 | 0.843 | 0.933 | 0.866 |
+| annotator A vs annotator B | 0.795 [0.734, 0.849] | 0.644 | 0.866 | 0.875 | 0.776 |
+| transcript vs DeBERTa-v3 (seeds 0, 1, 2) | 0.802, 0.789, 0.826 | 0.808–0.825 | 0.824–0.838 | 0.714–0.828 | 0.858–0.864 |
+
+- On these turns the two annotators agree with the transcript at 0.83
+  macro-F1 on average and with each other at 0.80; DeBERTa-v3 reaches 0.81
+  (mean of three seeds). The model lies between the two annotators. Against
+  annotator A, the CI of the paired difference includes zero for every seed;
+  annotator B is closer to the transcript than the model (CI below zero for two
+  of the three seeds).
+- Most disagreement is about commas. The transcript has 228 commas on these
+  words; annotator A typed 120 and annotator B 209. The two annotators reach a
+  comma F1 of 0.644 with each other, against 0.866 for periods and 0.875 for
+  questions. So part of the comma "errors" counted against the single reference
+  is optional punctuation; how much was not measured.
+- DeBERTa-v3's 0.81 on these turns is lower than its 0.87 on the whole test
+  split. The sample has no very short turns, and 20 turns is a small sample.
+- Read with care: two student annotators, who may not be native speakers of
+  English, had no audio and no punctuation guidelines beyond the short
+  instructions; the sample is small and the CIs are wide. The check shows how
+  much room the task leaves for valid variation, not which version is correct.
+  It changes no model and no test number.
 
 ## Model selection (validation split)
 
@@ -128,6 +198,67 @@ decision.
 
 The raw marks are stored next to the labels, so other mappings can be tried.
 Casing restoration is out of scope.
+
+## Related work
+
+Most work on this task reports results on the English IWSLT TED Talks
+benchmark. Che et al. (2016) built its usual split: training and development
+sets (2.1M and 296K words) from the IWSLT2012 machine-translation training
+data, and the IWSLT2011 reference and ASR transcripts as test sets. The papers
+below predict the same four classes as we do (comma, period, question mark,
+none), and Tilk and Alumäe (2016) and Alam et al. (2020) map the other marks
+the same way (colons and dashes to comma; exclamation marks and semicolons to
+period). Their scores cannot be compared directly with ours: the data is
+different (TED talks, not FOMC press conferences), and their "overall" F1 is
+not our macro-F1.
+
+- **Tilk and Alumäe (2016)**: a bidirectional recurrent network (GRU) with
+  attention, released as punctuator2. Overall F1 64.4 on the reference
+  transcripts and 61.4 on ASR output.
+- **Courtland et al. (2020)**: fine-tuned RoBERTa-base that labels every word
+  of a window at once and sums the predictions of overlapping windows. Overall
+  F1 83.9 on the reference transcripts. Our transformers also use overlapping
+  windows, but score each word only in the window where it has most context.
+- **Alam et al. (2020)**: compared BERT, RoBERTa, ALBERT, DistilBERT and
+  multilingual models. RoBERTa-large, trained with augmentation that imitates
+  ASR errors, reached overall F1 82.9 on the reference transcripts and 74.0 on
+  ASR output.
+
+As in our results, the pretrained transformers are well ahead of the
+recurrent model.
+
+**Human agreement.** Kolář and Lamel (2011) had English and French broadcast
+news and conversation punctuated twice, by trained annotators who followed
+written punctuation guidelines and heard the audio. For English, kappa was
+0.81 overall, 0.86 for periods and 0.70 for commas. The punctuation of the
+original transcripts agreed with the re-punctuated version at only 0.70
+overall (0.51 for commas). They found that comma choices stay partly
+subjective and proposed evaluating against two or more references. Our check
+([`annotation/`](annotation/), `fomcpunct/agreement.py`) also reports Cohen's
+kappa over the four labels, but our two annotators read text only and had no
+style guide beyond the instructions in
+[`annotation/README.md`](annotation/README.md). They reached a kappa of 0.78
+with each other, and here too most disagreement was about commas (see
+[Human agreement check](#human-agreement-check)).
+
+References:
+
+- Che, X., Wang, C., Yang, H. and Meinel, C. (2016). Punctuation Prediction for
+  Unsegmented Transcript Based on Word Vector. *LREC 2016*, pp. 654–658.
+  https://aclanthology.org/L16-1103/
+- Tilk, O. and Alumäe, T. (2016). Bidirectional Recurrent Neural Network with
+  Attention Mechanism for Punctuation Restoration. *Interspeech 2016*,
+  pp. 3047–3051. https://doi.org/10.21437/Interspeech.2016-1517
+- Courtland, M., Faulkner, A. and McElvain, G. (2020). Efficient Automatic
+  Punctuation Restoration Using Bidirectional Transformers with Robust
+  Inference. *IWSLT 2020*, pp. 272–279.
+  https://doi.org/10.18653/v1/2020.iwslt-1.33
+- Alam, T., Khan, A. and Alam, F. (2020). Punctuation Restoration using
+  Transformer Models for High- and Low-Resource Languages. *W-NUT 2020*,
+  pp. 132–142. https://doi.org/10.18653/v1/2020.wnut-1.18
+- Kolář, J. and Lamel, L. (2011). On Development of Consistently Punctuated
+  Speech Corpora. *Interspeech 2011*, pp. 833–836.
+  https://doi.org/10.21437/Interspeech.2011-307
 
 ## Data card
 
@@ -277,6 +408,10 @@ of the learning rate chosen with seed 0.
   median of 5 runs after a warm-up, timed in a separate pass. GPU times of the
   transformers are marked and not comparable.
 - **Selection** uses validation only; the test split is scored once at the end.
+- **Saturation and the reference**: accuracy and turn exact match are reported
+  next to macro-F1, and a human agreement check measures how much people differ
+  from the transcript and from each other (see the sections after the test
+  results).
 
 ## Error analysis
 
@@ -410,6 +545,8 @@ of a model.
 ## Reproduce
 
 Tested with Python 3.13 on Windows. Everything except the transformers runs on a CPU.
+A team member also ran the setup, the unit tests, the data build and the
+classical baselines with Python 3.12 on Windows, from a fresh clone.
 
 ```bash
 python -m venv .venv
@@ -418,12 +555,23 @@ pip install -r requirements.txt
 python -m unittest                # unit tests
 ```
 
-Data (the raw PDFs and the built files are already in the repository; these
-commands rebuild them):
+Data. The raw PDFs, `data/raw/manifest.csv` and the built files are already in
+the repository. `build` reads only the PDFs listed in the manifest, so running
+it alone rebuilds the committed data files (`git status` shows no change):
 
 ```bash
-python -m fomcpunct.download      # 95 transcript PDFs -> data/raw/
 python -m fomcpunct.build         # data/clean/ and data/processed/
+```
+
+`download` is needed only to fetch the PDFs again. It takes every press
+conference the Board lists on the day it runs and rewrites the manifest. Our
+data is frozen at the 95 conferences up to 16 September 2026; a later run also
+adds newer ones (on 30 October 2026 it added the 28 October 2026 conference).
+Because the split is by date, they go to test: train and validation stay the
+same, but the test split no longer matches the reported results.
+
+```bash
+python -m fomcpunct.download      # every listed conference -> data/raw/
 ```
 
 Models on validation (selection uses validation only):
@@ -468,6 +616,19 @@ python -m fomcpunct.error_analysis --split test --models crf bilstm_crf_s0 bilst
 python -m fomcpunct.figures --split test --focus deberta_s0 --reference crf
 ```
 
+Saturation and human agreement checks. They read only the data and the saved
+predictions; no model is retrained.
+
+```bash
+python -m fomcpunct.saturation                      # -> results/saturation_test.{md,json}
+python -m fomcpunct.saturation --split validation   # -> results/saturation_validation.{md,json}
+python -m fomcpunct.agreement score annotation/annotator_A.txt annotation/annotator_B.txt   # -> results/agreement/
+```
+
+The 20 turns and the blank sheets came from `python -m fomcpunct.agreement
+sample` (seed 0); it refuses to overwrite the sheets, which now hold the
+annotators' punctuation.
+
 Latency is reported from the validation timing passes only. The test pass was
 timed while the laptop ran on battery power, so the latency column of
 `results/test_summary.md` is not used, and `figures` draws no speed chart for
@@ -491,13 +652,17 @@ fomcpunct/                 package
   transformer.py, colab.py                        BERT / DeBERTa on Colab
   metrics.py, evaluate.py                         scores, bootstrap CIs
   error_analysis.py, figures.py                   analysis and plots
+  saturation.py                                   accuracy vs macro-F1 vs turn exact match
+  agreement.py                                    human agreement check (sheets, scoring)
+annotation/                instructions, sampled turns and the two annotated sheets
 tests/                     unit tests (python -m unittest)
 notebooks/                 Colab notebook for the transformer runs
 data/raw/                  PDFs and manifest
 data/clean/                cleaned speaker turns and cleaning log
 data/processed/            train / validation / test (JSONL) and stats
 results/                   tuning, params, predictions, latency, training curves,
-                           metrics, summaries, error analysis, figures
+                           metrics, summaries, error analysis, figures,
+                           saturation check, human agreement (agreement/)
 contributions/             one file per team member
 ```
 

@@ -1,0 +1,571 @@
+{
+  "split": "validation",
+  "documents": 8,
+  "turns": 650,
+  "words": 66089,
+  "o_share": 0.8388082736915372,
+  "one_word_turns": 98,
+  "one_word_turns_moderator": 96,
+  "models": {
+    "all O (no model)": {
+      "accuracy": {
+        "point": 0.8388082736915372,
+        "low": 0.8308273862809094,
+        "high": 0.8466102923202086,
+        "std": 0.004105117480133427,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "std": 0.0,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "std": 0.0,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "std": 0.0,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 0
+    },
+    "heuristic": {
+      "accuracy": {
+        "point": 0.8756827913873716,
+        "low": 0.8711283433713435,
+        "high": 0.8798818448955641,
+        "std": 0.002254245570340303,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.2906403521559407,
+        "low": 0.2696857346298506,
+        "high": 0.3110671643187164,
+        "std": 0.010740377757291288,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.23692307692307693,
+        "low": 0.22173274596182085,
+        "high": 0.2519809825673534,
+        "std": 0.007833293628141353,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.10144927536231885,
+        "low": 0.08242991551459294,
+        "high": 0.12693336162988114,
+        "std": 0.0111699204760457,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 154
+    },
+    "hmm": {
+      "accuracy": {
+        "point": 0.8567235092072811,
+        "low": 0.8490930000768371,
+        "high": 0.864275287701691,
+        "std": 0.004025381575426416,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.2625795760255007,
+        "low": 0.24478466187766934,
+        "high": 0.28034539813564063,
+        "std": 0.009165055708151341,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.22615384615384615,
+        "low": 0.20981961516142647,
+        "high": 0.23885350318471338,
+        "std": 0.007716968743026928,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.08876811594202899,
+        "low": 0.07330802464275872,
+        "high": 0.10773215386264368,
+        "std": 0.008830295747559128,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 147
+    },
+    "crf": {
+      "accuracy": {
+        "point": 0.9287778601582715,
+        "low": 0.9267477060375172,
+        "high": 0.9310404289006287,
+        "std": 0.001125412141417327,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.6078729758043927,
+        "low": 0.5988805301629528,
+        "high": 0.6164404092827475,
+        "std": 0.004628197177163904,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.2353846153846154,
+        "low": 0.22083469105630849,
+        "high": 0.24731344005416647,
+        "std": 0.0068825849499603246,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.09963768115942029,
+        "low": 0.08177576180015772,
+        "high": 0.12275786052297784,
+        "std": 0.010766933037460177,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 153
+    },
+    "bilstm_softmax_s0": {
+      "accuracy": {
+        "point": 0.9392031956906596,
+        "low": 0.9371670432792892,
+        "high": 0.9414683934231438,
+        "std": 0.0011237858831831227,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.7582084011443593,
+        "low": 0.7448196066563748,
+        "high": 0.7713360442977432,
+        "std": 0.006909294266186474,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.28307692307692306,
+        "low": 0.2730106851332877,
+        "high": 0.29505582137161085,
+        "std": 0.005648435382678022,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.15579710144927536,
+        "low": 0.13602760312532883,
+        "high": 0.17486565226579717,
+        "std": 0.009954109861133162,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 184
+    },
+    "bilstm_softmax_s1": {
+      "accuracy": {
+        "point": 0.9407768312427182,
+        "low": 0.9386092581582898,
+        "high": 0.9432707475550473,
+        "std": 0.0011709143885020364,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.7671672105877235,
+        "low": 0.750617769984505,
+        "high": 0.7856358355269415,
+        "std": 0.009095879838716747,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.2907692307692308,
+        "low": 0.2756481161014418,
+        "high": 0.3064802602163999,
+        "std": 0.007896089981787485,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.16485507246376813,
+        "low": 0.14855072463768115,
+        "high": 0.1813285457809695,
+        "std": 0.008928874083942898,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 189
+    },
+    "bilstm_softmax_s2": {
+      "accuracy": {
+        "point": 0.9390972779131171,
+        "low": 0.9366255522827688,
+        "high": 0.9416873095872612,
+        "std": 0.001270771479279753,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.7549879048541,
+        "low": 0.7449881245987742,
+        "high": 0.7643653849477735,
+        "std": 0.004933286452722695,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.2876923076923077,
+        "low": 0.2731245971787563,
+        "high": 0.3014385840311005,
+        "std": 0.007203878813780054,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.161231884057971,
+        "low": 0.13483463930668593,
+        "high": 0.19136960600375236,
+        "std": 0.014288118722269363,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 187
+    },
+    "bilstm_crf_s0": {
+      "accuracy": {
+        "point": 0.9391578023574271,
+        "low": 0.936900897807979,
+        "high": 0.9413139655560626,
+        "std": 0.0011391914774782073,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.7551950604015989,
+        "low": 0.7406017033146295,
+        "high": 0.7682788267878274,
+        "std": 0.007213091960865258,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.2876923076923077,
+        "low": 0.2774387854576038,
+        "high": 0.2993991515103512,
+        "std": 0.005730939932453027,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.161231884057971,
+        "low": 0.1401831406567224,
+        "high": 0.18342599666129075,
+        "std": 0.011581034486627754,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 187
+    },
+    "bilstm_crf_s1": {
+      "accuracy": {
+        "point": 0.9405498645765559,
+        "low": 0.9380558017778204,
+        "high": 0.9432241971067314,
+        "std": 0.0012863885187596204,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.7637055915643072,
+        "low": 0.7481759812262341,
+        "high": 0.7809071165116391,
+        "std": 0.008487111883688548,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.28615384615384615,
+        "low": 0.26431639395846446,
+        "high": 0.3078205625355463,
+        "std": 0.01131936473567875,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.15942028985507245,
+        "low": 0.12692807403804304,
+        "high": 0.19425616406685617,
+        "std": 0.01766404933417115,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 186
+    },
+    "bilstm_crf_s2": {
+      "accuracy": {
+        "point": 0.9403834223547035,
+        "low": 0.9384043801329683,
+        "high": 0.9427291328302546,
+        "std": 0.0011189143215315578,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.76148426582187,
+        "low": 0.7499775504502464,
+        "high": 0.7743241884442544,
+        "std": 0.006433316055385724,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.2846153846153846,
+        "low": 0.271752423866835,
+        "high": 0.2971709065950114,
+        "std": 0.006555266914771529,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.15760869565217392,
+        "low": 0.13357095597209553,
+        "high": 0.1857466837826273,
+        "std": 0.013383898780652447,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 185
+    },
+    "bert_s0": {
+      "accuracy": {
+        "point": 0.9627472045272284,
+        "low": 0.961070712170978,
+        "high": 0.9644476894642745,
+        "std": 0.0008891554664021643,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.8476652595162509,
+        "low": 0.8387349761818379,
+        "high": 0.858297038106924,
+        "std": 0.005128905135364164,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.3446153846153846,
+        "low": 0.3165666901905434,
+        "high": 0.37519649663528193,
+        "std": 0.014473288751212083,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.22826086956521738,
+        "low": 0.19999116607773854,
+        "high": 0.25874386321313697,
+        "std": 0.015435976592010188,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 224
+    },
+    "bert_s1": {
+      "accuracy": {
+        "point": 0.9635794156364902,
+        "low": 0.9623494687266533,
+        "high": 0.9649293935801432,
+        "std": 0.0006618539341398104,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.8505980003132789,
+        "low": 0.8379962338458103,
+        "high": 0.8652486621315951,
+        "std": 0.007577109478527278,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.3415384615384615,
+        "low": 0.3135121625210427,
+        "high": 0.3716535433070866,
+        "std": 0.015006972902671209,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.2246376811594203,
+        "low": 0.19487132352941178,
+        "high": 0.25430377397018694,
+        "std": 0.015268164614460077,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 222
+    },
+    "bert_s2": {
+      "accuracy": {
+        "point": 0.9628985156380033,
+        "low": 0.9613151219040657,
+        "high": 0.9645353376958565,
+        "std": 0.0008309102345786052,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.850440159290799,
+        "low": 0.8398209023727551,
+        "high": 0.8617046909585757,
+        "std": 0.005745258725773824,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.34,
+        "low": 0.3247284094702179,
+        "high": 0.358974358974359,
+        "std": 0.00902623403792187,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.22282608695652173,
+        "low": 0.20430107526881722,
+        "high": 0.2429391731348012,
+        "std": 0.010115266887859048,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 221
+    },
+    "deberta_s0": {
+      "accuracy": {
+        "point": 0.9712660200638533,
+        "low": 0.9695312071641772,
+        "high": 0.9727732461148595,
+        "std": 0.0008604193261502566,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.8812548017076133,
+        "low": 0.8697260322998798,
+        "high": 0.8927964870242573,
+        "std": 0.0060143431624391785,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.3646153846153846,
+        "low": 0.3443490020014064,
+        "high": 0.3869081282936357,
+        "std": 0.011226607842901323,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.25181159420289856,
+        "low": 0.21885494201142464,
+        "high": 0.28834041141340405,
+        "std": 0.017763491296576818,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 237
+    },
+    "deberta_s1": {
+      "accuracy": {
+        "point": 0.9707213000650637,
+        "low": 0.9691997311856273,
+        "high": 0.972078079792319,
+        "std": 0.0007611714047750775,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.8800569147985139,
+        "low": 0.8709472875798565,
+        "high": 0.8886794001405152,
+        "std": 0.004670061283935543,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.36153846153846153,
+        "low": 0.34880239520958084,
+        "high": 0.375786413892561,
+        "std": 0.00694991584306403,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.24818840579710144,
+        "low": 0.23048347947014378,
+        "high": 0.26829377372485713,
+        "std": 0.009793775865001348,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 235
+    },
+    "deberta_s2": {
+      "accuracy": {
+        "point": 0.9703278911770491,
+        "low": 0.9682157969911005,
+        "high": 0.972119222418083,
+        "std": 0.0010451499679131663,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "macro_f1": {
+        "point": 0.875374466677235,
+        "low": 0.8623831942235701,
+        "high": 0.8875572432728799,
+        "std": 0.006565901087774201,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match": {
+        "point": 0.3553846153846154,
+        "low": 0.34077216340075855,
+        "high": 0.36960267100977195,
+        "std": 0.007314618617538354,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "turn_exact_match_2plus_words": {
+        "point": 0.24094202898550723,
+        "low": 0.2155734290701365,
+        "high": 0.26833843329253365,
+        "std": 0.013307006259584005,
+        "n_resamples": 1000,
+        "n_documents": 8
+      },
+      "exact_turns": 231
+    }
+  }
+}
